@@ -42,6 +42,51 @@ A revisão sistemática será conduzida com base nos seguintes temas:
 - **ChatGpt API**: Automatização da extração de dados dos artigos analisados
 
 ---
+## arquitetuta do projeto
+
+.
+├── dados/                    # PDFs originais
+│   ├── artigo1.pdf
+│   ├── artigo2.pdf
+├── resumos-artigos/          # Resumos gerados pelo BLOOM-560M
+│   ├── artigo1.txt
+│   ├── artigo2.txt
+├── resultados-openai/        # Resultados processados pela API OpenAI
+│   ├── artigo1_resultado.txt
+│   ├── artigo2_resultado.txt
+├── scripts/                  # Scripts principais
+│   ├── process_pdf.py        # Processa PDFs e extrai texto
+│   ├── gerar_resumo.py       # Gera resumos utilizando BLOOM-560M
+│   ├── agente_openai.py      # Gera resultados usando a API OpenAI
+├── config.py                 # Configurações de variáveis de ambiente
+├── .env                      # Chave da API OpenAI
+├── requirements.txt          # Dependências do projeto
+└── README.md                 # Documentação do projeto
+
+
+---
+## Fluxo de Uso
+
+1. Coloque os PDFs na pasta dados.
+2. Extraia o texto dos PDFs:
+
+````
+python scripts/process_pdf.py
+````
+
+3. Gere os resumos com o BLOOM-560M:
+
+````
+python scripts/gerar_resumo.py
+````
+
+4. Analise os resumos com a API OpenAI:
+
+````
+python scripts/agente_openai.py
+````
+5. Os resultados serão salvos na pasta resultados-openai.
+--- 
 
 ## Como Contribuir
 
