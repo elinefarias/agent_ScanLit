@@ -1,0 +1,53 @@
+import os
+from huggingface_hub import login
+from transformers import pipeline
+import torch
+
+# Configuração do token de acesso do Hugging Face
+# Substitua 'SEU_TOKEN' pelo seu token real do Hugging Face
+login(token='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')
+
+# ID do modelo LLaMA
+model_id = "meta-llama/Meta-Llama-3-8B"
+
+# Cria o pipeline de geração de texto
+text_generator = pipeline(
+    "text-generation",
+    model=model_id,
+    model_kwargs={"torch_dtype": torch.bfloat16},
+    device_map="auto"
+)
+
+# Função para gerar resumo
+def gerar_resumo(texto, prompt="Summarize the following text:"):
+    entrada = f"{prompt}\n\n{texto}"
+    resumo = text_generator(entrada, max_new_tokens=500, do_sample=True, temperature=0.7, top_p=0.9, top_k=50)
+    return resumo[0]['generated_text']
+
+if __name__ == "__main__":
+    pdf_dir = "dados"  # Pasta com os PDFs
+    output_dir = "resumos-artigos"  # Pasta para salvar resumos
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    for pdf_file in os.listdir(pdf_dir):
+        if pdf_file.endswith(".pdf"):
+            pdf_path = os.path.join(pdf_dir, pdf_file)
+
+            # Extrair texto do PDF (supondo que você tenha uma função para isso)
+            texto = extract_text_from_pdf(pdf_path)
+
+            if texto.strip():
+                prompt = """
+                Summarize the following scientific article by highlighting the most important parts, such as methodology, results, and conclusions. Make sure to include key metrics like accuracy, precision, recall, and any other relevant performance indicators. Focus on the classification methods and their effectiveness:
+                """
+                resumo = gerar_resumo(texto, prompt=prompt)
+
+                # Salvar resumo em um arquivo de texto
+                resumo_path = os.path.join(output_dir, f"resumo_{os.path.splitext(pdf_file)[0]}.txt")
+                with open(resumo_path, "w", encoding="utf-8") as f:
+                    f.write(resumo)
+
+                print(f"Resumo gerado e salvo em: {resumo_path}")
+            else:
+                print(f"Não foi possível extrair texto do PDF: {pdf_file}")

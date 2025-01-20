@@ -1,8 +1,7 @@
-openai==0.27.9             
-python-dotenv==1.0.0   
 transformers
+huggingface_hub
 torch
-PyPDF2
+accelerate
 
 
 
