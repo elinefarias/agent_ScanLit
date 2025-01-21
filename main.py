@@ -1,88 +1,73 @@
-from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
-from database.weaviate_client import WeaviateClient
-from database.memoria import Memoria
-import openai
 import os
-from jinja2 import Environment, FileSystemLoader
-from server.gunicorn_server import GunicornServer
+from dotenv import load_dotenv
+import transformers
+from PyPDF2 import PdfReader
 
-app = FastAPI(
-    title="Via Chat",
-    version="0.1",
-    description="Agente Professor de Violão é um assistente virtual que funciona como um professor(a) de violão.",
+# Carregar as variáveis de ambiente
+load_dotenv()
+
+# Pegar a chave da API do Hugging Face
+HUGGINGFACE_API_KEY = os.getenv('HUGGINGFACE_API_KEY')
+
+# Configurar o pipeline de resumo de texto
+pipeline = transformers.pipeline(
+    "summarization",
+    model="google/pegasus-xsum",
+    tokenizer="google/pegasus-xsum"
 )
 
-app.mount("/assets", StaticFiles(directory="assets"), name="assets")
+# Função para extrair texto de um PDF
+def extract_text_from_pdf(pdf_path):
+    reader = PdfReader(pdf_path)
+    text = ""
+    for page in reader.pages:
+        text += page.extract_text()
+    return text
 
-openai_key = os.getenv('OPENAI_API_KEY')
-weaviate_client = WeaviateClient("http://localhost:8080", openai.api_key)
+# Função para dividir o texto em partes menores
+def split_text(text, max_length=1024):
+    sentences = text.split('. ')
+    chunks = []
+    chunk = ""
+    for sentence in sentences:
+        if len(chunk) + len(sentence) + 1 <= max_length:
+            chunk += sentence + ". "
+        else:
+            chunks.append(chunk.strip())
+            chunk = sentence + ". "
+    if chunk:
+        chunks.append(chunk.strip())
+    return chunks
 
-env = Environment(loader=FileSystemLoader('templates'))
+# Caminhos das pastas
+input_folder = "dados"
+output_folder = "resumos-artigos"
 
-class Question(BaseModel):
-    question: str
-    session_id: str
+# Criar a pasta de saída se não existir
+os.makedirs(output_folder, exist_ok=True)
 
-@app.get("/", response_class=HTMLResponse)
-async def get_chat(request: Request):
-    template = env.get_template('via_chat.html')
-    return template.render(request=request)
-
-@app.post("/ask")
-async def ask_question(question: Question):
-    session_id = question.session_id
-    question_text = question.question
-
-    if not question_text or not session_id:
-        raise HTTPException(status_code=400, detail="Missing 'question' or 'session_id' in request body")
-
-
-    memoria = Memoria(session_id)
-
-
-    historico = memoria.obter_historico_formatado()
-
-    vector = weaviate_client.generate_embedding(question_text)
+# Processar cada PDF na pasta de entrada
+for pdf_file in os.listdir(input_folder):
+    if pdf_file.endswith(".pdf"):
+        pdf_path = os.path.join(input_folder, pdf_file)
+        text = extract_text_from_pdf(pdf_path)
         
+        # Dividir o texto em partes menores
+        text_chunks = split_text(text)
+        
+        # Gerar resumos para cada parte
+        summaries = []
+        for chunk in text_chunks:
+            prompt = f"As a bibliographic reviewer, summarize the article by focusing on practical implications, key sections, and main results: {chunk}"
+            summary = pipeline(prompt, max_length=200, min_length=50, do_sample=False)[0]['summary_text']
+            summaries.append(summary)
+        
+        # Combinar os resumos
+        full_summary = "\n".join(summaries)
+        
+        # Salvar o resumo em um arquivo de texto
+        output_path = os.path.join(output_folder, f"{os.path.splitext(pdf_file)[0]}_resumo.txt")
+        with open(output_path, "w", encoding="utf-8") as output_file:
+            output_file.write(full_summary)
 
-    similar_texts = weaviate_client.search_similar(vector)
-    print(f"Similar texts: {similar_texts}")
-    
-
-    context = "\n".join([text for text, _ in similar_texts])
-
-
-    prompt = (
-        f"Use o seguinte contexto para responder a pergunta: {context}\n\n"
-        f"Histórico da conversa:\n{historico}\n\n"
-        f"Pergunta atual: {question_text}\n\n"
-        "Instrução: Responda à pergunta atual com base no contexto e no histórico da conversa."
-    )
-    print("Texto enviado para OpenAI:", prompt)
-    
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "Você é um assistente virtual que funciona como um professor(a) de violão."},
-            {"role": "user", "content": prompt},
-        ],
-        max_tokens=600
-    )
-
-    answer = response.choices[0].message['content'].strip()
-
-    memoria.salvar_historico(question_text, answer)
-
-    return {"answer": answer}
-  
-if __name__ == '__main__':
-  options = {
-      'bind': '{}:{}'.format('0.0.0.0', '8000'),
-      'workers': 1,
-      'worker_class': 'uvicorn.workers.UvicornWorker',
-      'timeout': 600
-  }
-  GunicornServer(app, options).run()
+print("Resumos gerados com sucesso!")
