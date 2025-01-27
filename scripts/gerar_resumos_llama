@@ -5,7 +5,7 @@ import torch
 
 # Configuração do token de acesso do Hugging Face
 # Substitua 'SEU_TOKEN' pelo seu token real do Hugging Face
-login(token='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')
+login(token='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')
 
 # ID do modelo LLaMA
 model_id = "meta-llama/Meta-Llama-3-8B"

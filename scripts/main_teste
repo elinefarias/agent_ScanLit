@@ -1,0 +1,55 @@
+import requests
+import json
+import os
+from crawai import Crawai
+
+OLLAMA_API_URL = "http://localhost:11434/api/chat"
+DADOS_DIR = "dados"
+RESUMOS_DIR = "resumos-artigos"
+
+def resumir_texto(texto):
+    data = {
+        "model": "llama2",
+        "messages": [{"role": "user", "content": f"Resuma o seguinte texto: {texto}"}]
+    }
+    headers = {"Content-Type": "application/json"}
+    
+    try:
+        response = requests.post(OLLAMA_API_URL, json=data, headers=headers, stream=True)
+        if response.status_code == 200:
+            result_content = ""
+            for line in response.iter_lines(decode_unicode=True):
+                if line:
+                    try:
+                        json_line = json.loads(line)
+                        result_content += json_line.get("message", {}).get("content", "")
+                        if json_line.get("done", False):
+                            break
+                    except ValueError:
+                        print("Erro ao decodificar uma linha JSON:", line)
+            return result_content
+        else:
+            print(f"Erro ao conectar à API: {response.status_code} - {response.text}")
+            return None
+    except requests.exceptions.RequestException as e:
+        print(f"Erro ao realizar a solicitação: {e}")
+        return None
+
+def processar_arquivos():
+    if not os.path.exists(RESUMOS_DIR):
+        os.makedirs(RESUMOS_DIR)
+    
+    for arquivo in os.listdir(DADOS_DIR):
+        caminho_arquivo = os.path.join(DADOS_DIR, arquivo)
+        if os.path.isfile(caminho_arquivo):
+            with open(caminho_arquivo, 'r', encoding='utf-8') as f:
+                conteudo = f.read()
+                resumo = resumir_texto(conteudo)
+                if resumo:
+                    caminho_resumo = os.path.join(RESUMOS_DIR, f"resumo_{arquivo}.txt")
+                    with open(caminho_resumo, 'w', encoding='utf-8') as resumo_f:
+                        resumo_f.write(resumo)
+                    print(f"Resumo salvo em: {caminho_resumo}")
+
+if __name__ == "__main__":
+    processar_arquivos()

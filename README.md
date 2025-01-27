@@ -103,3 +103,7 @@ python scripts/agente_openai.py
 Para dúvidas ou sugestões, entre em contato com:
 - **Maria Eline Silva de Farias**  
   E-mail: elinefarias33@gmail.com
+
+
+  Alterar a Política de Execução para Permitir Scripts:
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser

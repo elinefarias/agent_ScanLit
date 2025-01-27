@@ -1,9 +1,9 @@
-transformers
-huggingface_hub
-torch
-accelerate
+crewai
 python-dotenv
+transformers
+torch
+huggingface_hub
+accelerate
 requests
 tf-keras
-
-
+tiktoken
