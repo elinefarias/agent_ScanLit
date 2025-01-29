@@ -1,0 +1,34 @@
+Here is the requested JSON file with the extracted quantitative results from the provided article:
+
+{
+"article_name": "Active Learning in Math University Course",
+"quantitative_results": {
+"sample_size": "Total sample size: 365 students; Subgroup sizes: N = 120 students in section tiger, N = 125 students in section lion, and N = 110 students in section mouse.",
+"metrics": [
+{
+"description": "Pre-CCI scores",
+"value": "Mean = 7.18, SD = 3.85"
+},
+{
+"description": "Post-CCI scores",
+"value": "Mean = 9.23, SD = 3.62"
+},
+{
+"description": "Level of active learning perceived by students",
+"value": "Mean = 4.07, SD = 1.54"
+},
+],
+"comparisons": [
+{
+"description": "Comparison between pre- and post-CCI scores",
+"statistical_test": "t-test",
+"p_value": "p < 0.01"
+},
+{
+"description": "Comparison between levels of active learning perceived by students in different sections",
+"statistical_test": "ANOVA",
+"p_value": "p < 0.05"
+},
+],
+"additional_details": "The results of the study supported all three hypotheses, demonstrating a statistically significant impact of active learning on students' learning outcomes. The study found that displaying clicker voting results had a direct correlation with students' perceptions of their level of active learning."
+}

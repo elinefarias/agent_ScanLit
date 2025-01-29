@@ -1,0 +1,1161 @@
+
+You are a scientific text analysis assistant. Your task is to extract detailed and structured quantitative results from the provided scientific text, focusing on sample sizes, statistical measures, numerical results, and comparisons.
+
+Extract the following information:
+
+1. **Sample Size**:
+   - Clearly specify the total sample size and any subgroup sizes reported (e.g., 'N = 365 students').
+
+2. **Quantitative Metrics**:
+   - Summarize all numerical metrics with their descriptions. Include statistics such as means, standard deviations, percentages, p-values, correlations, or other relevant values. For each metric, include:
+     - **Metric Description**: A clear explanation of what the metric represents.
+     - **Value**: The reported number.
+     - **Unit**: The measurement unit if applicable (e.g., 'points', '%').
+     - **Standard Deviation** (if available): The SD value.
+
+3. **Comparisons or Statistical Tests**:
+   - Identify comparisons made (e.g., pre- and post-test scores) and the type of statistical tests applied (e.g., t-test, ANOVA).
+   - Include p-values or confidence intervals if mentioned.
+
+4. **Additional Quantitative Details**:
+   - Include any additional quantitative information or notes that complement the above fields.
+
+### Response Format:
+The response must be in JSON format:
+{
+    "article_name": "Title of the Article",
+    "quantitative_results": {
+        "sample_size": {
+            "total": "Total sample size",
+            "subgroups": {
+                "group_1": "Size of group 1",
+                "group_2": "Size of group 2"
+            }
+        },
+        "metrics": [
+            {
+                "description": "What the metric represents",
+                "value": "Reported numerical value",
+                "unit": "Measurement unit",
+                "std_dev": "Standard deviation (if available)"
+            }
+        ],
+        "comparisons": [
+            {
+                "description": "Comparison details",
+                "statistical_test": "Type of statistical test",
+                "p_value": "Value if available"
+            }
+        ],
+        "additional_details": "Any complementary quantitative information"
+    }
+}
+
+Below is the article's text. Focus on extracting quantitative results from the abstract, introduction, and results:
+---------------------
+Abstract: Research has demonstrated the positive impact of active learning on students’ learning
+outcomes, particularly in science, technology, engineering and mathematics (STEM) ﬁelds. However,
+few studies have explored the impact of active learning via problem-based collaborative games in
+large mathematics classes in the context of Asian tertiary education. This study assesses the e ects
+of active learning on students’ learning outcomes using class test scores and the calculus concept
+inventory (CCI) to test the conceptual understanding of the basic principles of di erential calculus, in
+a ﬁrst year calculus course in Hong Kong. Three hypotheses were tested to determine the e ects of
+game-based collaborative learning on learning mathematics among students. Active learning through
+a problem-based collaborative learning methodology was employed, using Kahoot!, a game-based
+learning platform. Results supported all three hypotheses, demonstrating a statistically signiﬁcant
+increase in students’ conceptual understanding and examination performance, based upon their
+individual perceptions of active engagement and time spent in active learning. Our results indicated
+that active learning “levels the playing ﬁeld”, in the sense that students with less pre-requisite
+background knowledge, using a problem-based collaborative learning methodology, were relatively
+more inclined to catch up or even exceed the performance of students with a stronger prerequisite
+background knowledge, at the end of the course.
+Keywords: mathematics; problem-based learning; active learning; collaborative learning; engagement;
+time spent; game-based learning; student performance; concept test
+1. Introduction
+1.1. Active Learning
+The basic premise of active learning involves focusing on reinforcing higher-order thinking skills
+and instructional techniques, requiring learners to actively participate in their learning process [ 1,2].
+However, the term active learning lacks a concise deﬁnition, even though it is used frequently in
+educational literature and educational research. Moreover, a major obstacle is the lack of universally
+accepted deﬁnitions and measurements as di erent researchers from di erent ﬁelds, such as education,
+social psychology, healthcare and engineering disciplines, provide di erent deﬁnitions of the term.
+Active learning, as deﬁned by Prince [ 3], is “any instructional method that engages students in the
+learning process.” Instructional methods such as the ﬂip classroom pedagogy promote engaged
+learning and complex thinking skills in students [ 4]. When active learning is employed, both the
+instructional strategies faculty employ to promote active learning and the strategies the students
+themselves use to actively engage in the learning process come into e ect.
+Speciﬁcally, a key essential element of active learning is to actively engage students in deeper
+learning by fostering their ability to create new knowledge and apply the acquired knowledge and
+Educ. Sci. 2019 ,9, 172; doi:10.3390 /educsci9030172 www.mdpi.com /journal /educationEduc. Sci. 2019 ,9, 172 2 of 22
+skills by demonstrating well-developed judgement and responsibility as learners [ 5,6]. Moreover,
+active learning strategies motivate student learning in the classroom, subsequently promoting students’
+initiative to take ownership of their own learning as stakeholders in their own learning trajectory [ 7].
+Furthermore, active learning strategies are designed to shift traditional slide-based lectures to facilitated,
+problem-solving and collaborative learning activities that actively engage learners and result in positive
+academic outcomes (for example, the development of life-long learning skills and the retention of
+classroom-based experiences in the form of knowledge, skills, and abilities) [8].
+One of the key goals of active learning is to enable students to use higher levels of cognitive
+functioning through cognitively deeper and richer learning experiences. Learners are able to combine
+prior knowledge and engage with abstract concepts that require problem-solving, collaborative
+discourse, critical thinking and reasoning skills [ 9,10]. Moreover, mobile learning tools support
+compelling learning experiences in a learner centric setting that is dynamic and engaging and meets
+the individual needs of learners, while simultaneously imparting them with the skills required
+to be lifelong learners [ 11]. With the rapid development of advances in mobile technology and
+game-based learning approaches, clickers or game-based student response systems such as Kahoot! or
+CloudClassRoom (CCR), are often used in conjunction with active pedagogies such as problem-based
+and inquiry-based learning, think-pair-share, peer instruction, and ﬂipped classroom instruction [ 12–14].
+Furthermore, only a limited number of studies have attempted to explore the impact of active learning
+via problem-based collaborative games in large mathematics classes in the context of Asian tertiary
+education. Hence, the objective of this study is to examine the e ects of active learning via problem-based
+collaborative games in large mathematics classes in the context of Asian tertiary education.
+1.2. Di erent Approaches to Active Learning in STEM Education
+An active learning context refers to the various learning approaches and instructional methods
+such as experiential learning, collaborative learning, cooperative learning, case-based, inquiry-based,
+problem-based, team-based and game-based learning [ 15–18]. These di erent models cover the subset
+of active learning—hence, active learning is an umbrella concept that encompasses the di erent learning
+approaches and instructional methods of learning [ 4]. Over the years, active learning as a model
+of instruction in science, technology, engineering and mathematics (STEM) education has evolved,
+placing emphasis on di erent instructional approaches and the context in which learning occurs.
+Problem solving, inquiry-based learning and interactive learning activities all play signiﬁcant roles in
+STEM education. For example, a problem-solving based active learning approach in a mathematics
+course enables students to view problems with a deeper perspective, thereby experiencing deeper
+learning, undertaking critical thinking and utilizing an analytic reasoning process. More speciﬁcally,
+research on active learning approaches in STEM education has shown to improve student performance
+by increasing cognitive stimulation [ 1,19,20]. Moreover, a quantitative meta-analysis conducted by
+Freeman et al., [ 21] found strong evidence that student performance in undergraduate STEM courses
+was positively inﬂuenced by the inclusion of student-centered methodologies in the classroom.
+1.3. Conceptions of Teaching and Learning Within the Hong Kong Context
+Despite extensive evidence-based research on the beneﬁts of active learning strategies on student
+achievement, retention and performance in STEM related subjects, a large number of STEM instructors
+in Hong Kong do not put these teaching strategies into practice due to a lack of incentives or support
+from their tertiary institutions [ 21,22]. A key issue to consider is that the Hong Kong tertiary education
+system is depicted as highly competitive, examination-oriented, besides being characterized by
+classes with a large number of students and expository teaching, based on lecture-based delivery [ 23].
+Hence, undue emphasis is placed on abstract and declarative knowledge in classrooms. As a result,
+students tend to ﬁnd learning tedious, boring and /or irrelevant to their daily lives, leading to a lack of
+attention, passivity and ’o -task’ attitudes that have become commonplace in Hong Kong classrooms.
+Consequently, university level instructors in Hong Kong are more likely to resist active learningEduc. Sci. 2019 ,9, 172 3 of 22
+teaching practices, since they contrast sharply with their intrinsic deeply held beliefs and their own
+background education in passive learning and teaching [ 24,25]. Advocacy for STEM education in Hong
+Kong has only emerged in recent years, and such advocacy is frequently centered on the secondary or
+high school education sector, rather than on tertiary institutions [26].
+2. Literature Review and Research Hypotheses
+2.1. Active Learning in Mathematics in Tertiary Education in Asia
+With respect to prior research on active learning in Asia, extensive research has been conducted on
+the topic, motivated by various aspects of active learning in STEM subjects, such as ﬂipped classrooms
+in medicine [ 27], role playing and experiential learning in computer science [ 28], or the use of student
+response systems in physics [ 29]. Consequently, there are many more studies on active learning with
+respect to STEM education in Asia. However, up to now, only a limited number of studies have been
+conducted to assess the impact and e ectiveness of active learning in university mathematics in Asia.
+For example, Kaur [ 30] discussed a broad overview of the challenges of implementing active learning
+in math education within primary and secondary schools in Asia. Moreover, Chen and Chiu [ 31]
+studied design-based learning (DBL) via computerized multi-touch collaborative scripts and its e ects
+on elementary school students’ performance in Taiwan. However, the authors acknowledged there
+were limited studies that focused on active learning in university mathematics in an Asian context [ 31].
+Furthermore, Li, Zheng and Yang [ 32] examined the e ect of ﬂipped methods on 120 Master of
+Business Administration (MBA) students of a national university in China and concluded that the
+ﬂipped classroom approach supported cooperative learning and subsequently enhanced students’
+learning achievements, course satisfaction and cooperative learning attitudes in science education.
+This provides compelling evidence that increasing active learning in STEM education for students in
+Hong Kong universities would be a worthy pursuit that warrants further investigation.
+2.2. Student Performance and Active learning in Large University Math Classes
+Research has shown that active learning increases student performance in the ﬁelds of science,
+technology, engineering and mathematics (STEM) [ 19–21,33]. Though numerous studies have
+been conducted on active learning and student performance in large STEM tertiary classes in
+non-mathematics subjects, there have only been a few studies on creating sustainable teaching and
+learning strategies for large mathematics classes [ 34–37]. One study examined student performance
+in small tertiary math classes ( <30) but did not observe any statistically signiﬁcant improvement in
+the group with more student engagement [ 38]. We may put forth the argument that Freeman’s [ 21]
+meta-analysis does provide some evidence that active learning improves student performance in large
+mathematics classes, but his review of articles does not take into consideration large mathematics
+classes. However, investigations exist for methods to improve student performance via active learning
+pedagogies in large classes in other STEM disciplines, like team-based learning in introductory
+Biology [ 39] or project-based learning in Engineering [ 40]. Other studies on student achievement,
+performance and other outcomes have tenuous connections to active learning [ 20,22,41,42]. For example,
+Isbell and Cote [ 43] provide evidence to suggest that sending a simple personalized email to students
+expressing concern about their performance and providing information about course resources
+improved student performance.
+2.3. Active Learning Through a Problem-Based Learning Methodology in Mathematics Education
+It is commonly recognized that there are various limitations in the traditional lecture style
+approach to the teaching of mathematics. Mathematics is often taught purely using the lecture
+format, which encourages passivity and subsequently, diminishes creativity in students. However,
+one of the most well-known approaches to active learning in mathematics is a problem-based
+learning methodology. In the context of mathematics, problem-based learning approaches engageEduc. Sci. 2019 ,9, 172 4 of 22
+students in the thought-processes instrumental in solving mathematical problems and discovering
+multiple approaches and /or solutions [ 44]. Moreover, instead of attempting to ﬁnd a single correct
+solution or answer, students clarify problems, discern possible solutions and assess viable options.
+Consequently, mathematics educators are beginning to employ problem-based learning approaches in
+teaching mathematics at the tertiary level, including applying several innovative and creative methods,
+such as the use of digital learning tools to provide interactive contexts for exploring mathematical
+problems [45,46].
+2.4. Applying Technology-Enabled Active Learning in Mathematics Education
+The application of digital learning tools and its capabilities creates environments where students
+create knowledge by being actively engaged in learning activities rather than being passive recipients
+of information [ 47]. Accessible learning technologies and digital learning content provide interactive
+and authentic contexts for exploring mathematical concepts and solving problems. By purposefully
+applying technology-enabled learning contexts in mathematics education, students are able to develop
+the necessary higher order cognition skills and subsequently, take responsibility for their own learning.
+Hence, active learning strategies, such as problem-based learning, can be presented through a variety
+of technology-enabled learning contexts, such as virtual environments, simulations, social networking
+and digital gaming technologies, within the classroom [ 48]. Research has shown that students have a
+proclivity towards active, engaging and technology-rich learning experiences, based on instructional
+strategies and technological capability [ 12,48,49]. Furthermore, prior studies support active learning
+and the integration of mobile learning technologies into mathematics course design as an e ective
+pedagogy to enhance student engagement and collaboration [ 50–52]. Hence, mathematics educators
+must be able to implement innovative active learning strategies by leveraging these game-based
+learning and gamiﬁcation technologies to make learning, in the context of mathematics, more engaging,
+interactive and collaborative [46].
+2.5. Game-Based Learning in Mathematics in Tertiary Education in Asia
+One active learning methodology that is emerging in its application is the use of game-based
+learning. In recent years, games have been used in traditional classrooms setting to augment active
+learning strategies for cognitively diverse students, by providing a context for problem solving
+and inquiry [ 53,54]. Game-based learning is an interactive learning methodology and instructional
+design strategy that integrates educational content and gaming elements, by delivering interactive,
+game-like formats of instruction to learners [ 55]. Moreover, game-based learning integrates aspects
+of experiential learning and intrinsic motivation with game applications that have explicit learning
+goals, thereby allowing learners to engage in complex, problem-solving tasks and activities that mirror
+real-world, authentic situations [ 56,57]. For example, results from a study conducted by Snow et
+al., [ 58] demonstrated that a computer game simulation of Newton’s laws of motion was actively
+eective in helping non-physics students understand key concepts of force. In addition, studies have
+demonstrated that game-based learning may enhance student achievement in reading skills [ 59],
+self-e cacy [60] and student performance [61,62].
+A signiﬁcant amount of research in game-based learning has focused on examining student
+performance and how game-based learning is applied, in order to make the learning process more
+interactive and engaging for learners [ 63–65]. For the speciﬁc subject of mathematics, game-based
+learning assists students to visualize graphical representations of complex mathematical concepts in
+a particularly engaging way [ 66]. However, reviews of the e ects of game-based learning research
+on student performance are typically limited to secondary school students in North America and
+Europe. For example, a research study conducted by Bai et., al., [ 67] demonstrated that 3-D games
+help eight graders learn algebra more e ectively, thus attaining higher scores on their tests. Moreover,
+various additional research studies have investigated the relationship between game-based learning
+and mathematics achievement and motivation [68,69].Educ. Sci. 2019 ,9, 172 5 of 22
+2.6. Embedding Formative Assessment into Game-Based Learning
+Formative assessment comprises of learning activities in which learners engage with learning
+materials as they progress towards achieving speciﬁc learning outcomes [ 70]. The primary purpose of
+formative assessment is to improve learning and facilitate the learning process. Formative assessment
+can be embedded into a game-based learning context, whereby learners actively engage with the
+technology, by responding to questions and receiving frequent, timely and relevant feedback on
+their progress and performance [ 71]. Prior studies have shown that game-based learning supports
+learner engagement and provides e ective feedback [ 72,73]. Ismail and Mohammad [ 74] in their study
+demonstrated that students perceived Kahoot!, a game-based student response system, as a potential
+formative assessment tool to provide feedback for learning. By embedding formative assessment to a
+game-based learning context, learners are provided with feedback on their learning progress during the
+course, thus giving the instructor a way to assess learners’ understanding and also highlight concepts
+that require additional clariﬁcation [ 75]. Game-based formative assessment allows learners to monitor
+their progress and optimize the overall learning process. Moreover, embedding formative assessment
+into game-based learning in a pedagogically sound way allows for the precise assessment of learners’
+progress and performance in terms of achievement of learning outcomes [ 70]. Furthermore, game-based
+learning technologies for formative assessment create active learning environments, ensuring learners
+are moving toward content mastery, thereby resulting in more successful learning outcomes.
+To conclude this section, analysis of game-based learning in mathematics in Asia has been
+carried out for primary and secondary school students [ 66,76,77]. However, as per the authors’
+present knowledge, to date, there has been only one study on game-based learning in mathematics
+in tertiary mathematics education in large classes in Asia [ 78]. The study was conducted with a
+sample of 326 Taiwan students on three-hour classes for 16 weeks using game-based instruction.
+The results of the study demonstrated that game-based instruction had a signiﬁcant inﬂuence on
+learning achievements, whereas learning motivation had signiﬁcantly positive e ects on learning
+achievements [ 78]. In addition, the authors of this study did not examine the e ect of game-based
+learning on student performance directly. Since only a limited number of studies have attempted to
+explore the impact of active learning via problem-based collaborative games in large mathematics
+classes in the context of Asian tertiary education, this research study has long-term signiﬁcance for
+students, instructors and institutions at large. The use of technology has the potential to change the
+nature of learning environments and the ways in which we design activities to support active learning.
+Hence, an examination of the e ects of active learning via problem-based collaborative games in large
+mathematics classes in the context of Asian tertiary education should play a pivotal role in furthering
+this research.
+2.7. Research Hypotheses
+Speciﬁcally, for the purpose of this study, the authors aim to better understand the e ects of active
+learning via problem-based collaborative games in large mathematics classes in the context of Asian
+tertiary education. Consistent with related literature, this study tested the following hypotheses:
+H1: A positive correlation exists between students’ perceptions of their “level of active engagement” and “time
+spent in active learning” and their academic performance (i.e., midterm test scores).
+H2: Students’ perceptions of “time spent in active learning” is a signiﬁcant predictor of their level of conceptual
+understanding of di erential calculus.
+H3: Students’ perceptions of their “level of active engagement” is a signiﬁcant predictor of their level of academic
+performance.Educ. Sci. 2019 ,9, 172 6 of 22
+3. Research Methodology
+3.1. Research Setting and Activity
+The broad purpose of this research was to examine active learning via problem-based collaborative
+games in a large mathematics university course in Hong Kong. A convenience sampling methodology
+was used as it is considered appropriate in exploratory research of this type [ 79]. The purpose of using
+a convenience sampling methodology was to facilitate a large sample size and to collect data. A total
+of 1017 (N =1017) undergraduate students enrolled in a ﬁrst year one semester 13-week “Applied
+Mathematics” course o ered at the Hong Kong Polytechnic University constituted a su cient pool of
+subjects, who ﬁt well within the intent and objectives of this study. A power test was conducted in
+providing the appropriate sample size necessary for the study [ 80]. A power test is an appropriate
+method to dispel suspicions that a sample is too small and is thus, calculated to assess the sample
+size required [ 81,82]. Ethical clearance for the study was obtained from the ethical review board of
+the institution. Furthermore, informed consent, which included information about the purpose of
+the study, voluntary participation, risks and beneﬁts, conﬁdentiality, and participants’ freedom to
+withdraw from the study at any time, was obtained prior to participation in the research.
+The course comprised of two hours of lectures and one hour of tutorials, where the medium of
+instruction was English. The ﬁrst 6.5 weeks covered di erential calculus topics, while the latter 6.5
+weeks covered probability and statistics. In this study, we only considered the di erential calculus part,
+covering topics such as functions, limits, continuity and di erentiation. There were approximately
+900 students in the six lecture sections labelled elephant, dog, cat, mouse, lion and tiger, taught by
+four di erent instructors. The main di erence across the six sections was the delivery of the teaching
+methods (i.e., the independent variable) in the lectures (i.e., traditional instructor-led lecture-based
+method versus a game-based active learning method via Kahoot!). Instructors of the sections tiger and
+dog would teach the class with the game-based active learning method via Kahoot! In the sections
+lion, mouse, cat and elephant, the instructor used the traditional instructor-led lecture-based method.
+Students who enrolled in the course were randomly assigned to one of the six sections. It should
+be noted that students in the study were subjected to either one of the teaching methods (i.e., the
+independent variable) during the course. Moreover, for equivalency, the assessment tasks and one
+hour tutorial sessions were kept the same among the six sections to reduce the inﬂuence of mediating
+factors or any potential confounds.
+A table of demographic variables of the students in all six sections is shown below (see Table 1),
+with respect to gender, and their enrollment in various programs, with valid midterm test scores (with
+mean and standard deviation) in di erential calculus. Each of the variables was examined for outliers
+and distributional properties. This was done in order to ensure that basic statistical assumptions
+were met.
+Table 1. Distribution of all students in the courses ( N=1017).
+Section Male FemaleBachelor
+LevelHigher
+DiplomaTotal
+Number of
+EnrolmentNTest
+Score
+MeanSD
+Elephant 144 34 83 95 178 168 69.9583 24.08427
+80.90% 19.10% 46.60% 53.40% 100.00%
+Dog 120 29 143 6 149 143 74.7937 19.99545
+80.50% 19.50% 96.00% 4.00% 100.00%
+Cat 111 56 109 58 167 158 60.9241 24.62574
+66.50% 33.50% 65.30% 34.70% 100.00%
+Mouse 130 21 31 120 151 136 58.6544 24.90995
+86.10% 13.90% 20.50% 79.50% 100.00%
+Lion 128 47 174 1 175 170 72.3941 21.7977
+73.10% 26.90% 99.40% 0.60% 100.00%
+Tiger 121 76 93 104 197 184 57.5761 21.91837Educ. Sci. 2019 ,9, 172 7 of 22
+Table 1. Cont .
+Section Male FemaleBachelor
+LevelHigher
+DiplomaTotal
+Number of
+EnrolmentNTest
+Score
+MeanSD
+61.40% 38.60% 47.20% 52.80% 100.00%
+Total 754 263 633 384 1017 959 65.6439 23.86943
+74.10% 25.90% 62.20% 37.80% 100.00%
+3.2. Pre and Post Concept and Midterm Tests
+The calculus concept inventory (CCI) is a measure of students’ conceptual understanding of the
+principles of di erential calculus, with little to no computation required [ 83]. The CCI was developed
+by Epstein and Yang [ 83] and has undergone extensive development and evaluation including item
+speciﬁcation, pilot testing and analysis, ﬁeld testing and analysis and post-examination analysis [ 84].
+The CCI contains 20 multiple choice questions in English. Pre and post CCI tests were administered in
+weeks 1 and 10, respectively. The CCI test was administered in the tutorials and students were given
+20 minutes to complete the test. It should be noted that all students had ﬁnished the calculus portion
+of the course in week 8. A midterm test covering the calculus part of the course was conducted in
+week 9. The CCI was administered via a hardcopy question sheet and a one-page hardcopy bubble
+sheet for answers. In addition to administering the CCI, we also asked the following two questions at
+the pre-test assessment in respect to students’ background knowledge of calculus: (1) have you taken
+calculus previously? (2) Have you taken a pre-calculus course previously (functions, trigonometry, and
+algebra, module M1 (Calculus and Statistics) or module M2 (Algebra and Calculus))? Both questions
+had the following choice of answers coded as follows: 1 =no, 2 =yes, in high school /college, 3 =yes,
+in university.
+For the post-test, we asked questions involving students’ perceptions of their active learning in
+class. The ﬁrst question we asked was as follows: “If an active classroom is one in which students
+actively work on underlying concepts and problems during the class and receive feedback from the
+instructor or other students on their work in class, how would you describe your class this semester?”
+The response scale was a ﬁve-point scale coded as 1: very active; 2: active; 3: somewhat active; 4; a little
+active; 5: not active. Hence, the lower the value, the higher the level of engagement in active learning in
+classroom. The second question we asked was their approximation of the percentage of class time that
+they were active. The second question we asked was as follows: “On an average, about what percent
+of your time in class would you say was spent with active learning working on problems and receiving
+feedback from your instructor and /or your classmates, e.g., student response (clickers) questions,
+“question and answer”, etc.?” The response scale was a ﬁve-point scale coded as 1 =76%–100%; 2 =
+51%–75%; 3 =26%–50%; 4 =1%–25%; 5 =0%. Hence, the lower the value, the more time was spent by
+students in active learning. It should be noted that, in a study conducted by Epstein [ 83], these same
+questions were asked of students in North America to measure their perceptions of active learning
+in their classes, except a four-point scale for “level of engagement in active learning” was used. For
+calculation of learning gain, we modeled our concept test normalization procedures from previous
+work on normalizing gains in STEM learning [85].
+3.3. Active Learning Procedures and Interventions in Large Classes
+In this subsection, we describe the active learning procedures and interventions applied in
+some lecture sections. We classify the active teaching methods according to the ICAP (interactive,
+constructive, active, and passive) framework for active learning [ 42]. In a majority of “traditional”
+lecture sections, students take notes - according to the ICAP framework for active learning, note-taking
+is the most “passive” form of active learning. In two to three of the lecture sections, a wide range of
+active learning pedagogies were employed. It is important to note that the most prominent active
+learning pedagogy used in the lecture sections was cooperative and team-based learning with games,Educ. Sci. 2019 ,9, 172 8 of 22
+as described earlier. In yet another lecture section, students were asked to try and solve math problems
+posed in class individually and the instructor provided support by checking students work and
+understanding. We classify the pedagogical interventions in increasing order, based on the ICAP
+framework proposed by Chi [42,86] (see Table 2 below).
+Table 2. Pedagogical interventions featured under the interactive, constructive, active, and passive
+(ICAP) framework.
+Passive (Receiving) Active (Manipulating)Constructive
+(Creating)Interactive (Social
+Exchange)
+Sitting still and
+listening to
+explanationsSummarizing
+throughout lectures;
+highlighting sentencesBuilding concept mapsCooperative
+groups—facilitation of
+student involvement
+Sitting and reading
+slides silentlyActivating existing
+knowledgeAsking questions Student-student discussions
+Sitting and watching a
+videoAssimilating, encoding
+or storing new
+informationExplaining concepts
+and integrating new
+information with
+existing knowledgeSmall group activities +
+feedback
+Information is stored in
+encapsulated form
+without embedding it
+in a relevant schemaApplying knowledge
+to similar but
+non-identical contexts
+(i.e., similar problems
+or concepts that need
+to be explainedComparing and
+contrasting to prior
+knowledge or other
+materialsCooperative /team-based
+and collaborative /group
+learning;
+Minimal
+understandingSelected information
+activates prior
+knowledge and schemaJustifying or providing
+rationales; deep
+understandingGroup
+interaction—communication
+between group members,
+including cooperative
+problem solving exercises
+3.3.1. Question and Answer
+For large class sizes, which we consider to be courses with over 100 students enrolled in each
+lecture section, it is challenging to use the active pedagogy “question and answer (orally),” which
+would correspond to an “interactive” degree, according to the ICAP framework. Numerous research
+studies have demonstrated that students are reluctant to ask questions because of fear of possible
+embarrassment in front of other students [ 87–89]. Moreover, as passive learners, they have been
+trained culturally not to “speak up and ask questions” because of the fear of being ridiculed or because
+their questions or comments may be perceived as unintelligent or of no value [ 87,88,90]. To solve this
+problem, the instructor in this study, introduced “TodaysMeet”, an online “backchannel” used for
+conversations that functions concurrently with a primary activity, presentation or discussion. It was
+found that the instructor received more questions in the large class than one would normally have, on
+average, when compared to a traditional class format. Some sample student questions are as follows:
+“Are there ways to check if a function is 1 to 1 without a graph?” or “For d /dx2xcan we simply apply
+the power rule?”
+3.3.2. Student Response Systems
+Student response systems or computer-based interaction systems or clickers were also used in
+lectures. There have been numerous studies which explore the beneﬁts of student response systems in
+STEM classes [ 91,92]. Studies have shown that the use of student response systems in large classes is
+particularly useful, since students typically do not experience an opportunity to give their opinions,
+comments and post answers [ 93,94]. A student response system called “uReply”, developed by a local
+university, was used for challenging multiple-choice questions and for peer instruction. An example of
+a challenging question using a student response system in a lecture would be the following:Educ. Sci. 2019 ,9, 172 9 of 22
+The error of using the tangent line y=f(a)+f,(a)(x a) to approximate y=f(x) is
+E(x)=f(x) [f(a)+f’(a)(x a)]. Then the limit limx!aE(x)is (a) 0; (b) does not exist; (c) depends on
+the value of a; (d) none of the above”.
+The “uReply” student response system was also used for the following “active” pedagogies
+(ICAP): “brain dump /free write” (in which students are expected to elaborate on all that they know
+about a speciﬁc topic) and “muddiest point” (in which students write a topic most confusing to them).
+“uReply” was used at least once per lecture. For example, an open-ended question would be, “What
+was the most confusing thing you learned in the “L’Hospital Rule section?”
+3.3.3. Cooperative Problem-Based Learning with Games
+In a small- to-medium-sized mathematics class of approximately 30 students, a cooperative
+problem-based learning method enables students to form groups of three to six to solve mathematical
+problems posed by the instructors. Consequently, by providing sca olding, students are able to discuss,
+brainstorm and solve the problem in their respective groups and then report their answers, ideas and
+ﬁndings to the whole class. However, a cooperative problem-based learning method is not conducive
+for large class settings (over 100 students) which are typically held in large lecture style theatres.
+Subsequently, it is very di cult to replicate the above scenario because it would be problematic for
+students to form groups due to the nature of the seating layout. Moreover, there is no easy mechanism
+or channel for each group to communicate their solutions to the instructor, who is typically positioned
+at the front of the lecture theatre.
+Instructors have to continually contend with the challenge of dealing with large classes [ 95].
+In order to resolve this problem, the instructor employed an online web-based student response system.
+The Kahoot! game-based digital learning platform was selected to supplement this study. Primarily,
+the course provided a rich opportunity for applying Kahoot! in the context of a classroom. Kahoot! has
+shown to be a valuable learning tool for instructors to use in a classroom setting as it engages students
+in the active learning process through use of problem-solving strategies, activities that evoke interest
+as well as activities that encourage feedback. Kahoot! o ered the instructor an e ective and e cient
+method to create and generate quizzes including polling and voting functionalities. Game-based
+learning activities in the form of quizzes, discussions and surveys, using Kahoot!, were carefully
+structured into the design and organization of the course.
+To begin with, the instructor created four to six Kahoot! questions per lecture, based on
+mathematical concepts and problems that were reviewed in the lecture. After each topic or section in
+a lecture was completed, the instructor would ask a Kahoot! question, based on the topic or section
+just covered. When playing Kahoot!, the instructor would ﬁrst launch a Kahoot! game session, which
+in turn generated a unique game pin for each session. The students were required to go to Kahoot!
+(https: //kahoot.it /) and enter the game pin to log into the game session on their mobile device (tablets,
+smartphones, laptops). Once logged in, the objective of the students (individual or team-based) is to
+attempt to answer a multiple-choice question correctly, and in the shortest amount of time to score the
+highest number of points. Firstly, the instructor posted a question, which was displayed on a screen,
+together with several optional answers shown in various colors and corresponding graphical symbols.
+Secondly, students attempted to answer the question, by selecting the correct color and corresponding
+symbol associated with the correct answer. Some examples of a Kahoot! multiple-choice question are
+as follows. On the topic of intermediate value theorem at the end of section, we asked the following:
+“Claim: If the function f (x) is an odd degree polynomial, then f (x) has a root. The possible
+four answers are: (A) Claim is true; (B) Claim is false; (C) If the claim is true depends on the
+odd number; (D) None of the above.”
+On the topic of limits, we asked the following question (see Figure 1 below).
+In between each question, a distribution was presented by means of a scoreboard, displayed
+on the screen, posting the performance of the students by revealing the team’s names or individualEduc. Sci. 2019 ,9, 172 10 of 22
+player’s nicknames and ranked scores of the top ﬁve players. It should be noted that the instructor
+augmented student motivation to participate by o ering a prize to the winning team at the end of each
+Kahoot! game. For example, gifts would be under US$7.00 on an average, and were typically in the
+form of a coupon or gift voucher.
+Educ. Sci. 2018 , 8, x FOR PEER REVIEW  10 of 22 
+ 
+ 
+Figure 1.  An example  of a Kahoot! question  asked  at the end of an introduction  to the definition  of a 
+limit  section . 
+In between each question, a distribution was presented  by means of a sco reboard, displayed on 
+the screen, posting the performance of the students by revealing the team’s names or individual 
+player’s nicknames and ranked scores of the top five players.  It should be noted that the instructor  
+augmented  student  motivation to parti cipate by offering  a prize to the winning team at the end of 
+each Kahoot! game. For example, gifts would be under US$7.00 on an average, and were typically  in 
+the form of a coupon or gift voucher.  
+4. Results and Analyses  
+In this section, we report the resu lts of our study. Inferential statistics on scores of the pre -tests, 
+post -tests and in -class exams were analyzed  using Statistical Package for the Social Sciences Version 
+24.0 (SPSS, Inc., Chicago , IL, USA ) and visually reviewed for potential data entry errors . A 
+comparison between class sections was conducted using the independent sample t -test, whereas the 
+performance of the same group of students in the pre- and post -tests was analyzed  using the paired 
+sample t -test [96]. There were 750 students (N = 750) who took the pre -CCI test  and 470 students (N  
+= 470) who took the post -CCI test. In the end, there were 425 students who were formally matched 
+who took both the pre- and post -test. However, observin g the scores  more closely , we noted that 
+there were 17 and 43  "missing marks" in the pre - or post -CCI, respectively. Missing marks , in this 
+case, implied  that students  only submitted an answer sheet with their student ID but  did not answer  
+any of  the quest ions. In the end, we had 365  valid and matched pre- and post -test scores, i.e., matched 
+scores of students who had attempted to answer  at least one question in each of the pre- and post -
+tests. Table 3 below shows the demographic  information (in terms of ge nder and level of study) and 
+pre, post and midterm test scores of each of  the six lecture sections.  
+Table 3.  Demographic information of students who completed both pre- and post-calculus concept 
+inventory ( CCI) test (N = 365) . 
+Section  N Male   
+(%) Female  
+(%) Level 
+B*(%)  HD* *  
+(%) Pre-CCI 
+Mean  SD Post -CCI 
+Mean  SD N Test 
+Mean  SD 
+Elephant  62 50 12 34 28 7.18 3.85 8.73 3.53 61 79.41  19.65  
+ 100%  80.60%  19.40%  54.80%  45.20%         
+Dog  49 41 8 49 0 9.14 3.46 11.37  4.54 48 77.2 20.97  
+ 100%  83.70%  16.30%  100.00%  0.00%         
+Cat 50 36 14 36 14 6.32 3.65 8.48 4.06 50 71.37  21.45  
+Figure 1. An example of a Kahoot! question asked at the end of an introduction to the deﬁnition of a
+limit section.
+4. Results and Analyses
+In this section, we report the results of our study. Inferential statistics on scores of the pre-tests,
+post-tests and in-class exams were analyzed using Statistical Package for the Social Sciences Version
+24.0 (SPSS, Inc., Chicago, IL, USA) and visually reviewed for potential data entry errors. A comparison
+between class sections was conducted using the independent sample t-test, whereas the performance of
+the same group of students in the pre- and post-tests was analyzed using the paired sample t-test [ 96].
+There were 750 students (N =750) who took the pre-CCI test and 470 students (N =470) who took
+the post-CCI test. In the end, there were 425 students who were formally matched who took both
+the pre- and post-test. However, observing the scores more closely, we noted that there were 17 and
+43 “missing marks” in the pre- or post-CCI, respectively. Missing marks, in this case, implied that
+students only submitted an answer sheet with their student ID but did not answer any of the questions.
+In the end, we had 365 valid and matched pre- and post-test scores, i.e., matched scores of students
+who had attempted to answer at least one question in each of the pre- and post-tests. Table 3 below
+shows the demographic information (in terms of gender and level of study) and pre, post and midterm
+test scores of each of the six lecture sections.
+Table 3. Demographic information of students who completed both pre- and post-calculus concept
+inventory (CCI) test (N =365).
+Section NMale
+(%)Female
+(%)Level
+B*(%)HD**
+(%)Pre-CCI
+MeanSDPost-CCI
+MeanSD NTest
+MeanSD
+Elephant 62 50 12 34 28 7.18 3.85 8.73 3.53 61 79.41 19.65
+100% 80.60% 19.40% 54.80% 45.20%
+Dog 49 41 8 49 0 9.14 3.46 11.37 4.54 48 77.2 20.97
+100% 83.70% 16.30% 100.00% 0.00%
+Cat 50 36 14 36 14 6.32 3.65 8.48 4.06 50 71.37 21.45
+100% 72.00% 28.00% 72.00% 28.00%
+Mouse 59 47 12 10 49 5.98 2.58 7.47 3.57 58 58.88 23.86
+100% 79.70% 20.30% 16.90% 83.10%
+Lion 81 59 22 81 0 7.14 3.54 11.99 4.35 79 76.47 21.44
+100% 72.80% 27.20% 100.00% 0.00%Educ. Sci. 2019 ,9, 172 11 of 22
+Table 3. Cont .
+Section NMale
+(%)Female
+(%)Level
+B*(%)HD**
+(%)Pre-CCI
+MeanSDPost-CCI
+MeanSD NTest
+MeanSD
+Tiger 64 26 38 33 31 4.33 2.52 11.56 6.02 64 56.96 20.34
+100% 40.60% 59.40% 51.60% 48.40%
+Total 365 259 106 243 122 6.62 3.57 10.07 4.76 360 70.05 23.01
+100% 71.00% 29.00% 66.60% 33.40%
+B*=Bachelor; HD** =Higher Diploma.
+4.1. Pre-CCI Test and Pre-Calculus Knowledge
+As mentioned, there were 750 students (N =750) who took the pre-CCI test, of which the mean,
+median and standard deviation CCI score (out of 20) was 6.27, 6 and 3.35, respectively. Overall, 34.6%
+of the students had taken calculus courses before the start of the course and only 54.9% had taken some
+pre-calculus courses (see Section 3.2 for coding of these variables). A correlational analysis was done
+(Table 4), and not surprisingly, positive correlations were found between calculus and pre-calculus
+knowledge and pre-CCI scores, with correlations r =0.21 and r =0.32, respectively. In other words,
+those who had taken any calculus or pre-calculus before the class were more likely to perform better in
+the pre-CCI test.
+Table 4. Correlation between pre-CCI scores and backgrounds in mathematics (N =750).
+Calculus Background 1 2 3
+Pre CCI-Score
+Taken calculus before the course–0.21 ** –
+Taken pre-calculus before the course 0.32 ** 0.45 ** -
+Note: ** indicates p<0.01.
+4.2. Post-CCI Test and Students’ Perceptions of Active Learning
+As indicated, there were 470 (N =470) students who took the post-CCI test, of which the mean,
+median and standard deviation CCI scores (out of 20) were 10.9, 9 and 4.873, respectively. It is clear
+that the mean scores of the post-CCI were higher than the mean score of the pre-CCI, i.e., 10.9 >6.27.
+Table 5 shows students’ perceptions of their active learning—84.9% students rated the courses from
+“somewhat active” to “very active”; and half of the students in the course rated the course “active” and
+“very active”.
+Table 5. Students’ perceptions of levels of active engagement.
+Likert Scale Value Frequency Percent (%)Valid
+PercentCumulative
+Percent
+Valid Very active 1 49 9.2 14.2 14.2
+Active 2 117 21.9 33.9 48.1
+Somewhat
+active3 127 23.8 36.8 84.9
+A little active 4 41 7.7 11.9 96.8
+Not active 5 11 2.1 3.2 100
+Total Count 345 64.6 100
+Missing 189 35.4
+Total 534 100
+Note: The mean and standard deviation of “students’ perceptions of their level of engagement in active learning”
+are=2.56 and s=0.98, respectively.
+Approximately 67.1% of students spent at least 51% of time in active learning activities in the
+courses (see Table 6).Educ. Sci. 2019 ,9, 172 12 of 22
+Table 6. Students’ perceptions of time spent in active learning.
+Percentage of Time Value Frequency Percent Cumulative Percent
+76–100% 1 79 23.2 23.2
+51–75% 2 149 43.8 67.1
+26–50% 3 77 22.6 89.7
+1–25% 4 31 9.1 98.8
+0% 5 4 1.2 100
+Total 340 100
+Note: Mean =2.21 and SD =0.94.
+Correlation analysis was performed using the Pearson’s and Spearman’s correlation tests (r =
+correlation coe cient) to calculate the correlation between the two variables [ 97,98]. A pvalue of
+<0.05 was considered statistically signiﬁcant. Most importantly, correlations were found between the
+“level of active engagement” and “time spent in active learning” and post CCI scores, with correlations
+of r= 0.30 and r = 0.22, respectively (see Table 7). The correlation coe cient was 0.30 ( p<0.01)
+between the post-CCI Score and “level of active engagement” and 0.67 ( p<0.01) between “level of
+active engagement” and “time spent in active learning.” Note that the negative correlational values
+imply more involvement of active learning, which in turn, implies better post-CCI results, attributable
+to the coding of active learning in Section 3.2.
+Table 7. Correlation between post-CCI scores and engagement in active learning (N =470).
+1 2
+1. Post-CCI Score
+2. Level of active engagement  0.30 **
+3. Time spent in active learning  0.22 ** 0.67 **
+Note: ** indicates p<0.01.
+4.3. The Normalized Gain
+The normalized gain procedure developed by Hestenes, Wells, and Swackhamer’s [ 99] was
+used to measure the gain in the mean between the pre- and post-CCI tests. Hestenes, Wells, and
+Swackhamer’s [ 99] Normalized Gain procedure is appropriate when comparing across di erent
+sections [ 100]. Hestenes et al.’s [ 99] Normalized Gain (g) is predicated upon students receiving a
+larger postscore than prescore, and is deﬁned as the change in score divided by the maximum possible
+increase. Among those 365 students who completed both the pre- and post-CCI tests, we deﬁned the
+individual student normalized gain, as
+g=Post CCI Score Pre CCI Score
+20 Pre CCI Score(1)
+We deﬁne the students’ perceptions of active learning to be dependent on the following two
+variables: levels of active engagement and time spent in active learning activities. As such, correlations
+were found between normalized gain and student’s perceptions of engagement in active learning.
+More precisely, correlations of normalized gain and levels of active engagement and the time spent
+in active learning activities were r =-0.18 and r =-0.19, respectively (see Table 8). Therefore, this
+suggests that the main factors contributing to an increase in normalized gain are student’s perceptions
+of engagement in active learning.
+Table 8. Correlation among normalized gain, engagement in active learning and math background
+(N=365).
+1 2 3 4 5
+1. Normalized Gain -
+2. Level of active engagement  0.18 ** -
+3. Time spent in active learning  0.19 ** 0.64 ** -Educ. Sci. 2019 ,9, 172 13 of 22
+Table 8. Cont .
+1 2 3 4 5
+4. Taken calculus before the course  0.06 0.01  0.05 -
+5. Taken pre-calculus before the course  0.1 0.02 0.11 0.43 ** -
+Note: ** indicates p<0.01.
+We also see from the above table that there is no correlation found between whether students had
+taken calculus or pre-calculus courses before normalized gain. Hierarchical regression analysis method
+was performed to test which variables were signiﬁcant predictors of the normalized gain [ 101,102].
+Step 1 included students’ learning background, i.e., students who have “taken calculus” and “taken
+pre-calculus” before the course. Step 2 included students’ learning background but also their
+participation in active learning, i.e., level of active engagement”, “time spent in active learning” and
+“interest to take any online preparatory course.” Using a hierarchical regression analysis method,
+the variables deﬁned by students who have “taken calculus” and “taken pre-calculus”, the “level
+of active engagement” and “time spent in active learning” were all independent random variables.
+Most importantly, we found that only the “time spent in active learning” was a signiﬁcant predictor
+(p=0.018 ) of the normalized gain contributing to a 22.1% change of the normalized gain (see Table 9).
+Table 9. Hierarchical regression analysis of predictors of normalized gain (N =220).
+Predictor Variables R2DR2b F p
+Step 1 0.01 1.42 0.25
+Taken calculus before the course  0.02
+Taken pre-calculus before the course  0.11
+Step 2 0.08 0.06 3.19 ** 0.009
+Taken calculus before the course  0.02
+Taken pre-calculus before the course  0.14
+Level of active engagement  0.03
+Time spent in active learning  0.22 *
+Interest to take any online preparatory course  0.02
+Note: * indicates p<0.05; **indicates p<0.01.
+Both correctional table and regression analysis provide evidence of the fact that engagement in
+active learning would a ect the normalized gain, i.e., more engagement in active learning will lead to
+a higher normalized gain. However, the low value of R2indicated that there could be other latent
+factors to normalized gain and hence, future studies could examine other variables that could a ect
+normalized gain with a higher inﬂuence.
+4.4. Midterm Test Scores
+The midterm test covers all the di erential calculus material and was given in week 9. It is
+reasonable to assume that the midterm test score may be a means to quantify “student performance” in
+the course. However, it is not much of a surprise that we have found a signiﬁcant correlation between
+midterm test scores and the post-CCI score (r =0.24, p<0.001 (see Table 10).
+Table 10. Correlation between midterm test scores, post-CCI scores, level of active engagement and
+time spent in active learning (N =470).
+1 2 3 4
+1. Midterm test scores –
+2. Post CCI score 0.24 ** –
+3. Level of active engagement  0.25 ** 0.27 ** –
+4. Time spent in active learning  0.19 ** 0.20 ** 0.64 ** –
+Note: ** indicates p<0.01.Educ. Sci. 2019 ,9, 172 14 of 22
+In addition, Table 10 suggests that the midterm test scores were found to be correlated again
+with the “level of active engagement” and “time spent in active learning”, r = 0.25 and r = 0.19,
+respectively. To test the inference of whether an active classroom enhances student performance
+(in terms of midterm test scores), we use stepwise regression analysis. After eliminating the inﬂuence
+of student background knowledge of calculus, and using stepwise regression analysis, we found
+that the level of active engagement was a signiﬁcant predictor ( p=0.037) of the midterm test scores,
+contributing to a 16.4% change of the midterm test scores (see Table 11).
+Table 11. Hierarchical regression analysis of predictors of midterm test scores (N =220).
+Predictor Variables R2 DR2 b F p
+Step 1 0.26 25.24 ** <0.001
+Pre CCI Score 0.22 **
+Taken calculus before the course 0.14 *
+Taken pre-calculus before the course 0.31 **
+Step 2 0.3 0.04 18.30** <0.001
+Pre CCI Score 0.21 **
+Taken calculus before the course 0.15 *
+Taken pre-calculus before the course 0.30 **
+Level of active engagement  0.16 *
+Time spent in active learning  0.05
+Note: *indicates p<0.05; ** indicates p<0.01.
+4.5. Active Learning Groups and Normalized Gain
+As mentioned, there were six lecture sections taught by four instructors. To minimize the di erence
+across the four instructors over the 6 lecture sections, for consistency and equivalency, all instructors
+used the same set of teaching materials and assessments. This was done to minimize any potential
+confounds and /or threats to validity. To ensure anonymity of the six sections, we randomly ordered
+and designated the sections using names of animals: section tiger, section lion, section dog, section cat,
+section mouse and section elephant. Statistical analysis was performed using a one-way analysis of
+variance (ANOVA) to test the di erence in means across di erent lecture sections for each one of the
+variables [ 80,103]. Using one-way ANOVA, we found a statistically signiﬁcant di erence between the
+lecture sections in terms of the variables of pre and post CCI test scores, normalized gain, and midterm
+test scores. However, it can be stated cautiously that all six lecture sections were equivalent on the
+variables of level of active engagement and time spent in active learning, i.e., there was no signiﬁcant
+dierence between each lecture section in terms of student’s perceptions of their active learning (see
+Table 12).
+Table 12. Multiple comparisons across di erent lecture sections using ANOVA (N =365).
+Variables F p
+Pre CCI scores 13.13** <0.001
+Post CCI scores 11.73** <0.001
+Normalized gain 10.37** <0.001
+Midterm test scores 12.92** <0.001
+Level of active engagement 1.28 0.28
+Time spent in active learning 0.83 0.53
+Note: **indicates p<0.01.
+Based on Table 3 above, students in sections elephant, mouse and lion had higher scores in the
+midterm test compared to the students in other sections. Moreover, students in sections tiger, lion and
+mouse had higher scores in the post CCI results. Finally, students in sections tiger, lion and mouse had
+the highest normalized gain. For the normalized gain of each student, it was already established using
+the ANOVA test that di erences were found between the lecture sections.Educ. Sci. 2019 ,9, 172 15 of 22
+Additional Tukey and Sche e post hoc comparison tests [ 104,105] were conducted and three
+subsets were formed in both tests (see Table 13). In the Tukey post hoc comparison test ( =0.05),
+sections lion and tiger were in the highest normalized gain group. Furthermore, in the Sche e post hoc
+comparison group ( =0.05), sections lion, tiger and dog were in the highest normalized gain group.
+Based on both comparisons, sections lion and tiger were shown to have the highest normalized gain.
+Table 13. Post-hoc analysis of normalized gain among six lecture sections (N =365).
+Sections n Mean SD T ukey 1 2 3 Sche e 1 2 3
+Elephant 62 0.074 0.36 0.07 0.07
+Mouse 59 0.1002 0.25 0.1 0.1
+Cat 50 0.1612 0.21 0.16 0.16 0.16 0.16
+Dog 49 0.2217 0.33 0.22 0.22 0.22 0.22 0.22
+Lion 81 0.3386 0.35 0.34 0.34 0.34 0.34
+Tiger 64 0.4234 0.46 0.42 0.42
+Sig 0.18 0.06 0.08 0.36 0.16 0.07
+A further in depth exploration of the di erences in normalized gain among the groups can be
+performed by calculating the “group normalized gain,” deﬁned as
+g=Post CCI Average o f Group  Pre CCI Average o f Group
+20 Pre CCI Average o f Group(2)
+Note that this is di erent from the individual normalized gain deﬁned in Section 4.3. We
+summarize the group-normalized gain for the six lecture sections in Table 14.
+Table 14. Group normalized gain (N =365).
+Section N Pre-CCI Mean SD Post-CCI Mean SD <g>
+Tiger 64 4.33 2.52 11.56 6.02 0.4614
+Lion 81 7.14 3.54 11.99 4.36 0.3771
+Mouse 59 5.98 2.58 7.47 3.57 0.1063
+Cat 50 6.32 3.65 8.48 4.06 0.1579
+Dog 49 9.14 3.46 11.37 4.54 0.2053
+Elephant 62 7.18 3.85 8.73 3.53 0.1209
+Total 365 6.62 3.57 10.07 4.76 0.2382
+As shown in Table 13, we found that there were three subsets formed. By Sche e, sections
+tiger, lion and dog had the highest normalized gain. Based on one-way ANOVA tests, post hoc
+comparison (Tukey and Sche e) tests, and observations of the group normalized gain <g>, sections
+tiger, lion and dog can be classiﬁed as “medium to high normalized gain group”, and sections dog,
+cat and elephant “low to medium normalized gain group.” Moreover, two out of the three lecture
+sections employed the active learning pedagogy of cooperative and team-based learning with games
+described in Section 3.3.3. More precisely, sections tiger and dog had the same lecturer who used
+Kahoot! (team-based, problem-based learning via games) the most in his lectures. Furthermore, the
+lecture section lion, which had the second highest average group normalized gain <g> = 0.3771,
+also employed an active pedagogy of problem-based learning (without technology, collaboration
+and games). The instructor would pose a mathematical problem in front of the large class (e.g., a
+limit question) and then proceed to move around the class to support and assist any students who
+encountered di culties in trying to solve the problem.
+4.6. Hypotheses Testing
+Overall, all three of the proposed hypotheses were supported by the data.Educ. Sci. 2019 ,9, 172 16 of 22
+H1: A positive correlation exists between students’ perceptions of their “level of active engagement” and “time
+spent in active learning” and their academic performance (i.e., midterm test scores).
+Data indicates that those students who perceived they were more “actively engaged” or spent
+more “time in active learning” performed better in the post CCI test. Since there is a correlation between
+post CCI test and midterm test performance, it is reasonable to conclude that our data indicates that
+there is a positive correlation between students’ perceptions of their “level of active engagement” and
+“time spent in active learning” and their academic performance.
+H2: Students’ perceptions of “time spent in active learning” is a signiﬁcant predictor of their level of conceptual
+understanding of di erential calculus.
+Another meaningful correlation discovered was the correlation between students’ perceptions of
+their “level of classroom engagement in active learning” and the “normalized gain” (see Section 4.3).
+Stepwise regression analysis indicated that time spent in active learning contributed to a +22.1%
+change of the normalized gain, and hence, it is reasonable to suggest that students’ perceptions of
+time spent in active learning is a signiﬁcant predictor of their level of conceptual understanding of
+dierential calculus.
+H3: Students’ perceptions of their “level of active engagement” is a signiﬁcant predictor of their level of academic
+performance.
+Moreover, our results indicated a direct correlation between students’ perceptions of their “level
+of active engagement” and students’ academic performance. Using stepwise regression analysis again,
+it was demonstrated in Section 4.4 that students’ perceptions of their “level of active engagement”
+contributed to a +16.4% change in midterm test scores, and therefore, it is reasonable to suggest that
+students’ perceptions of their level of active engagement is a signiﬁcant predictor of their level of
+academic performance.
+Furthermore, this study found direct correlations (r =0.21 and 0.32, p<0.01) existed between
+students’ backgrounds in calculus and pre-calculus before the class, as these students tended to
+perform better in the pre-CCI test, as discussed in Section 4.1. This relationship is consistent with our
+expectation, as students who already possess prior pre-requisite calculus knowledge will clearly have
+an advantage on the pre CCI test, as opposed to those students who do not have a background in
+calculus. In the same light, there was also a direct correlation (r =0.24, p<0.01) between post-CCI
+scores and the midterm test scores. This reinforces the fact that the CCI test developed is a valid and
+reliable instrument to measure students’ conceptual understanding of di erential calculus [84].
+4.7. Comparison of North American Versus Asian CCI Scores
+In this section, we compare the results of CCI scores and students’ perceptions of active learning
+from North America [ 83] to those in Asia (Hong Kong). We list the ﬁrst three results of CCI scores
+for the Hong Kong Polytechnic University and compare them to the CCI scores (indicated below in
+parentheses) of the study conducted by Epstein [83] at the University of Michigan (U-M).
+1. The average gain over all six sections was 0.23815 (0.35).
+2. Two sections have a gain of 0.37 to 0.46 (0.4 to 0.44).
+3. The range of gain scores was 0.12 to 0.46 (0.21 to 0.44).
+The ﬁrst and most noticeable di erence is in item 1, which demonstrates that the average
+normalized gain of 0.238 at the Hong Kong Polytechnic University was much lower than the normalized
+gain of 0.35 at the University of Michigan (U-M). Items 2 and 3 are almost the same, however, it was
+observed that the Hong Kong Polytechnic University had a wider range of normalized gain; and
+the highest normalized gain of 0.46 at the Hong Kong Polytechnic University was greater than the
+highest normalized gain of 0.44 at U-M. Although 0.46 is not signiﬁcantly higher than 0.44, this resultEduc. Sci. 2019 ,9, 172 17 of 22
+is consistent with our current (research in progress) meta-analysis ﬁndings that Asian students may
+beneﬁt more from active learning than North American students.
+5. Discussion
+The results of the study supported all three hypotheses, demonstrating a statistically signiﬁcant
+increase in students’ conceptual understanding and exam performance, based on their perceptions of
+“time spent” and “level of active engagement” in active learning. In this study, we report normalized
+gain to characterize the change in scores from pre-test to post-test. Furthermore, our study found
+a direct correlation between post-CCI test scores and midterm test scores. However, there was no
+correlation found between students who had taken pre-calculus or calculus courses before and after
+normalized gain. These two observations suggests that if we informally equate the “medium to high
+normalized gain group” with an “active learning group” (see end of Section 4.5), then those students
+who have a “weaker background” and who are taught actively can “catch up” to the students with a
+“stronger background,” and are in fact, at an equivalent (or sometimes exceeding) level of competency
+at the end of the course. This can be identiﬁed by referencing Table 13, where section tiger’s mean
+pre-CCI score was the lowest among all six sections (4.33), but section tiger’s mean post-CCI score
+was the second highest (11.56) among the six lecture sections. Hence, active learning may “level
+the playing ﬁeld” in the sense that if students with less background knowledge when coming into a
+course are taught actively, they tend to catch up or exceed the performance of students with a stronger
+background knowledge at the end of the course.
+Furthermore, it should be noted that the relationship between CCI scores and active learning
+have not been studied in su cient detail for similar results and conclusions to be drawn. The low
+correlation may be explained by the fact that the post-CCI test scores may have been subjected to some
+external factors apart from “level of active learning” and “time spent on active learning,” such as
+learners’ academic background, learning style, motivational disposition during or before the start of
+the course and previous learning experience. Hence, low correlations may be explained by the weak
+link between post CCI score and active learning. Moreover, higher correlations could be expected
+with more heterogeneous samples in respect to subjects’ academic background and prior learning
+experience. We also perceived that the seriousness of the subjects in taking the CCI test may have an
+eect on the results of this study.
+6. Conclusions
+With the support from the Hong Kong Education Bureau, Hong Kong’s higher education system is
+beginning to promote and apply active learning methods and approaches in STEM-related disciplines.
+Because of the passive nature of learners’ involvement in traditional teacher-centered mathematics
+courses, active learning methods such as problem-based, discovery-based and inquiry-based learning,
+for example, have typically not been applied and, hence, examples of powerful instructional methods
+and active learning pedagogies remain relatively rare. Another reason is that instructors teaching in
+the tertiary education sector may not have formal teacher training or teacher experience. Therefore,
+they may lack the knowledge and experience in designing classes that are rich in engagement and
+active learning.
+This study is a preliminary e ort to examine active learning via problem-based collaborative
+games in a large mathematics university course in Hong Kong. The results of this study could
+encourage a growing number of tertiary instructors to adopt active learning methods and pedagogies
+into their teaching repertoire. One question that needs to be raised is the extent to which other active
+learning pedagogies such as peer learning, team-based learning and ﬂipped-classroom have improved
+positive e ects on student performance in large mathematics classes. In this study, the CCI was used
+to test the conceptual understanding of the basic principles of di erential calculus and is based on the
+premise that developing an understanding of calculus requires an interactive process, which o ers anEduc. Sci. 2019 ,9, 172 18 of 22
+opportunity for game-based interactivity and engagement, by employing an online student response
+system that incorporates di erent gaming elements.
+We believe that the work described here can contribute to this e ort by demonstrating the
+numerous methods by which insights into research on teaching and learning in mathematics, have
+been drawn upon to revise pedagogical and instructional approaches and thereby, to improve student
+learning outcomes. This study is a careful ﬁrst attempt towards providing statistically signiﬁcant
+evidence that active learning in the form of collaborative game-based problem solving increases
+students’ conceptual understanding and exam performance in a ﬁrst year calculus class in Hong Kong.
+Author Contributions: F.S.T.T. conceived and designed the experiments; F.S.T.T. performed the experiments;
+F.S.T.T. and W.H.L. analyzed the data; W.H.L. contributed analysis tools; F.S.T.T. and R.H.S. wrote the paper.
+All authors contributed to the ﬁnal manuscript.
+Funding: This paper is part of a project funded by the University Grants Committee of the Hong Kong Special
+Administrative Region, entitled ”Developing Active Learning Pedagogies and Mobile Applications in University
+STEM Education” (PolyU2 /T&L/16-19) with additional support from the Hong Kong Polytechnic University.
+Acknowledgments: The authors would like to thank the University Grants Committee of the Hong Kong Special
+Administrative Region and the Hong Kong Polytechnic University (PolyU) for funding this project. Ethical
+clearance (HSEARS20171128001-01) was obtained in accordance with the guidelines of the Human Subjects Ethics
+Sub-committee (HSESC) at the Hong Kong Polytechnic University.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+References
+1. Kim, K.; Sharma, P .; Land, S.M.; Furlong, K.P . E ects of active learning on enhancing student critical thinking
+in an undergraduate general science course. Innov. High. Educ. 2013 ,38, 223–235. [CrossRef]
+2. Marton, F. Towards a pedagogical theory of learning. In Deep Active Learning ; Springer: Singapore, 2018;
+pp. 59–77.
+3. Prince, M. Does active learning work? A review of the research. J. Eng. Educ. 2004 ,93, 223–231. [CrossRef]
+4. Roehl, A.; Reddy, S.L.; Shannon, G.J. The ﬂipped classroom: An opportunity to engage millennial students
+through active learning strategies. J. Fam. Consum. Sci. 2013 ,105, 44–49. [CrossRef]
+5. NíRaghallaigh, M.; Cunni e, R. Creating a safe climate for active learning and student engagement:
+An example from an introductory social work module. Teach. High. Educ. 2013 ,18, 93–105. [CrossRef]
+6. Shro, R.; Ting, F.; Lam, W. Development and validation of an instrument to measure students’ perceptions
+of technology-enabled active learning. Australas. J. Educ. Technol. 2019 ,35, 109–127. [CrossRef]
+7. Koohang, A.; Paliszkiewicz, J. Knowledge construction in e-learning: An empirical validation of an active
+learning model. J. Comput. Inf. Syst. 2013 ,53, 109–114. [CrossRef]
+8. Lumpkin, A.; Achen, R.M.; Dodd, R.K. Student perceptions of active learning. Coll. Stud. J. 2015 ,49, 121–133.
+9. Savery, J.R. Overview of problem-based learning: Deﬁnitions and distinctions. In Essential Readings in
+Problem-Based Learning: Exploring and Extending the Legacy of Howard S. Barrows ; Purdue University Press:
+West Lafayette, IN, USA, 2015; Volume 9, pp. 5–15.
+10. Baepler, P .; Walker, J.; Driessen, M. It’s not about seat time: Blending, ﬂipping, and e ciency in active
+learning classrooms. Comput. Educ. 2014 ,78, 227–236. [CrossRef]
+11. Sharples, M. The design of personal mobile technologies for lifelong learning. Comput. Educ. 2000 ,34,
+177–193. [CrossRef]
+12. Blasco-Arcas, L.; Buil, I.; Hern ández-Ortega, B.; Sese, F.J. Using clickers in class. The role of interactivity,
+active collaborative learning and engagement in learning performance. Comput. Educ. 2013 ,62, 102–110.
+[CrossRef]
+13. Lai, C.-L.; Hwang, G.-J. A self-regulated ﬂipped classroom approach to improving students’ learning
+performance in a mathematics course. Comput. Educ. 2016 ,100, 126–140. [CrossRef]
+14. Lucas, A. Using peer instruction and i-clickers to enhance student participation in calculus. Primus 2009 ,19,
+219–231. [CrossRef]
+15. Hmelo-Silver, C.E.; Barrows, H.S. Goals and strategies of a problem-based learning facilitator. Interdiscip. J.
+Probl.-Based Learn. 2006 ,1, 21–39. [CrossRef]Educ. Sci. 2019 ,9, 172 19 of 22
+16. McCarthy, J.P .; Anderson, L. Active learning techniques versus traditional teaching styles: Two experiments
+from history and political science. Innov. High. Educ. 2000 ,24, 279–294. [CrossRef]
+17. Michael, J. Where’s the evidence that active learning works? Adv. Physiol. Educ. 2006 ,30, 159–167. [CrossRef]
+[PubMed]
+18. Gormally, C.; Brickman, P .; Hallar, B.; Armstrong, N. E ects of inquiry-based learning on students’ science
+literacy skills and conﬁdence. Int. J. Scholarsh. Teach. Learn. 2009 ,3, 16. [CrossRef]
+19. Smith, K.A.; Douglas, T.C.; Cox, M.F. Supportive teaching and learning strategies in STEM education.
+New Dir. Teach. Learn. 2009 ,2009 , 19–32. [CrossRef]
+20. Freeman, S.; O’Connor, E.; Parks, J.W.; Cunningham, M.; Hurley, D.; Haak, D.; Dirks, C.; Wenderoth, M.P .
+Prescribed active learning increases performance in introductory biology. CBE-Life Sci. Educ. 2007 ,6, 132–139.
+[CrossRef]
+21. Freeman, S.; Eddy, S.L.; McDonough, M.; Smith, M.K.; Okoroafor, N.; Jordt, H.; Wenderoth, M.P . Active
+learning increases student performance in science, engineering, and mathematics. Proc. Natl. Acad. Sci. USA
+2014 ,111, 8410–8415. [CrossRef]
+22. Haak, D.C.; HilleRisLambers, J.; Pitre, E.; Freeman, S. Increased structure and active learning reduce the
+achievement gap in introductory biology. Science 2011 ,332, 1213–1216. [CrossRef]
+23. Kennedy, P . Learning cultures and learning styles: Myth-understandings about adult (Hong Kong) Chinese
+learners. Int. J. Lifelong Educ. 2002 ,21, 430–445. [CrossRef]
+24. Pham, T.T.H.; Renshaw, P . How to enable asian teachers to empower students to adopt student-centred
+learning. Aust. J. Teach. Educ. 2013 ,38, 65–85. [CrossRef]
+25. Fendos, J. Us experiences with stem education reform and implications for asia. Int. J. Comp. Educ. Dev.
+2018 ,20, 51–66. [CrossRef]
+26. Bureau, H.K.E. Promotion of STEM Education—Unleashing Potential in Innovation ; Curriculum Development
+Council: Hong Kong, 2015; pp. 1–24.
+27. Cheng, X.; Ka Ho Lee, K.; Chang, E.Y.; Yang, X. The “ﬂipped classroom” approach: Stimulating positive
+learning attitudes and improving mastery of histology among medical students. Anat. Sci. Educ. 2017 ,10,
+317–327. [CrossRef] [PubMed]
+28. Wu, W.-H.; Yan, W.-C.; Kao, H.-Y.; Wang, W.-Y.; Wu, Y.-C.J. Integration of RPG use and ELC foundation to
+examine students’ learning for practice. Comput. Hum. Behav. 2016 ,55, 1179–1184. [CrossRef]
+29. Chien, Y.-T.; Lee, Y.-H.; Li, T.-Y.; Chang, C.-Y. Examining the e ects of displaying clicker voting results on
+high school students’ voting behaviors, discussion processes, and learning outcomes. Eurasia J. Math. Sci.
+Technol. Educ. 2015 ,11, 1089–1104.
+30. Kaur, B. Towards excellence in mathematics education—Singapore’s experience. Procedia-Soc. Behav. Sci.
+2010 ,8, 28–34. [CrossRef]
+31. Chen, C.-H.; Chiu, C.-H. Collaboration scripts for enhancing metacognitive self-regulation and mathematics
+literacy. Int. J. Sci. Math. Educ. 2016 ,14, 263–280. [CrossRef]
+32. Li, Y.-B.; Zheng, W.-Z.; Yang, F. Cooperation learning of ﬂip teaching style on the MBA mathematics education
+eciency. Eurasia J. Math. Sci. Technol. Educ. 2017 ,13, 6963–6972. [CrossRef]
+33. Rosenthal, J.S. Active learning strategies in advanced mathematics classes. Stud. High. Educ. 1995 ,20,
+223–228. [CrossRef]
+34. Radu, O.; Seifert, T. Mathematical intimacy within blended and face-to-face learning environments. Eur. J.
+Open Distance E-learn. 2011 ,14, 1–6.
+35. Isabwe, G.M.N.; Reichert, F. Developing a formative assessment system for mathematics using mobile
+technology: A student centred approach. In Proceedings of the 2012 International Conference on Education
+and e-Learning Innovations (ICEELI), Sousse, Tunisia, 1–3 July 2012; pp. 1–6.
+36. Kyriacou, C. Active learning in secondary school mathematics. Br. Educ. Res. J. 1992 ,18, 309–318. [CrossRef]
+37. Keeler, C.M.; Steinhorst, R.K. Using small groups to promote active learning in the introductory statistics
+course: A report from the ﬁeld. J. Stat. Educ. 1995 ,3, 1–8. [CrossRef]
+38. Stanberry, M.L. Active learning: A case study of student engagement in college Calculus. Int. J. Math. Educ.
+Sci. Technol. 2018 ,49, 959–969. [CrossRef]
+39. Carmichael, J. Team-based learning enhances performance in introductory biology. J. Coll. Sci. Teach. 2009 ,
+38, 54–61.Educ. Sci. 2019 ,9, 172 20 of 22
+40. Wanous, M.; Procter, B.; Murshid, K. Assessment for learning and skills development: The case of large
+classes. Eur. J. Eng. Educ. 2009 ,34, 77–85. [CrossRef]
+41. Rotgans, J.I.; Schmidt, H.G. Situational interest and academic achievement in the active-learning classroom.
+Learn. Instr. 2011 ,21, 58–67. [CrossRef]
+42. Chi, M.T.; Wylie, R. The ICAP framework: Linking cognitive engagement to active learning outcomes. Educ.
+Psychol. 2014 ,49, 219–243. [CrossRef]
+43. Isbell, L.M.; Cote, N.G. Connecting with struggling students to improve performance in large classes. Teach.
+Psychol. 2009 ,36, 185–188. [CrossRef]
+44. Roh, K.H. Problem-based learning in mathematics. In ERIC Clearinghouse for Science Mathematics and
+Environmental Education ; ERIC Pubications: Columbus, OH, USA, 2003.
+45. Padmavathy, R.; Mareesh, K. E ectiveness of problem based learning in mathematics. Int. Multidiscip. E-J.
+2013 ,2, 45–51.
+46. Triantafyllou, E.; Timcenko, O. Developing digital technologies for undergraduate university mathematics:
+Challenges, issues and perspectives. In Proceedings of the 21st International Conference on Computers in
+Education, Bali, Indonesia, 18–22 November 2013; pp. 971–976.
+47. Duy, T.M.; Cunningham, D.J. Constructivism: Implications for the design and delivery of instruction.
+InHandbook of Research for Educational Communications and Technology ; Jonassen, D.H., Ed.; Simon & Schuster:
+New York, NY, USA, 1996; pp. 170–198.
+48. Mellecker, R.R.; Witherspoon, L.; Watterson, T. Active learning: Educational experiences enhanced through
+technology-driven active game play. J. Educ. Res. 2013 ,106, 352–359. [CrossRef]
+49. Dom ínguez, A.; Saenz-De-Navarrete, J.; de-Marcos, L.; Fern ández-Sanz, L.; Pag és, C.; Mart ínez-Herr áiz, J.-J.
+Gamifying learning experiences: Practical implications and outcomes. Comput. Educ. 2013 ,63, 380–392.
+[CrossRef]
+50. Keengwe, J. Promoting Active Learning through the Integration of Mobile and Ubiquitous Technologies ; IGI Global:
+Hershey, PA, USA, 2014.
+51. Ciampa, K. Learning in a mobile age: An investigation of student motivation. J. Comput. Assist. Learn. 2014 ,
+30, 82–96. [CrossRef]
+52. Ally, M.; Prieto-Bl ázquez, J. What is the future of mobile learning in education? Int. J. Educ. Technol. High.
+Educ. 2014 ,11, 142–151.
+53. Abdul Jabbar, A.I.; Felicia, P . Gameplay engagement and learning in game-based learning: A systematic
+review. Rev. Educ. Res. 2015 ,85, 740–779. [CrossRef]
+54. Park, H. Relationship between motivation and student’s activity on educational game. Int. J. Grid Distrib.
+Comput. 2012 ,5, 101–114.
+55. Pivec, M. Play and learn: Potentials of game-based learning. Br. J. Educ. Technol. 2007 ,38, 387–393. [CrossRef]
+56. Eseryel, D.; Law, V .; Ifenthaler, D.; Ge, X.; Miller, R. An investigation of the interrelationships between
+motivation, engagement, and complex problem solving in game-based learning. J. Educ. Technol. Soc. 2014 ,
+17, 42–53.
+57. Shro, R.H.; Keyes, C. A proposed framework to understand the intrinsic motivation factors on university
+students’ behavioral intention to use a mobile application for learning. J. Inf. Technol. Educ. Res. 2017 ,16,
+143–168. [CrossRef]
+58. Snow, E.L.; Jackson, G.T.; Varner, L.K.; McNamara, D.S. Expectations of technology: A factor to consider in
+game-based learning environments. In Proceedings of the International Conference on Artiﬁcial Intelligence
+in Education, Memphis, TN, USA, 9–13 July 2013; Springer: Berlin /Heidelberg, Germany; pp. 359–368.
+59. Yoon, H.S. Can i play with you? The intersection of play and writing in a kindergarten classroom. Contemp.
+Issues Early Child. 2014 ,15, 109–121. [CrossRef]
+60. Ku, O.; Chen, S.Y.; Wu, D.H.; Lao, A.C.; Chan, T.-W. The e ects of game-based learning on mathematical
+conﬁdence and performance: High ability vs. Low ability. J. Educ. Technol. Soc. 2014 ,17, 65–78.
+61. Cheng, Y.-M.; Lou, S.-J.; Kuo, S.-H.; Shih, R.-C. Investigating elementary school students’ technology
+acceptance by applying digital game-based learning to environmental education. Australas. J. Educ. Technol.
+2013 ,29, 96–110. [CrossRef]
+62. Yang, J.C.; Chien, K.H.; Liu, T.C. A digital game-based learning system for energy education: An energy
+conservation pet. TOJET Turk. Online J. Educ. Technol. 2012 ,11, 27–37.Educ. Sci. 2019 ,9, 172 21 of 22
+63. Sung, H.-Y.; Hwang, G.-J. Facilitating e ective digital game-based learning behaviors and learning
+performances of students based on a collaborative knowledge construction strategy. Interact. Learn.
+Environ. 2018 ,26, 118–134. [CrossRef]
+64. Sung, H.-Y.; Hwang, G.-J. A collaborative game-based learning approach to improving students’ learning
+performance in science courses. Comput. Educ. 2013 ,63, 43–51. [CrossRef]
+65. Hwang, G.-J.; Wu, P .-H.; Chen, C.-C. An online game approach for improving students’ learning performance
+in web-based problem-solving activities. Comput. Educ. 2012 ,59, 1246–1256. [CrossRef]
+66. Chang, K.-E.; Wu, L.-J.; Weng, S.-E.; Sung, Y.-T. Embedding game-based problem-solving phase into
+problem-posing system for mathematics learning. Comput. Educ. 2012 ,58, 775–786. [CrossRef]
+67. Bai, H.; Pan, W.; Hirumi, A.; Kebritchi, M. Assessing the e ectiveness of a 3-D instructional game on
+improving mathematics achievement and motivation of middle school students. Br. J. Educ. Technol. 2012 ,
+43, 993–1003. [CrossRef]
+68. Kebritchi, M.; Hirumi, A.; Bai, H. The e ects of modern mathematics computer games on mathematics
+achievement and class motivation. Comput. Educ. 2010 ,55, 427–443. [CrossRef]
+69. Hung, C.-M.; Huang, I.; Hwang, G.-J. E ects of digital game-based learning on students’ self-e cacy,
+motivation, anxiety, and achievements in learning mathematics. J. Comput. Educ. 2014 ,1, 151–166. [CrossRef]
+70. Belland, B.R. The role of construct deﬁnition in the creation of formative assessments in game-based learning.
+InAssessment in Game-Based Learning ; Springer: New York, NY, USA, 2012; pp. 29–42.
+71. Law, V .; Chen, C.-H. Promoting science learning in game-based learning with question prompts and feedback.
+Comput. Educ. 2016 ,103, 134–143. [CrossRef]
+72. Charles, D.; Charles, T.; McNeill, M.; Bustard, D.; Black, M. Game-based feedback for educational multi-user
+virtual environments. Br. J. Educ. Technol. 2011 ,42, 638–654. [CrossRef]
+73. Tsai, F.-H.; Tsai, C.-C.; Lin, K.-Y. The evaluation of di erent gaming modes and feedback types on game-based
+formative assessment in an online learning environment. Comput. Educ. 2015 ,81, 259–269. [CrossRef]
+74. Ismail, M.A.-A.; Mohammad, J.A.-M. Kahoot: A promising tool for formative assessment in medical
+education. Educ. Med. J. 2017 ,9, 19–26. [CrossRef]
+75. Wang, T.-H. Web-based quiz-game-like formative assessment: Development and evaluation. Comput. Educ.
+2008 ,51, 1247–1263. [CrossRef]
+76. Huang, S.-H.; Wu, T.-T.; Huang, Y.-M. Learning diagnosis instruction system based on game-based learning
+for mathematical course. In Proceedings of the 2013 IIAI International Conference on Advanced Applied
+Informatics (IIAIAAI), Los Alamitos, CA, USA, 31 August–4 September 2013; pp. 161–165.
+77. Huang, Y.-M.; Huang, S.-H.; Wu, T.-T. Embedding diagnostic mechanisms in a digital game for learning
+mathematics. Educ. Technol. Res. Dev. 2014 ,62, 187–207. [CrossRef]
+78. Chen, Y.-C. Empirical study on the e ect of digital game-based instruction on students’ learning motivation
+and achievement. Eurasia J. Math. Sci. Technol. Educ. 2017 ,13, 3177–3187. [CrossRef]
+79. Etikan, I.; Musa, S.A.; Alkassim, R.S. Comparison of convenience sampling and purposive sampling. Am. J.
+Theor. Appl. Stat. 2016 ,5, 1–4. [CrossRef]
+80. Cohen, J. Statistical Power Analysis for the Behavioral Sciences ; Lawrence Earlbaum Associates: Hillsdale, NJ,
+USA, 1988.
+81. Cohen, J. Statistical power analysis. Curr. Dir. Psychol. Sci. 1992 ,1, 98–101. [CrossRef]
+82. Krejcie, R.V .; Morgan, D.W. Determining sample size for research activities. Educ. Psychol. Meas. 1970 ,30,
+607–610. [CrossRef]
+83. Epstein, J. The calculus concept inventory-measurement of the e ect of teaching methodology in mathematics.
+Not. Am. Math. Soc. 2013 ,60, 1018–1027. [CrossRef]
+84. Epstein, J. Development and validation of the calculus concept inventory. In Proceedings of the Ninth
+International Conference on Mathematics Education in a Global Community, Charlotte, NC, USA, 7–12
+September 2007; pp. 165–170.
+85. Derera, E.; Naude, M. Unannounced quizzes: A teaching and learning initiative that enhances academic
+performance and lecture attendance in large undergraduate classes. Mediterr. J. Soc. Sci. 2014 ,5, 1193.
+[CrossRef]
+86. Chi, M.T. Active-constructive-interactive: A conceptual framework for di erentiating learning activities.
+Top. Cogn. Sci. 2009 ,1, 73–105. [CrossRef] [PubMed]Educ. Sci. 2019 ,9, 172 22 of 22
+87. Hwang, A.; Ang, S.; Francesco, A.M. The silent Chinese: The inﬂuence of face and kiasuism on student
+feedback-seeking behaviors. J. Manag. Educ. 2002 ,26, 70–98. [CrossRef]
+88. Hwang, A.; Arbaugh, J.B. Seeking feedback in blended learning: Competitive versus cooperative student
+attitudes and their links to learning outcome. J. Comput. Assist. Learn. 2009 ,25, 280–293. [CrossRef]
+89. Good, T.L.; Slavings, R.L.; Harel, K.H.; Emerson, H. Student passivity: A study of question asking in K–12
+classrooms. Sociol. Educ. 1987 ,60, 181–199. [CrossRef]
+90. Harrington, C.L. Talk about embarrassment: Exploring the taboo-repression-denial hypothesis. Symb. Interact.
+1992 ,15, 203–225. [CrossRef]
+91. Hubbard, J.K.; Couch, B.A. The positive e ect of in-class clicker questions on later exams depends on initial
+student performance level but not question format. Comput. Educ. 2018 ,120, 1–12. [CrossRef]
+92. Lewin, J.D.; Vinson, E.L.; Stetzer, M.R.; Smith, M.K. A campus-wide investigation of clicker implementation:
+The status of peer discussion in stem classes. CBE-Life Sci. Educ. 2016 ,15, ar6. [CrossRef]
+93. Homan, C.; Goodwin, S. A clicker for your thoughts: Technology for active learning. New Libr. World 2006 ,
+107, 422–433. [CrossRef]
+94. Gauci, S.A.; Dantas, A.M.; Williams, D.A.; Kemm, R.E. Promoting student-centered active learning in lectures
+with a personal response system. Adv. Physiol. Educ. 2009 ,33, 60–71. [CrossRef] [PubMed]
+95. Mamun, M.R.A.; Kim, D. The e ect of perceived innovativeness of student response systems (SRSS) on
+classroom engagement. In Proceedings of the 2018 Twenty-Fourth Americas Conference on Information
+Systems, New Orleans, LA, USA, 16–18 August 2018; pp. 1–5.
+96. Markowski, C.A.; Markowski, E.P . Conditions for the e ectiveness of a preliminary test of variance. Am. Stat.
+1990 ,44, 322–326.
+97. de Winter, J.C.; Gosling, S.D.; Potter, J. Comparing the Pearson and Spearman correlation coe cients across
+distributions and sample sizes: A tutorial using simulations and empirical data. Psychol. Methods 2016 ,21,
+273–290. [CrossRef] [PubMed]
+98. Spearman, C. The proof and measurement of association between two things. Am. J. Psychol. 1987 ,100,
+441–471. [CrossRef] [PubMed]
+99. Hestenes, D.; Wells, M.; Swackhamer, G. Force concept inventory. Phys. Teach. 1992 ,30, 141–158. [CrossRef]
+100. Coletta, V .P .; Phillips, J.A. Interpreting FCI scores: Normalized gain, preinstruction scores, and scientiﬁc
+reasoning ability. Am. J. Psychol. 2005 ,73, 1172–1182. [CrossRef]
+101. Cohen, J.; Cohen, P . Applied Multiple Regression /Correlation Analysis for the Behavioral Sciences ; Erlbaum:
+Hillsdale, NJ, USA, 1983.
+102. Dodhia, R.M. A review of applied multiple regression /correlation analysis for the behavioral sciences. J. Educ.
+Behav. Stat. 2005 ,30, 227–229. [CrossRef]
+103. Gelman, A. Analysis of variance—Why it is more important than ever. Ann. Stat. 2005 ,33, 1–53. [CrossRef]
+104. Keselman, H.J.; Rogan, J.C. A comparison of the modiﬁed-Tukey and Sche e methods of multiple comparisons
+for pairwise contrasts. J. Am. Stat. Assoc. 1978 ,73, 47–52.
+105. Marascuilo, L.A.; Levin, J.R. Appropriate post hoc comparisons for interaction and nested hypotheses in
+analysis of variance designs: The elimination of type IV errors. Am. Educ. Res. J. 1970 ,7, 397–421. [CrossRef]
+©2019 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http: //creativecommons.org /licenses /by/4.0/).
