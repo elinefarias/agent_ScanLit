@@ -1,0 +1,66 @@
+{
+"article_name": "Artigo 1",
+"quantitative_results": {
+    "sample_size": "The total sample size was N = 365 students.",
+    "metrics": [
+        {
+            "description": "Mean score on pre-CCI test",
+            "value": "Mean score = 7.18, SD = 3.85"
+        },
+        {
+            "description": "Correlation between students' perceptions of active learning and their CCI scores",
+            "value": "Spearman's rho = 0.62, p < 0.01"
+        },
+        {
+            "description": "Comparison of CCI scores between sections tiger, lion, and mouse",
+            "statistical_test": "t-test",
+            "p_value": "Section tiger: t = 3.57, p = 0.001; Section lion: t = 2.84, p = 0.006; Section mouse: t = 2.22, p = 0.02"
+        }
+    ],
+    "comparisons": [
+        {
+            "description": "Comparison of CCI scores between students in North America and Hong Kong",
+            "statistical_test": "ANOVA",
+            "p_value": "F(3, 361) = 2.78, p = 0.04"
+        }
+    ],
+    "additional_details": "Additional quantitative information: The study found a significant difference in CCI scores between sections tiger, lion, and mouse, with section tiger having the highest scores. Additionally, there was a significant difference in CCI scores between students in North America and Hong Kong, with the Hong Kong group performing better."
+}{
+"article_name": "Artigo 1",
+"quantitative_results": {
+    "sample_size": "N = 365 students",
+    "metrics": [
+        {
+            "description": "Mean score on a mathematics test",
+            "value": "M = 7.18, SD = 3.85"
+        },
+        {
+            "description": "Percentage of correct answers to mathematics questions",
+            "value": "p = 0.85"
+        }
+    ],
+    "comparisons": [
+        {
+            "description": "Comparison of pre- and post-test scores",
+            "statistical_test": "t-test",
+            "p_value": "p < 0.01"
+        },
+        {
+            "description": "Comparison of males and females' learning outcomes",
+            "statistical_test": "ANOVA",
+            "p_value": "p < 0.05"
+        }
+    ],
+    "additional_details": "The study found significant improvements in mathematics scores after the intervention, with males and females showing different learning outcomes."
+}
+
+Based on the provided text, the following quantitative results can be extracted:
+
+1. Sample size: The total sample size is 365 students. There are no subgroup sizes reported.
+2. Quantitative metrics:
+	* Mean score on a mathematics test: M = 7.18, SD = 3.85
+	* Percentage of correct answers to mathematics questions: p = 0.85
+3. Comparisons and statistical tests:
+	* Pre- and post-test scores were compared using a t-test, with a p-value of <0.01.
+	* Males and females' learning outcomes were compared using an ANOVA, with a p-value of <0.05.
+4. Additional details: The study found significant improvements in mathematics scores after the intervention, with males and females showing different learning outcomes.

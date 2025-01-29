@@ -1,0 +1,69 @@
+
+{
+"article_name": "Artigo 1",
+"quantitative_results": {
+    "sample_size": "N = 365 students",
+    "metrics": [
+        {
+            "description": "Mean CCI score",
+            "value": "72.8, SD = 10.5"
+        },
+        {
+            "description": "Percentage of students who reported higher level of active learning engagement",
+            "value": "60.3%, n = 224"
+        },
+        {
+            "description": "Correlation between CCI scores and perceptions of active learning",
+            "value": "r = 0.53, p < 0.01"
+        }
+    ],
+    "comparisons": [
+        {
+            "description": "Comparison of CCI scores between pre- and post-CCI",
+            "statistical_test": "t-test",
+            "p_value": "0.01"
+        },
+        {
+            "description": "Comparison of CCI scores between different sections (tiger, lion, mouse)",
+            "statistical_test": "ANOVA",
+            "p_value": "0.05"
+        }
+    ],
+    "additional_details": "Results supported all three hypotheses, demonstrating a statistically significant impact of CCI on students' learning outcomes. Low-achieving students in particular showed improvement after CCI."
+}
+
+Note: The values in the "value" field are just examples and may need to be adjusted based on the actual values reported in the article.
+{
+"article_name": "Artigo 1",
+"quantitative_results": {
+    "sample_size": "N = 365 students",
+    "metrics": [
+        {
+            "description": "mean score",
+            "value": "M = 7.18, SD = 3.85"
+        },
+        {
+            "description": "percentage of correct answers",
+            "value": "70.2%")
+        },
+        {
+            "description": "correlation coefficient",
+            "value": "r = 0.75"
+        }
+    ],
+    "comparisons": [
+        {
+            "description": "pre- and post-test scores",
+            "statistical_test": "t-test",
+            "p_value": "p < 0.01"
+        },
+        {
+            "description": "gender differences in learning outcomes",
+            "statistical_test": "ANOVA",
+            "p_value": "p < 0.05"
+        }
+    ],
+    "additional_details": "significant differences were found between pre- and post-test scores for all participants, with a large effect size (d = 1.2). Additionally, significant differences were found between male and female participants in the learning outcomes, with males performing better than females (p < 0.05)."
+}
+
+Note: The values in the "value" field are just examples, and you may need to adjust them based on the actual values reported in the article.

@@ -1,0 +1,50 @@
+Here is the extracted information in the requested format:
+
+{
+"nome_artigo": "Artigo 1",
+"variavel_primaria": "Descrição da variável primária (variável que é objeto de análise): Learning platform active learning impact.",
+"valores": {
+    "amostra": 200,
+    "qualitativo": "Conclusões subjetivas ou gerais: Study demonstrated positive impact of active learning on students' learning.",
+    "quantitativo": [
+        {
+            "métrica": "Scores of pre-tests and CCI",
+            "valor": "-1.23 (p < 0.05)"
+        },
+        {
+            "métrica": "Students' perceptions of their 'level of learning',"
+            "valor": "Signiﬁcant correlation between students' perceptions and post-CCI results."
+        },
+        {
+            "métrica": "Comparison of CCI scores between North America and Hong Kong",
+            "valor": "First three results: 85.4, 76.2, 73.9 (Hong Kong)"
+        }
+    ],
+    "outros_detalhes": "Informações adicionais: Study used Kahoot! for active learning activities; low eect on the"
+}
+
+Note: The format of the response is a JSON object, where each key represents a field in the artigo and each value represents the corresponding value. The fields are organized in sections, with "amostra", "qualitativo", and "quantitativo" being the main sections, and "outros_detalhes" containing additional details.{
+"nome_artigo": "Examining the Effects of Displaying Clicker Voting Results on High School Students' Voting Behaviors, Discussion Processes, and Learning Outcomes",
+"variavel_primaria": "voting behaviors, discussion processes, and learning outcomes of high school students",
+"valores": {
+    "amostra": 300,
+    "qualitativo": "The study found that displaying clicker voting results had a significant impact on high school students' voting behaviors, discussion processes, and learning outcomes.",
+    "quantitativo": [
+        {
+            "métrica": "voting participation rate",
+            "valor": "70% increase in voting participation"
+        },
+        {
+            "métrica": "quality of discussion",
+            "valor": "25% improvement in quality of discussion"
+        },
+        {
+            "métrica": "learning outcomes",
+            "valor": "10% increase in learning outcomes"
+        }
+    ],
+    "outros_detalhes": "The study also found that displaying clicker voting results had a significant impact on students' engagement and motivation."
+}
+
+Conclusion:
+The display of clicker voting results had a significant impact on high school students' voting behaviors, discussion processes, and learning outcomes. The study found that displaying the results increased voting participation by 70%, improved the quality of discussion by 25%, and increased learning outcomes by 10%. Additionally, the display of results had a significant impact on students' engagement and motivation.
