@@ -1,0 +1,6 @@
+{
+    "artigo": "Volcanic_Seismic_Event_Classification_based_on_CNN_Architectures.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "CI - Resultados",
+    "COMMENTS": "O artigo atende aos critérios de inclusão ao apresentar métricas quantitativas de desempenho, como AUC e ACC, para os modelos de classificação de eventos sísmicos utilizando CNNs."
+}

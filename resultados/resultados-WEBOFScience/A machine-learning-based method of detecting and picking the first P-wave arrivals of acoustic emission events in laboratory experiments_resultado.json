@@ -1,0 +1,6 @@
+{
+    "artigo": "A machine-learning-based method of detecting and picking the first P-wave arrivals of acoustic emission events in laboratory experiments.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo foi classificado como 'Accepted' pois apresenta estudos utilizando aprendizado de máquina para classificação de eventos sísmicos, utilizando CNN e FCN para detecção de chegadas de ondas P em imagens de formas de onda sísmicas."
+}

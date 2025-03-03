@@ -1,0 +1,6 @@
+{
+    "artigo": "Improving_feature_extraction_in_the_automatic_classification_of_seismic_events._Application_to_Colima_and_Arenal_volcanoes.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo atende aos critérios de inclusão ao apresentar estudos sobre a classificação automática de eventos sísmicos utilizando modelos baseados em tensores e vetores, além de métricas quantitativas de desempenho. Além disso, o estudo foi publicado em inglês."
+}

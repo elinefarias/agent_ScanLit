@@ -1,0 +1,17 @@
+{
+  "artigo": "Deep-Learning for Volcanic Seismic Events Classification.pdf",
+  "TÍTULO": "Deep-Learning for Volcanic Seismic Events Classification",
+  "AUTORES": "Aaron Salazar, Rodrigo Arroyo, Noel Pe´rez, Diego Ben´ıtez",
+  "ANO": "2025",
+  "REVISTA OU PERIÓDICO": "IEEE Xplore",
+  "PAÍS": "Ecuador",
+  "OBJETIVOS": "Desenvolver um método para classificar imagens de espectrograma de eventos sísmicos de longo período e tectônicos de vulcão usando seis diferentes arquiteturas de aprendizado profundo, visando maximizar a área sob a curva das características de operação do receptor.",
+  "GAP": "Embora técnicas de aprendizado profundo sejam empregadas na análise de atividades sísmicas de vulcões, o uso de imagens de espectrograma para a classificação de eventos sísmicos vulcânicos ainda é limitado, representando o GAP científico abordado.",
+  "METODOLOGIA": "Utilizou-se um conjunto de dados de imagens de espectrograma do vulcão Cotopaxi, aplicando arquiteturas de redes neurais convolucionais profundas e recorrentes em combinação, com ajustes de hiperparâmetros e validação cruzada estratificada de 10 vezes.",
+  "RESULTADOS": "O modelo DCNN1 superou os demais alcançando uma área sob a curva de 0.98 e precisão de 95%, mostrando desempenho similar ou superior comparado a métodos de estado da arte.",
+  "CONCLUSÃO": "O modelo DCNN1 mostrou-se eficaz na classificação de eventos sísmicos baseados em imagens de espectrograma, com desempenho comparável ou superior a outros métodos analisados.",
+  "AVALIAÇÃO": "Embora o estudo tenha alcançado resultados promissores com o modelo DCNN1, a aplicação de arquiteturas mais complexas como DCNN-RNN não produziu o desempenho esperado devido ao overfitting, indicando a necessidade de revisão dessas abordagens ou expansão do conjunto de dados.",
+  "AMOSTRA": "668 imagens de espectrograma",
+  "VARIAVEL PRIMARIA 1": "587 eventos de longo período (LP)",
+  "VARIAVEL PRIMARIA 2": "81 eventos tectônicos de vulcão (VT)"
+}

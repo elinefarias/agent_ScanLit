@@ -1,0 +1,17 @@
+{
+  "artigo": "nome do arquivo.pdf",
+  "TÍTULO": "Deep learning for seismic event detection of earthquake aftershocks",
+  "AUTORES": "Lijun Zhu, Zhigang Peng, and James McClellan",
+  "ANO": "2025",
+  "REVISTA OU PERIÓDICO": "IEEE Xplore",
+  "PAÍS": "China",
+  "OBJETIVOS": "Desenvolver um sistema baseado em rede neural convolucional (CNN) para detecção de eventos sísmicos e marcação de tempos de eventos, aplicado a gravações contínuas de réplicas do terremoto de Wenchuan de 2008.",
+  "GAP": "A necessidade de métodos mais rápidos e confiáveis para detecção e marcação de fases sísmicas diante do crescente volume de dados sísmicos de monitoramento contínuo.",
+  "METODOLOGIA": "Utilizou-se uma CNN treinada em um conjunto de dados de fases sísmicas rotuladas, aplicando-se a classificação multiclasse para a detecção de fases P e S em formações de ondas sísmicas multicanais.",
+  "RESULTADOS": "A CNN alcançou 97% de precisão na detecção de fases sísmicas rotuladas. Em testes contínuos, detectou 119,066 janelas temporais não listadas em catálogos, com 92% dessas contendo fases sísmicas confirmadas por catálogos aprimorados.",
+  "CONCLUSÃO": "O método baseado em CNN provou ser eficaz na detecção e marcação de eventos sísmicos, superando os métodos tradicionais ao identificar eventos menores não listados em catálogos existentes.",
+  "AVALIAÇÃO": "O estudo demonstra robustez na aplicação de CNN para detecção sísmica, embora dependa da qualidade e quantidade de dados rotulados. A precisão na detecção de fases menores e a adaptação a diferentes condições de ruído podem ser áreas para futuras melhorias.",
+  "AMOSTRA": "60,000",
+  "VARIAVEL PRIMARIA 1": "15,281",
+  "VARIAVEL PRIMARIA 2": "30,000"
+}

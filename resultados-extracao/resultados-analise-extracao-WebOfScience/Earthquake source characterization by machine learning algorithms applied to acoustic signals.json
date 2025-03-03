@@ -1,0 +1,17 @@
+{
+    "artigo": "Earthquake source characterization by machine learning algorithms applied to acoustic signals.pdf",
+    "TÍTULO": "Earthquake source characterization by machine learning algorithms applied to acoustic signals",
+    "AUTORES": "Bernabe Gomez & Usama Kadri",
+    "ANO": "2021",
+    "REVISTA OU PERIÓDICO": "Scientific Reports",
+    "PAÍS": "UK",
+    "OBJETIVOS": "O objetivo do estudo foi caracterizar eventos tectônicos submarinos utilizando algoritmos de machine learning aplicados a sinais acústicos, visando identificar o tipo de falha e estimar a magnitude do terremoto em tempo quase real.",
+    "GAP": "O estudo aborda a necessidade de métodos rápidos e precisos para a caracterização de eventos tectônicos submarinos, especialmente para a identificação do tipo de falha e estimativa da magnitude, utilizando sinais acústicos e técnicas de machine learning.",
+    "METODOLOGIA": "O estudo analisou 201 gravações de hidrofones de terremotos no Pacífico e no Oceano Índico. Foram aplicados métodos de processamento de sinais acústicos e algoritmos de machine learning (SVM e RFC) para classificar o tipo de falha e estimar a magnitude. A validação foi realizada com técnica de 10-fold e grid search de 5-fold.",
+    "RESULTADOS": "Os algoritmos de machine learning alcançaram acurácia de 70% a 78% na classificação binária do tipo de falha. Para a regressão da magnitude, o erro quadrático médio (SSE) foi de 5.94 a 7.72, com R² entre 0.40 e 0.51. A classificação multiclasse teve acurácia de 64.14% para eventos de falha normal.",
+    "CONCLUSÃO": "O estudo demonstrou que a combinação de algoritmos de machine learning com modelos inversos pode fornecer caracterizações rápidas de eventos tectônicos submarinos, com resultados estatisticamente significativos para a classificação do tipo de falha e estimativa da magnitude.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem promissora, mas a limitação do tamanho do conjunto de dados e a baixa acurácia na classificação de eventos de falha normal sugerem a necessidade de mais dados e possíveis ajustes nos algoritmos para melhorar a precisão.",
+    "AMOSTRA": "201",
+    "VARIAVEL PRIMARIA 1": "Acurácia na classificação binária do tipo de falha antes da aplicação dos algoritmos: 0% (baseline).",
+    "VARIAVEL PRIMARIA 2": "Acurácia na classificação binária do tipo de falha após a aplicação dos algoritmos: 70% a 78%."
+}

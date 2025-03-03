@@ -1,0 +1,6 @@
+{
+    "artigo": "Tensor-Based_Learning_Framework_for_Automatic_Multichannel_Volcano-Seismic_Classification.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "CI - Intervenção",
+    "COMMENTS": "O artigo atende ao critério de inclusão relacionado à aplicação de métodos baseados em tensores para análise sísmica, utilizando técnicas como multilinear principal component analysis (MPCA) e support tensor machine (STM) na classificação de eventos sísmicos do vulcão Ubinas, no Peru. Além disso, reporta métricas quantitativas de desempenho e foi publicado em inglês."
+}

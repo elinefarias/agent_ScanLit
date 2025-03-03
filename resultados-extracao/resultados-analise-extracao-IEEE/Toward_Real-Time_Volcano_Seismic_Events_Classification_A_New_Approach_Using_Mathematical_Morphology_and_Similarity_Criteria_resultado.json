@@ -1,0 +1,18 @@
+{
+  "artigo": "Toward_Real-Time_Volcano_Seismic_Events_Classification_A_New_Approach_Using_Mathematical_Morphology_and_Similarity_Criteria.pdf",
+  "TÍTULO": "Toward Real-Time Volcano Seismic Events Classification: A New Approach Using Mathematical Morphology and Similarity Criteria",
+  "AUTORES": "Noel Pérez, Francisco Granda, Diego Benítez, Felipe Grijalva, Román Lara-Cueva",
+  "ANO": "2021",
+  "REVISTA OU PERIÓDICO": "IEEE Transactions on Geoscience and Remote Sensing",
+  "PAÍS": "Equador",
+  "OBJETIVOS": "O objetivo do estudo foi propor um novo método para classificar eventos sísmicos vulcânicos em tempo real, utilizando uma combinação de técnicas de morfologia matemática e critérios de similaridade. O foco foi melhorar a precisão e a velocidade de classificação de eventos de longo período (LP) e vulcano-tectônicos (VT) no vulcão Cotopaxi.",
+  "GAP": "O estudo aborda a lacuna na classificação automática de eventos sísmicos vulcânicos em tempo real, que ainda depende fortemente de métodos manuais devido à complexidade algorítmica e ao tempo de execução elevado das abordagens existentes. O trabalho propõe uma solução com menor complexidade e maior eficiência.",
+  "METODOLOGIA": "A metodologia envolveu a geração de espectrogramas a partir de sinais sísmicos, o cálculo de mapas de bordas usando operações de gradiente morfológico e a aplicação de métricas de similaridade (L1-norm, L2-norm e correlação de distância) para classificar os eventos. O método foi testado em dois conjuntos de dados: D1 (com sinais sobrepostos) e D2 (sem sinais sobrepostos).",
+  "RESULTADOS": "O método proposto alcançou uma acurácia média de 93,34% no conjunto D1 e 96,88% no conjunto D2, utilizando a métrica L2-norm. O tempo de execução foi de 0,388 segundos no treinamento e 0,012 segundos por amostra no teste. Comparado a métodos anteriores, como CNNs, que alcançaram 95% de acurácia, o método proposto apresentou desempenho similar com menor complexidade computacional.",
+  "CONCLUSÃO": "O estudo concluiu que o método proposto, baseado em morfologia matemática e critérios de similaridade, é eficaz para classificação em tempo real de eventos sísmicos vulcânicos, com alta precisão e baixo tempo de execução, sendo uma alternativa viável para monitoramento contínuo.",
+  "AVALIAÇÃO": "O trabalho apresenta uma abordagem inovadora para classificação de eventos sísmicos vulcânicos, com resultados promissores em termos de acurácia e tempo de execução. No entanto, a dependência de sinais gravados em uma única estação e a sensibilidade a sinais sobrepostos podem limitar a aplicação em cenários mais complexos. A inclusão de mais tipos de eventos e a validação em múltiplas estações seriam benéficas.",
+  "AMOSTRA": "668 sinais brutos no conjunto D1 e 603 no conjunto D2.",
+  "VARIAVEL PRIMARIA 1": "Acurácia média de 93,34% no conjunto D1 (com sinais sobrepostos).",
+  "VARIAVEL PRIMARIA 2": "Acurácia média de 96,88% no conjunto D2 (sem sinais sobrepostos)."
+}
+

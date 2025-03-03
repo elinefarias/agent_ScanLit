@@ -1,0 +1,6 @@
+{
+    "artigo": "Continuous_HMM-Based_Volcano_Monitoring_at_Deception_Island_Antarctica.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo atende ao critério de inclusão relacionado ao uso de modelos baseados em aprendizado de máquina, especificamente HMM, para monitoramento sísmico em um ambiente de vulcão, apresentando resultados quantitativos de desempenho e métricas de acurácia."
+}

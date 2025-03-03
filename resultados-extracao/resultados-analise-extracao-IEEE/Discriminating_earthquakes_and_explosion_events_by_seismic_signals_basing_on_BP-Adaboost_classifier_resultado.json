@@ -1,0 +1,17 @@
+{
+  "artigo": "Discriminating Earthquakes and Explosion Events by Seismic Signals Basing on BP-Adaboost Classifier.pdf",
+  "TÍTULO": "Discriminating Earthquakes and Explosion Events by Seismic Signals Basing on BP-Adaboost Classifier",
+  "AUTORES": "Gang Zhao, Hanming Huang, Xinxin Lu",
+  "ANO": "2016",
+  "REVISTA OU PERIÓDICO": "2nd IEEE International Conference on Computer and Communications",
+  "PAÍS": "China",
+  "OBJETIVOS": "O estudo visa desenvolver um método eficaz para discriminar entre terremotos e explosões usando sinais sísmicos, aplicando o classificador BP-Adaboost em comparação com métodos anteriores como BP-NN e SVM.",
+  "GAP": "Pesquisas anteriores não realizaram comparações de desempenho abrangentes entre métodos clássicos e o BP-Adaboost para classificação de sinais sísmicos, representando um gap que este estudo busca preencher.",
+  "METODOLOGIA": "Utilizou-se uma abordagem de aprendizado de conjunto com o método BP-Adaboost, aplicando-o a um conjunto de dados de sinais sísmicos para terremotos e explosões, com comparações de desempenho contra BP-NN e SVM.",
+  "RESULTADOS": "O método BP-Adaboost alcançou uma taxa de reconhecimento correta de no mínimo 98%, superando os métodos BP-NN e SVM, que anteriormente reportaram taxas acima de 90%.",
+  "CONCLUSÃO": "O método BP-Adaboost demonstrou superioridade em precisão e capacidade de generalização sobre os métodos BP-NN e SVM, sendo mais adequado para a classificação de sinais sísmicos em terremotos e explosões.",
+  "AVALIAÇÃO": "O estudo apresenta uma contribuição significativa ao demonstrar a eficácia do BP-Adaboost sobre métodos estabelecidos, embora uma análise mais profunda sobre a robustez em diferentes conjuntos de dados seja necessária.",
+  "AMOSTRA": "656 sinais sísmicos",
+  "VARIAVEL PRIMARIA 1": "Taxa de reconhecimento correta de 92% para métodos anteriores",
+  "VARIAVEL PRIMARIA 2": "Taxa de reconhecimento correta de 98% para BP-Adaboost"
+}

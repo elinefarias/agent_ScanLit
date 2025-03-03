@@ -1,0 +1,6 @@
+{
+    "artigo": "A_multibranch_multitarget_neural_network_for_rapid_point-source_inversion_in_a_microseismic_environment_examples_from_the_Hengill_Geothermal_Field_Iceland.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "CI - Intervenção: Aplicação de métodos baseados em tensores e/ou métodos baseados em vetores para análise sísmica",
+    "COMMENTS": "O artigo foi classificado como 'Accepted' por apresentar uma abordagem de inversão de fonte microsísmica utilizando redes neurais. O método proposto utiliza técnicas baseadas em tensores e vetores para estimar rapidamente os parâmetros das fontes sismológicas, atendendo assim ao critério de inclusão relacionado à intervenção utilizada."
+}

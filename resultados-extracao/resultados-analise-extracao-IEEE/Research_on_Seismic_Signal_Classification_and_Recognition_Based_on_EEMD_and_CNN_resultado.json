@@ -1,0 +1,17 @@
+{
+  "artigo": "Research_on_Seismic_Signal_Classification_and_Recognition_Based_on_EEMD_and_CNN.pdf",
+  "TÍTULO": "Research on Seismic Signal Classification and Recognition Based on EEMD and CNN",
+  "AUTORES": "Bingjun Li, Hanming Huang, Tingting Wang, Mengqi Wang, Pengfei Wang",
+  "ANO": "2020",
+  "REVISTA OU PERIÓDICO": "IEEE",
+  "PAÍS": "China",
+  "OBJETIVOS": "O objetivo foi classificar sinais sísmicos de terremotos e explosões utilizando a decomposição EEMD e uma rede neural convolucional (CNN), visando melhorar a acurácia da classificação automática.",
+  "GAP": "O estudo aborda a falta de métodos eficientes para classificação automática de sinais sísmicos, que tradicionalmente dependem de análise manual, resultando em ineficiência e erros.",
+  "METODOLOGIA": "Os sinais sísmicos foram pré-processados e decompostos usando EEMD para obter funções de modo intrínseco (IMFs). As IMFs foram transformadas em espectros de Hilbert, que foram usados como entrada para uma CNN. A rede foi treinada com 80% dos dados e testada com 20%.",
+  "RESULTADOS": "A acurácia média de classificação foi de 94,41%, com a maior acurácia atingindo 94,98%. O método proposto superou SVM (87,94%) e MLP (85,65%) em termos de acurácia.",
+  "CONCLUSÃO": "O método proposto, combinando EEMD e CNN, mostrou-se eficaz na classificação de sinais sísmicos de terremotos e explosões, com alta acurácia e robustez.",
+  "AVALIAÇÃO": "O estudo apresenta uma abordagem inovadora, mas a falta de comparação com métodos mais recentes de deep learning pode ser uma limitação. Além disso, a aplicação em diferentes tipos de sinais sísmicos ainda precisa ser validada.",
+  "AMOSTRA": "1674 formas de onda de 54 eventos de terremotos e 1509 formas de onda de 63 eventos de explosões.",
+  "VARIAVEL PRIMARIA 1": "acurácia de classificação antes da otimização: 87,94% para SVM e 85,65% para MLP.",
+  "VARIAVEL PRIMARIA 2": "acurácia de classificação após a otimização: 94,41% para o método proposto."
+}

@@ -1,0 +1,6 @@
+{
+    "artigo": "Refined Earthquake Focal Mechanism Catalog for Southern CaliforniaDerived With Deep Learning Algorithms.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos.",
+    "COMMENTS": "O artigo foi classificado como 'Accepted' devido ao atendimento aos critérios de inclusão, incluindo a aplicação de métodos baseados em tensores e vetores para análise sísmica, utilização de dados sísmicos reais, apresentação de métricas quantitativas de desempenho e a publicação em inglês."
+}

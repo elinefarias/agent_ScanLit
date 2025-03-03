@@ -1,0 +1,18 @@
+{
+  "artigo": "Volcanic_Seismic_Event_Classification_based_on_CNN_Architectures.pdf",
+  "TÍTULO": "Volcanic Seismic Event Classification based on CNN Architectures",
+  "AUTORES": "Francisco Calderon, Noel Pérez, Diego S. Benítez, Daniel Riófrio",
+  "ANO": "2020",
+  "REVISTA OU PERIÓDICO": "IEEE",
+  "PAÍS": "Equador",
+  "OBJETIVOS": "O objetivo do estudo foi explorar o uso de arquiteturas de redes neurais convolucionais (CNN) para classificar eventos sísmicos vulcânicos, utilizando imagens de espectrogramas em escala de cinza de eventos de longo período (LP) e vulcano-tectônicos (VT). O foco foi desenvolver modelos eficientes para identificar padrões morfológicos em espectrogramas.",
+  "GAP": "O estudo aborda a lacuna na classificação automática de eventos sísmicos vulcânicos, que ainda depende de etapas de cálculo e seleção de características, aumentando a complexidade e o tempo de processamento. O trabalho propõe o uso de CNNs para eliminar essas etapas e melhorar a eficiência.",
+  "METODOLOGIA": "A metodologia envolveu a geração de espectrogramas em escala de cinza a partir de sinais sísmicos, o redimensionamento das imagens para reduzir o tempo de computação e a aplicação de três arquiteturas de CNN com diferentes configurações de hiperparâmetros. Foram testados 720 modelos, utilizando validação cruzada estratificada para avaliação.",
+  "RESULTADOS": "O melhor modelo, baseado na arquitetura CNN3, alcançou uma AUC de 0.94 e uma acurácia de 94.13%. Comparado a métodos anteriores, como redes neurais feed-forward e random forest, que alcançaram acurácias próximas de 95%, o modelo proposto apresentou desempenho similar, mas com um fluxo de trabalho mais simples e sem a necessidade de cálculo de características.",
+  "CONCLUSÃO": "O estudo concluiu que as CNNs são eficazes para classificar eventos sísmicos vulcânicos com base em espectrogramas, com a CNN3 sendo a arquitetura mais precisa. O redimensionamento das imagens reduziu o tempo de computação sem prejudicar o desempenho.",
+  "AVALIAÇÃO": "O trabalho apresenta uma abordagem promissora para classificação de eventos sísmicos vulcânicos, com resultados competitivos em termos de acurácia e AUC. No entanto, a dependência de um conjunto de dados específico e a necessidade de ajustes de hiperparâmetros podem limitar a generalização do método. A inclusão de mais tipos de eventos e a validação em diferentes cenários seriam benéficas.",
+  "AMOSTRA": "668 registros sísmicos (587 LP e 81 VT).",
+  "VARIAVEL PRIMARIA 1": "AUC de 0.94 e acurácia de 94.13% antes da otimização do modelo.",
+  "VARIAVEL PRIMARIA 2": "AUC de 0.94 e acurácia de 94.13% após a otimização do modelo CNN3."
+}
+

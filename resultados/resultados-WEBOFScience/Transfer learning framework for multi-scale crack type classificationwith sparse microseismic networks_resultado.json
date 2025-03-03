@@ -1,0 +1,6 @@
+{
+    "artigo": "Transfer learning framework for multi-scale crack type classificationwith sparse microseismic networks.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Intervenção: Aplicação de métodos baseados em tensores e/ou métodos baseados em vetores para análise sísmica",
+    "COMMENTS": "O artigo foi classificado como 'Accepted' devido à aplicação de transfer learning para classificar se uma rachadura em rocha contrai ou dilata com base em um único waveform, utilizando um modelo de deep learning inicialmente treinado em dados de microsísmica de campo e laboratório, e posteriormente refinado com transfer learning em dados de microsismos acústicos de escala laboratorial, alcançando uma pontuação de F1-score superior a 86% em waveforms não vistos em diferentes escalas. Essa abordagem supera métodos empíricos existentes na classificação de mecanismos de fratura de rocha monitorados por uma rede microsísmica esparsa, contribuindo para a avaliação rápida e alerta precoce contra vários riscos de engenharia de rochas, como terremotos induzidos e explosões de rochas."
+}

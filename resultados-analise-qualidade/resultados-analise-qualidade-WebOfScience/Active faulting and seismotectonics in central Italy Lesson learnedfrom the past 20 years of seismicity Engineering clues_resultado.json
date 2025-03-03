@@ -1,0 +1,15 @@
+{
+    "artigo": "Active faulting and seismotectonics in central Italy Lesson learnedfrom the past 20 years of seismicity Engineering clues.pdf",
+    "titulo": "Active faulting and seismotectonics in central Italy: Lesson learned from the past 20 years of seismicity. Engineering clues",
+    "ano": "2019",
+    "O estudo possui uma descrição clara dos objetivos e da pergunta de pesquisa?": "Sim",
+    "Os dados sísmicos utilizados são descritos detalhadamente (ex.: origem, características, pré-processamento)?": "Parcialmente",
+    "Os métodos de aprendizado de máquina (baseados em tensores e/ou vetores) são bem explicados e justificam sua escolha?": "Não",
+    "O estudo compara diretamente métodos baseados em tensores e métodos baseados em vetores?": "Não",
+    "As métricas de desempenho são bem definidas e apropriadas para a avaliação da classificação sísmica?": "Não",
+    "O estudo inclui análise estatística ou técnicas de validação adequadas para avaliar a robustez dos resultados?": "Sim",
+    "As limitações do estudo são discutidas de forma clara e transparente?": "Parcialmente",
+    "O estudo apresenta reprodutibilidade, fornecendo detalhes suficientes sobre os métodos e os dados utilizados?": "Sim",
+    "O artigo foi publicado em uma fonte confiável (periódico ou conferência revisado por pares)?": "Sim",
+    "As conclusões do estudo são coerentes com os resultados apresentados?": "Sim"
+}

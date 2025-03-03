@@ -1,0 +1,17 @@
+{
+  "artigo": "Hierachical_classification_structure_based_on_SVM_for_volcano_seismic_events.pdf",
+  "TÍTULO": "Hierachical classification structure based on SVM for volcano seismic events",
+  "AUTORES": "Militza Curilem, Ricardo Soto, Fernando Huenupan, Cesar San Martin, Luis Franco, Carlos Cardona",
+  "ANO": "2019",
+  "REVISTA OU PERIÓDICO": "IEEE",
+  "PAÍS": "Chile",
+  "OBJETIVOS": "O objetivo foi propor uma estrutura hierárquica de classificação baseada em Support Vector Machines (SVM) para classificar quatro classes de eventos sísmicos vulcânicos, visando automatizar o processo de monitoramento vulcânico.",
+  "GAP": "O estudo aborda a dificuldade de classificação automática de eventos sísmicos vulcânicos devido à variabilidade dos sinais e à dependência de análise manual, que é ineficiente e propensa a erros.",
+  "METODOLOGIA": "Foi proposta uma estrutura hierárquica de classificação em árvore, utilizando SVM com kernel RBF. Foram extraídas 52 características de cada evento, incluindo amplitude, energia, frequência e medidas estatísticas, para treinar os classificadores.",
+  "RESULTADOS": "A estrutura hierárquica alcançou uma acurácia média de 89,7% para o vulcão Llaima e 84,9% para o complexo vulcânico Nevados de Chillán, sem retreinamento. A sensibilidade para a classe OT foi de 61,4%, superando trabalhos anteriores.",
+  "CONCLUSÃO": "A estrutura hierárquica mostrou-se eficaz na classificação de eventos sísmicos vulcânicos, com desempenho consistente em diferentes vulcões. A abordagem hierárquica simplificou a discriminação de classes complexas, como OT e TC.",
+  "AVALIAÇÃO": "O estudo apresenta uma abordagem promissora para a classificação automática de eventos sísmicos vulcânicos, mas a baixa sensibilidade para a classe OT indica a necessidade de melhorias. A validação em mais vulcões seria benéfica para generalização.",
+  "AMOSTRA": "990 eventos do vulcão Llaima e 1972 eventos do complexo vulcânico Nevados de Chillán.",
+  "VARIAVEL PRIMARIA 1": "acurácia de classificação antes da estrutura hierárquica: 86,34% para LP, 85,71% para VT e 68,94% para OT.",
+  "VARIAVEL PRIMARIA 2": "acurácia de classificação após a estrutura hierárquica: 89,52% para LP, 84,31% para VT e 61,42% para OT."
+}

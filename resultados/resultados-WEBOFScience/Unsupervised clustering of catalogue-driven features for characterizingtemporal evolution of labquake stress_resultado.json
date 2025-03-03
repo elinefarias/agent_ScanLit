@@ -1,0 +1,6 @@
+{
+    "artigo": "Unsupervised clustering of catalogue-driven features for characterizingtemporal evolution of labquake stress.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo atende aos critérios de inclusão ao explorar a aplicação de métodos baseados em tensores para analisar dados sísmicos e utilizar técnicas de aprendizado de máquina para clustering de features relacionadas ao estresse sísmico."
+}

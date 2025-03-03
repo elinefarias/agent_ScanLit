@@ -1,0 +1,17 @@
+{
+  "artigo": "Seismic Signal Classification Research Based on Multi-Attention Mechanism Residual Network.pdf",
+  "TÍTULO": "Seismic Signal Classification Research Based on Multi-Attention Mechanism Residual Network",
+  "AUTORES": "Chenghuan Wei, Hanming Huang, Tingting Wang, Bohong Zheng, Zhichao Feng",
+  "ANO": "2024",
+  "REVISTA OU PERIÓDICO": "6th International Conference on Communications, Information System and Computer Engineering (CISCE)",
+  "PAÍS": "China",
+  "OBJETIVOS": "Desenvolver um método inovador de classificação de sinais sísmicos baseado em rede residual com mecanismo de múltipla atenção, que utiliza diretamente sinais de forma de onda processados de maneira simples como entradas para a rede.",
+  "GAP": "O estudo aborda a lacuna na classificação rápida e precisa entre eventos sísmicos naturais e explosões artificiais usando métodos tradicionais que requerem extração complexa de características dos dados de forma de onda.",
+  "METODOLOGIA": "O estudo emprega uma rede neural profunda residual com mecanismos de atenção espacial e de canal, utilizando pooling de importância média global. Utiliza-se validação cruzada quíntupla para a classificação, baseando-se em dados de eventos sísmicos ocorridos entre 2010 e 2016 na região capital da China.",
+  "RESULTADOS": "O método alcançou uma acurácia máxima de 98.83% e uma acurácia média de 98.53% na distinção entre eventos sísmicos naturais e explosões artificiais, superando o desempenho de métodos anteriores como SVM, ResNet18 e RSNN.",
+  "CONCLUSÃO": "O método proposto demonstrou ser altamente eficaz na classificação de sinais sísmicos, alcançando uma acurácia média de 98.53%, o que representa uma melhoria significativa em relação aos métodos tradicionais.",
+  "AVALIAÇÃO": "A abordagem inovadora do estudo, ao evitar a extração complexa de características e ao empregar mecanismos de atenção múltipla, mostra uma melhoria significativa na classificação de sinais sísmicos, embora detalhes sobre o impacto computacional não sejam discutidos.",
+  "AMOSTRA": "192 eventos sísmicos naturais e explosões artificiais",
+  "VARIAVEL PRIMARIA 1": "Magnitude variando de 1.5 a 2.8 antes da intervenção",
+  "VARIAVEL PRIMARIA 2": "Magnitude após a intervenção não especificada"
+}

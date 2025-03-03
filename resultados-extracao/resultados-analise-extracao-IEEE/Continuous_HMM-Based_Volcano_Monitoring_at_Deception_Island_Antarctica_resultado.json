@@ -1,0 +1,17 @@
+{
+    "artigo": "Continuous_HMM-Based_Volcano_Monitoring_at_Deception_Island_Antarctica.pdf",
+    "TÍTULO": "CONTINUOUS HMM-BASED VOLCANO MONITORING AT DECEPTION ISLAND, ANTARCTICA",
+    "AUTORES": "C. Benitez, J. Ramirez, J. C. Segura, A. Rubio, J. M. Ibáñez, J. Almendros, A. García-Yeguas",
+    "ANO": "2006",
+    "REVISTA OU PERIÓDICO": "ICASSP 2006",
+    "PAÍS": "Spain",
+    "OBJETIVOS": "Desenvolver um sistema de monitoramento de vulcões baseado em modelos ocultos de Markov (HMM) para classificar eventos sísmicos em tempo real, com foco na identificação de diferentes tipos de eventos sísmicos vulcânicos, como terremotos vulcano-tectônicos, eventos de longo período, tremores vulcânicos e eventos híbridos.",
+    "GAP": "O estudo aborda a necessidade de um sistema automático e robusto para classificação de eventos sísmicos vulcânicos em tempo real, superando as limitações dos métodos tradicionais de análise visual, que são demorados e sujeitos a erros humanos.",
+    "METODOLOGIA": "O sistema utiliza modelos ocultos de Markov (HMM) contínuos com funções de densidade de probabilidade Gaussianas multivariadas. A extração de características é feita por meio de uma análise de banco de filtros, com 16 funções triangulares espaçadas uniformemente entre 0 e 20 Hz, além de derivadas de primeira e segunda ordem. O sistema foi treinado e testado com dados sísmicos coletados em três campanhas antárticas.",
+    "RESULTADOS": "O sistema alcançou uma acurácia de cerca de 90% na classificação de eventos sísmicos. Quando testado com um conjunto de dados diferente, composto principalmente por eventos de longo período, mais de 95% dos eventos foram corretamente classificados. Comparado a trabalhos anteriores, o sistema mostrou-se mais eficiente na classificação automática de eventos sísmicos vulcânicos.",
+    "CONCLUSÃO": "O sistema desenvolvido é eficaz para monitorar a atividade vulcânica em tempo real, com alta precisão na classificação de eventos sísmicos. Ele permite a tomada de decisões rápidas em situações de crise, auxiliando na segurança pública.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem inovadora para a classificação automática de eventos sísmicos vulcânicos, utilizando técnicas de HMM. No entanto, a dependência de um banco de dados bem rotulado para treinamento pode ser uma limitação, especialmente em cenários com poucos dados disponíveis.",
+    "AMOSTRA": "512 registros sísmicos rotulados manualmente, contendo 75 terremotos vulcano-tectônicos, 765 eventos de longo período, 54 eventos híbridos e 77 tremores vulcânicos.",
+    "VARIAVEL PRIMARIA 1": "Precisão de classificação de eventos sísmicos antes do uso do sistema HMM: não especificada no artigo.",
+    "VARIAVEL PRIMARIA 2": "Precisão de classificação de eventos sísmicos após o uso do sistema HMM: 90% em testes gerais e 95% para eventos de longo período."
+}

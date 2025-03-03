@@ -1,0 +1,43 @@
+import os
+import json
+import pandas as pd
+import re
+
+# Caminho para a pasta contendo os arquivos JSON
+pasta = r'C:\Users\user\Desktop\agent_ScanLit\resultados-extracao\resultados-analise-extracao-IEEE'
+
+# Lista para armazenar os dados
+dados_tabela = []
+
+# Função para extrair valores numéricos dos resultados
+def extrair_valores(resultados):
+    valores = re.findall(r'\d+\.?\d*%', resultados)
+    return ', '.join(valores)
+
+# Itera sobre todos os arquivos na pasta
+for arquivo in os.listdir(pasta):
+    if arquivo.endswith('.json'):
+        caminho_arquivo = os.path.join(pasta, arquivo)
+        
+        # Abre e lê o conteúdo do arquivo JSON
+        with open(caminho_arquivo, 'r', encoding='utf-8') as f:
+            dados = json.load(f)
+            
+            # Extrai as informações necessárias
+            titulo = dados.get("TÍTULO", "N/A")
+            amostra = dados.get("AMOSTRA", "N/A")
+            resultados = dados.get("RESULTADOS", "N/A")
+            valores_resultados = extrair_valores(resultados)
+            
+            # Adiciona os dados à lista
+            dados_tabela.append({
+                "Título do Estudo": titulo,
+                "Amostra": amostra,
+                "Resultados": valores_resultados
+            })
+
+# Cria um DataFrame do pandas com os dados
+df = pd.DataFrame(dados_tabela)
+
+# Exibe a tabela
+print(df)

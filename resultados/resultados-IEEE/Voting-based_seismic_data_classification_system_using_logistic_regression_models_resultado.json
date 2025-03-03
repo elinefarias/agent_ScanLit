@@ -1,0 +1,6 @@
+{
+    "artigo": "Voting-based_seismic_data_classification_system_using_logistic_regression_models.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo atende ao critério de inclusão relacionado ao uso de aprendizado de máquina para classificação de eventos sísmicos, através da aplicação de modelos de regressão logística para distinguir entre eventos sísmicos e não-sísmicos. Além disso, reporta métricas quantitativas de desempenho, como a acurácia dos classificadores, satisfazendo outro critério de inclusão. Portanto, foi classificado como 'Accepted'."
+}

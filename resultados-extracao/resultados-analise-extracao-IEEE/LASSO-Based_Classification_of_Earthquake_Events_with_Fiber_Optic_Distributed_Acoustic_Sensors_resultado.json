@@ -1,0 +1,17 @@
+{
+  "artigo": "nome do arquivo.pdf",
+  "TÍTULO": "LASSO-Based Classification of Earthquake Events with Fiber Optic Distributed Acoustic Sensors",
+  "AUTORES": "Deepika Sasi, Srijith Kanakambaran, Thomas Joseph",
+  "ANO": "2025",
+  "REVISTA OU PERIÓDICO": "IEEE Xplore",
+  "PAÍS": "India",
+  "OBJETIVOS": "O estudo visa aproveitar um conjunto de dados coletado por Sensores Acústicos Distribuídos para a classificação de eventos sísmicos, utilizando o modelo LASSO para destacar as vantagens dos dados DAS como uma solução robusta e eficaz em classificação de eventos sísmicos.",
+  "GAP": "Embora muitos estudos tenham usado dados convencionais de sismógrafos com modelos de aprendizado profundo para classificação sísmica, este trabalho foca em explorar dados DAS devido à sua alta resolução espacial e capacidade de monitoramento contínuo.",
+  "METODOLOGIA": "O estudo utilizou um conjunto de dados de sensores acústicos distribuídos ao longo de um cabo de telecomunicações de 41,5 km, aplicando o algoritmo LASSO após extrair características com PCA. A precisão dos modelos foi avaliada usando métricas como precisão e revocação.",
+  "RESULTADOS": "O modelo LASSO alcançou uma acurácia de 99.58%, com uma precisão de 99.69% e uma revocação de 98.78%. Esses resultados demonstram uma melhoria em relação aos métodos anteriores, embora comparações específicas com trabalhos anteriores não tenham sido detalhadas.",
+  "CONCLUSÃO": "O estudo confirmou a eficácia da tecnologia DAS em conjunto com o modelo LASSO para classificação de eventos sísmicos, alcançando alta acurácia e outras métricas, e destacando o potencial superior do DAS em monitoramento sísmico.",
+  "AVALIAÇÃO": "O trabalho apresenta uma contribuição significativa ao demonstrar a eficácia dos dados DAS com LASSO para classificação sísmica. No entanto, seria benéfico uma análise mais aprofundada sobre a sensibilidade do modelo LASSO a diferentes configurações de parâmetros.",
+  "AMOSTRA": "6000 eventos sísmicos",
+  "VARIAVEL PRIMARIA 1": "Não especificado",
+  "VARIAVEL PRIMARIA 2": "Acurácia de 99.58% após a intervenção"
+}

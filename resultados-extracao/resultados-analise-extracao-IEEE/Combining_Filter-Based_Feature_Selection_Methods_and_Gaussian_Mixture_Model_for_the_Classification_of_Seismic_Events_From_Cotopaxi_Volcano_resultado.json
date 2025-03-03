@@ -1,0 +1,17 @@
+{
+    "artigo": "Combining_Filter-Based_Feature_Selection_Methods_and_Gaussian_Mixture_Model_for_the_Classification_of_Seismic_Events_From_Cotopaxi_Volcano.pdf",
+    "TÍTULO": "Combining Filter-Based Feature Selection Methods and Gaussian Mixture Model for the Classification of Seismic Events From Cotopaxi Volcano",
+    "AUTORES": "Pablo Venegas, Noel Pérez, Diego Benítez, Román Lara-Cueva, Mario Ruiz",
+    "ANO": "2019",
+    "REVISTA OU PERIÓDICO": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "PAÍS": "Ecuador",
+    "OBJETIVOS": "O estudo avaliou cinco métodos de seleção de características baseados em filtros combinados com um classificador GMM para classificar eventos sísmicos LP e VT no vulcão Cotopaxi. O objetivo foi identificar subconjuntos ótimos de características que reduzissem o tempo de processamento mantendo alta precisão.",
+    "GAP": "O estudo abordou a limitação de métodos tradicionais de seleção de características (wrapper/embedded), que demandam alto custo computacional e tempo, inadequados para aplicações em tempo real. Propôs-se o uso de métodos filter-based, mais eficientes e rápidos.",
+    "METODOLOGIA": "Foram utilizados cinco métodos filter-based (IG, 1R, RELIEF, Chi2, uFilter) combinados com GMM. O dataset incluiu 587 eventos LP e 81 VT, com 84 características extraídas de domínios temporal, espectral e de escala. A validação empregou divisões 25-75%, 50-50% e 75-25% dos dados, além de validação cruzada de 10 folds.",
+    "RESULTADOS": "Para eventos LP, o método Chi2 com 5 características alcançou 95,62% de acurácia e 3,7 ms. Para VT, o uFilter com 5 características obteve 96,71% de acurácia e 4,1 ms. Na classificação conjunta, o uFilter atingiu 96,70% de acurácia. Comparado a SVM e ANN, o método proposto reduziu o tempo de processamento em 90% (3,7 ms vs. 50 ms).",
+    "CONCLUSÃO": "Os métodos filter-based combinados com GMM demonstraram eficiência na classificação de eventos sísmicos, com destaque para uFilter e Chi2. A análise de redundância reduziu o número de características em 50%, mantendo desempenho e acelerando o processamento.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem eficiente para classificação rápida, porém limita-se a eventos LP e VT. A generalização para outros tipos de eventos e vulcões não foi testada. A análise de redundância poderia explorar correlações não lineares além do Pearson.",
+    "AMOSTRA": "668 registros sísmicos (587 LP e 81 VT).",
+    "VARIAVEL PRIMARIA 1": "Acurácia de 83,5% com métodos tradicionais (SVM) para classificação de eventos LP.",
+    "VARIAVEL PRIMARIA 2": "Acurácia de 96,71% com uFilter e 5 características para classificação de eventos VT."
+}

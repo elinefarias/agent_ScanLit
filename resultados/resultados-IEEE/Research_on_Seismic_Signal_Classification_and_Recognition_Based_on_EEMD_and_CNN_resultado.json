@@ -1,0 +1,6 @@
+{
+    "artigo": "Research_on_Seismic_Signal_Classification_and_Recognition_Based_on_EEMD_and_CNN.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "CI - Intervenção",
+    "COMMENTS": "O artigo foi classificado como 'Accepted' devido à aplicação do método de Ensemble Empirical Mode Decomposition (EEMD) para decompor os dados de sinais sísmicos, seguido da utilização de uma rede neural convolucional (CNN) para classificar os tipos de sinais sísmicos. Essa abordagem unificada demonstrou uma capacidade de classificação mais forte do que métodos tradicionais, conforme relatado no resumo."
+}

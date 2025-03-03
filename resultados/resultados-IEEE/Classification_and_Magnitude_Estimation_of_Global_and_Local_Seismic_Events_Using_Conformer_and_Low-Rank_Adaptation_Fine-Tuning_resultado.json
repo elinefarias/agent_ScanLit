@@ -1,0 +1,6 @@
+{
+    "artigo": "Classification_and_Magnitude_Estimation_of_Global_and_Local_Seismic_Events_Using_Conformer_and_Low-Rank_Adaptation_Fine-Tuning.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Resultados: Estudos que reportam métricas quantitativas de desempenho, como acurácia, precisão, recall e F1-score.",
+    "COMMENTS": "O artigo atende aos critérios de inclusão ao apresentar métricas quantitativas de desempenho, demonstrando superioridade em estimativa de magnitude. Além disso, aborda a aplicação do método LoRA de forma eficaz na análise de eventos sísmicos, contribuindo para a pesquisa na área."
+}

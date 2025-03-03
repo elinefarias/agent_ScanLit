@@ -1,0 +1,6 @@
+{
+    "artigo": "Deep compressed seismic learning for fast location and moment tensorinferences with natural and induced seismicity.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "CI - Intervenção",
+    "COMMENTS": "O artigo foi classificado como 'Accepted' devido ao atendimento do critério de inclusão relacionado à aplicação de métodos baseados em tensores para análise sísmica, através do desenvolvimento da metodologia deep Compressed Seismic Learning (deepCoSeL)."
+}

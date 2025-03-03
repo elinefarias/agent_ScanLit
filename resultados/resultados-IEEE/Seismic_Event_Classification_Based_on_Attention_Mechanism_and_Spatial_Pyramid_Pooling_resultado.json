@@ -1,0 +1,6 @@
+{
+    "artigo": "Seismic_Event_Classification_Based_on_Attention_Mechanism_and_Spatial_Pyramid_Pooling.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo atende aos critérios de inclusão ao utilizar um modelo de rede neural convolucional integrando transformada de Fourier de curto tempo, mecanismo de atenção e pooling piramidal espacial para a classificação eficiente de eventos sísmicos. Foram reportadas métricas quantitativas de desempenho, incluindo acurácia, sensibilidade, especificidade, precisão, F1-score e coeficiente de correlação de Matthews, demonstrando melhorias significativas. Além disso, o artigo é baseado em estudos com dados reais de eventos sísmicos e apresenta resultados quantitativos para avaliação de desempenho."
+}

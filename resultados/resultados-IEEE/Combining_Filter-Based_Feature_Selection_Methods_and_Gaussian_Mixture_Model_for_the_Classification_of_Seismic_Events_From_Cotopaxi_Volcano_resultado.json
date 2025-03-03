@@ -1,0 +1,6 @@
+{
+    "artigo": "Combining_Filter-Based_Feature_Selection_Methods_and_Gaussian_Mixture_Model_for_the_Classification_of_Seismic_Events_From_Cotopaxi_Volcano.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos.",
+    "COMMENTS": "O artigo atende aos critérios de inclusão ao utilizar métodos de aprendizado de máquina para classificação de eventos sísmicos, com a proposta de avaliar métodos de seleção de características em combinação com um modelo de mistura gaussiana para classificar eventos sísmicos LP e VT do vulcão Cotopaxi."
+}

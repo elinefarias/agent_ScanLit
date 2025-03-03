@@ -1,0 +1,6 @@
+{
+    "artigo": "Deep_learning_for_seismic_event_detection_of_earthquake_aftershocks.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo foi classificado como 'Accepted' devido ao uso de métodos baseados em tensores e vetores para a classificação de eventos sísmicos, atendendo ao critério de inclusão relacionado ao tipo de estudo."
+}

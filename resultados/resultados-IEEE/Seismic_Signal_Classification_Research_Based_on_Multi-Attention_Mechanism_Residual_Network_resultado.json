@@ -1,0 +1,6 @@
+{
+    "artigo": "Seismic_Signal_Classification_Research_Based_on_Multi-Attention_Mechanism_Residual_Network.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "CI - Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo propõe um método inovador para classificação de sinais sísmicos baseado em rede residual com mecanismo de múltipla atenção, utilizando métodos avançados de aprendizado de máquina para análise e classificação de eventos sísmicos. Além disso, apresenta resultados quantitativos de desempenho, destacando a alta precisão obtida na distinção entre eventos sísmicos naturais e explosões artificiais, atendendo aos critérios de inclusão estabelecidos."
+}

@@ -1,0 +1,6 @@
+{
+    "artigo": "Adaptive_Filtering_for_Event_Recognition_from_Noisy_Signal_an_Application_to_Earthquake_Detection.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo atende aos critérios de inclusão ao desenvolver um framework end-to-end que utiliza aprendizado de máquina para denoising e classificação de eventos sísmicos."
+}

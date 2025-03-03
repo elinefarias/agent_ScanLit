@@ -1,0 +1,15 @@
+{
+    "artigo": "A_Contribution_to_Deep_Learning_Approaches_for_Automatic_Classification_of_Volcano-Seismic_Events_Deep_Gaussian_Processes.pdf",
+    "titulo": "A Contribution to Deep Learning Approaches for Automatic Classification of Volcano-Seismic Events: Deep Gaussian Processes",
+    "ano": "2021",
+    "O estudo possui uma descrição clara dos objetivos e da pergunta de pesquisa?": "Sim",
+    "Os dados sísmicos utilizados são descritos detalhadamente (ex.: origem, características, pré-processamento)?": "Sim",
+    "Os métodos de aprendizado de máquina (baseados em tensores e/ou vetores) são bem explicados e justificam sua escolha?": "Sim",
+    "O estudo compara diretamente métodos baseados em tensores e métodos baseados em vetores?": "Sim",
+    "As métricas de desempenho são bem definidas e apropriadas para a avaliação da classificação sísmica?": "Sim",
+    "O estudo inclui análise estatística ou técnicas de validação adequadas para avaliar a robustez dos resultados?": "Sim",
+    "As limitações do estudo são discutidas de forma clara e transparente?": "Sim",
+    "O estudo apresenta reprodutibilidade, fornecendo detalhes suficientes sobre os métodos e os dados utilizados?": "Sim",
+    "O artigo foi publicado em uma fonte confiável (periódico ou conferência revisado por pares)?": "Sim",
+    "As conclusões do estudo são coerentes com os resultados apresentados?": "Sim"
+}

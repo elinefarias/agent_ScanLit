@@ -1,0 +1,6 @@
+{
+    "artigo": "Source parameter estimation of acoustic emissions induced by hydraulicfracturing in the laboratory.pdf",
+    "STATUS": "Accepted",
+    "CRITERIO": "Tipo de Estudo: Estudos utilizando aprendizado de máquina para classificação de eventos sísmicos",
+    "COMMENTS": "O artigo atende aos critérios de inclusão ao analisar os parâmetros de eventos sísmicos induzidos hidraulicamente com base em dados reais obtidos em laboratório, utilizando transdutores de banda larga e soluções de MT. Além disso, reporta métricas quantitativas de desempenho na estimativa de parâmetros sísmicos."
+}
