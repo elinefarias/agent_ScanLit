@@ -1,0 +1,17 @@
+{
+  "artigo": "Automatically_Detecting_Avalanche_Events_in_Passive_Seismic_Data.pdf",
+  "TÍTULO": "Automatically Detecting Avalanche Events in Passive Seismic Data",
+  "AUTORES": "Marc J. Rubin, Tracy Camp, Alec van Herwijnen, Jurg Schweizer",
+  "ANO": "2012",
+  "REVISTA OU PERIÓDICO": "International Conference on Machine Learning and Applications",
+  "PAÍS": "Estados Unidos",
+  "OBJETIVOS": "O objetivo do estudo foi desenvolver um fluxo de trabalho de reconhecimento de padrões para detectar automaticamente eventos de avalanche em dados sísmicos passivos, utilizando técnicas de aprendizado de máquina para melhorar a precisão e eficiência na identificação de avalanches.",
+  "GAP": "O estudo aborda a falta de métodos automatizados e confiáveis para detectar avalanches em dados sísmicos passivos. Trabalhos anteriores dependiam de regras de lógica fuzzy definidas manualmente ou apresentavam baixa precisão. O estudo propõe uma abordagem automatizada baseada em aprendizado de máquina para superar essas limitações.",
+  "METODOLOGIA": "O estudo utilizou dados sísmicos coletados por sete geofones durante a temporada de inverno de 2010-2011. Foram extraídas 10 características no domínio da frequência, e 12 algoritmos de classificação foram testados. O método de seleção de eventos baseado em fluxo espectral foi empregado para reduzir o espaço de problemas e melhorar a precisão.",
+  "RESULTADOS": "O melhor modelo, um classificador decision stump, alcançou 93% de acurácia, 89,5% de recall e 13,2% de precisão. Comparado a métodos anteriores, como o SARA (90% de acurácia), o modelo proposto apresentou melhora na precisão, embora ainda gere um número significativo de falsos positivos.",
+  "CONCLUSÃO": "O estudo demonstrou que é possível detectar automaticamente avalanches em dados sísmicos passivos com alta acurácia. A seleção de eventos baseada em fluxo espectral reduziu o espaço de problemas em 97,6%, melhorando a precisão do modelo. No entanto, a precisão ainda é um desafio, indicando a necessidade de melhorias futuras.",
+  "AVALIAÇÃO": "O estudo apresenta uma abordagem promissora para a detecção automática de avalanches, com alta acurácia e recall. No entanto, a precisão de 13,2% indica que o modelo ainda gera muitos falsos positivos, o que pode limitar sua aplicação prática. A dependência de dados de um único local também pode afetar a generalização do modelo.",
+  "AMOSTRA": "385 eventos de avalanche (33 confirmados)",
+  "VARIAVEL PRIMARIA 1": "Acurácia de detecção de avalanches antes da intervenção: 65% (método k-nearest neighbor)",
+  "VARIAVEL PRIMARIA 2": "Acurácia de detecção de avalanches após a intervenção: 93%"
+}

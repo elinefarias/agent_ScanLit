@@ -1,0 +1,23 @@
+{
+  "artigo": "Volcanic_Seismic_Event_Classification_based_on_CNN_Architectures.pdf",
+  "TÍTULO": "Volcanic Seismic Event Classification based on CNN Architectures",
+  "AUTORES": [
+    "Francisco Calderón",
+    "Diego S. Benítez",
+    "Noel Pérez",
+    "Daniel Riofrío"
+  ],
+  "ANO": 2020,
+  "REVISTA OU PERIÓDICO": "IEEE Conference Proceedings",
+  "PAÍS": "Equador",
+  "OBJETIVOS": "Explorar arquiteturas de redes neurais convolucionais (CNN) para a classificação de eventos sísmicos vulcânicos utilizando imagens de espectrogramas em tons de cinza.",
+  "GAP": "Os métodos tradicionais de classificação de eventos sísmicos exigem etapas de extração e seleção de características, o que pode aumentar o tempo de processamento e a complexidade computacional. O uso direto de CNNs busca eliminar essas etapas sem comprometer a acurácia.",
+  "METODOLOGIA": "Foram avaliadas três arquiteturas de CNN (CNN1, CNN2 e CNN3) com diferentes configurações de hiperparâmetros. O conjunto de dados MicSigV1, contendo espectrogramas de eventos sísmicos LP e VT do vulcão Cotopaxi, foi utilizado. Os modelos foram treinados e avaliados com validação cruzada estratificada.",
+  "RESULTADOS": "O modelo CNN3, configurado com kernel de convolução e pooling 3x3, padding 'same' e taxa de aprendizado de 1x10⁻⁴, obteve os melhores resultados, alcançando AUC de 0.94 e acurácia de 94.13%.",
+  "CONCLUSÃO": "Os modelos baseados em CNN foram eficazes na classificação de eventos sísmicos utilizando espectrogramas, eliminando a necessidade de extração de características. O modelo CNN3 apresentou o melhor desempenho.",
+  "AVALIAÇÃO": "O estudo demonstrou que CNNs podem ser aplicadas diretamente à classificação de espectrogramas sísmicos sem perda de desempenho. Entretanto, a abordagem requer mais recursos computacionais do que métodos baseados em aprendizado tradicional.",
+  "AMOSTRA": "Conjunto de dados MicSigV1, contendo 668 eventos sísmicos LP e VT do vulcão Cotopaxi.",
+  "VARIAVEL PRIMARIA 1": "AUC de 0.94",
+  "VARIAVEL PRIMARIA 2": "Acurácia de 94.13%"
+}
+

@@ -1,0 +1,17 @@
+{
+    "artigo": "Moment Tensor Inversion for Nuclear Explosions.pdf",
+    "TÍTULO": "Moment Tensor Inversion for Nuclear Explosions: What Can We Learn from the 6 January and 9 September 2016 Nuclear Tests, North Korea?",
+    "AUTORES": "Simone Cesca, Sebastian Heimann, Marius Kriegerowski, Joachim Saul, Torsten Dahm",
+    "ANO": "2017",
+    "REVISTA OU PERIÓDICO": "Seismological Research Letters",
+    "PAÍS": "Alemanha",
+    "OBJETIVOS": "Determinar parâmetros fonte das explosões nucleares norte-coreanas de 2016 (localização, profundidade, momento sísmico e mecanismo focal) e avaliar ambiguidades em soluções de tensor de momento (MT) para fontes explosivas rasas, comparando com eventos anteriores.",
+    "GAP": "Inconsistências nas soluções de MT para explosões nucleares prévias, devido a trade-offs entre componentes isotrópicos e deviatórios, e falta de resolução robusta para discriminar mecanismos físicos subjacentes.",
+    "METODOLOGIA": "Inversão de MT com waveforms regionais (0.02–0.04 Hz) e modelagem de feixes teleseísmicos (1–6 Hz), usando três modelos de velocidade crustal. Análise de trade-offs via simulated annealing e decomposição MT padrão (ISO, CLVD, DC).",
+    "RESULTADOS": "Momento escalar para setembro/2016: 2.89×10¹⁶ N·m (Mw 4.94), com componente isotrópico dominante (57%). Trade-offs mostraram variação de Mw entre 4.4–4.9 para janeiro/2016. Amplitude relativa 3.44× maior que 2009. Modelos concorrentes (ISO+CLVD) foram discriminados via polaridade de feixes P.",
+    "CONCLUSÃO": "As explosões de 2016 apresentaram maior magnitude, com componente isotrópico significativo. Ambiguidades em MT persistem, mas integração de dados regionais e teleseísmicos resolveu trade-offs, confirmando origem explosiva.",
+    "AVALIAÇÃO": "O estudo integra métodos inovadores, mas a dependência de modelos de velocidade e ambiguidade inerente à decomposição MT limitam a precisão. A generalização para eventos anteriores carece de validação com dados independentes.",
+    "AMOSTRA": "Dados de 3 arrays teleseísmicos (GERES, ASAR, PDAR) e 13 estações regionais, analisando 4 eventos (2009, 2013, janeiro/2016, setembro/2016).",
+    "VARIAVEL PRIMARIA 1": "Momento escalar de 1.8×10¹⁵ N·m (2009, Ford et al.).",
+    "VARIAVEL PRIMARIA 2": "Momento escalar de 2.89×10¹⁶ N·m (setembro/2016, Mw 4.94)."
+}

@@ -1,0 +1,17 @@
+{
+  "artigo": "nome do arquivo.pdf",
+  "TÍTULO": "IMPROVING FEATURE EXTRACTION IN THE AUTOMATIC CLASSIFICATION OF SEISMIC EVENTS. APPLICATION TO COLIMA AND ARENAL VOLCANOES",
+  "AUTORES": "I. Álvarez, G. Cortés, A. de la Torre, C. Benítez, L. García, P. Lesage, R. Arámbula, M. González",
+  "ANO": "2009",
+  "REVISTA OU PERIÓDICO": "IEEE Transactions on Geoscience and Remote Sensing",
+  "PAÍS": "Spain, France, Mexico",
+  "OBJETIVOS": "Desenvolver um sistema de classificação e monitoramento de eventos sísmicos em tempo real, utilizando novas características adicionadas ao vetor de características MFCC.",
+  "GAP": "A necessidade de um sistema automatizado e mais eficaz para classificar eventos sísmicos de vulcões, reduzindo a carga de inspeção visual por operadores humanos.",
+  "METODOLOGIA": "Utilizou-se um classificador baseado em Modelo de Mistura Gaussiana (GMM), empregando coeficientes cepstrais de frequência de Mel (MFCC) e sete características propostas para melhorar a classificação.",
+  "RESULTADOS": "Os resultados demonstram que as características propostas aumentam a precisão da classificação dos eventos sísmicos, com uma precisão global de 81,4% para o vulcão Colima e 84,87% para o vulcão Arenal.",
+  "CONCLUSÃO": "As características propostas, adicionadas ao vetor de características MFCC, melhoram significativamente a precisão da classificação automática de eventos sísmicos.",
+  "AVALIAÇÃO": "O estudo mostra uma melhoria significativa na classificação automática através da inclusão de características adicionais ao MFCC, embora algumas classes de eventos não tenham mostrado melhoria na precisão.",
+  "AMOSTRA": "Dados de eventos sísmicos coletados dos vulcões Colima e Arenal, com centenas de eventos registrados.",
+  "VARIÁVEL PRIMÁRIA 1": "A precisão da classificação antes da inclusão das novas características era de 75,06% para Colima e 71,27% para Arenal.",
+  "VARIÁVEL PRIMÁRIA 2": "A precisão da classificação após a inclusão das novas características melhorou para 81,40% para Colima e 84,87% para Arenal."
+}

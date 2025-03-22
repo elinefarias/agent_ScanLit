@@ -1,0 +1,17 @@
+{
+    "artigo": "Unsupervised clustering of catalogue-driven features for characterizing temporal evolution of labquake stress.pdf",
+    "TÍTULO": "Unsupervised clustering of catalogue-driven features for characterizing temporal evolution of labquake stress",
+    "AUTORES": "Sadegh Karimpouli, Grzegorz Kwiatek, Patricia Martinez-Garzón, Georg Dresen, Marco Bohnhoff",
+    "ANO": "2024",
+    "REVISTA OU PERIÓDICO": "Geophysical Journal International",
+    "PAÍS": "Alemanha",
+    "OBJETIVOS": "O estudo teve como objetivo investigar a evolução temporal do estresse em falhas geológicas utilizando técnicas de clustering não supervisionado em dados de emissões acústicas (AE) obtidos de experimentos de stick-slip em granito Westerly. O objetivo foi identificar estágios distintos de evolução do estresse que antecedem a falha sísmica.",
+    "GAP": "O estudo aborda a dificuldade de prever terremotos devido à natureza complexa e não observável diretamente da evolução do estresse em falhas geológicas. O trabalho propõe uma abordagem baseada em características derivadas de catálogos sísmicos para identificar padrões de evolução do estresse que antecedem a falha.",
+    "METODOLOGIA": "Foram utilizados dados de emissões acústicas (AE) de três experimentos de stick-slip em granito Westerly. Extraíram-se 47 características físicas dos dados de AE, que foram submetidas a clustering não supervisionado usando o método K-means. As características incluíram taxa de AE, dimensão fractal, valor-b, distribuição de tempo entre eventos e integral de correlação.",
+    "RESULTADOS": "O clustering identificou três estágios distintos de evolução do estresse: estável, transicional e instável. O estágio instável foi detectado com 93% de precisão usando 10 características independentes. Comparado a estudos anteriores, o método proposto mostrou maior capacidade de identificar padrões de evolução do estresse em falhas rugosas.",
+    "CONCLUSÃO": "O estudo demonstrou que técnicas de clustering não supervisionado podem identificar estágios de evolução do estresse que antecedem a falha sísmica. As características mais importantes foram taxa de AE, dimensão fractal, valor-b e integral de correlação.",
+    "AVALIAÇÃO": "O trabalho apresenta uma abordagem inovadora para a análise de dados sísmicos, mas a dependência de características altamente correlacionadas pode limitar a generalização dos resultados. A remoção de características não universais, como a taxa de AE, mostrou impacto mínimo na precisão do clustering.",
+    "AMOSTRA": "O estudo utilizou 542.123 eventos de emissões acústicas (AE) de três experimentos de stick-slip em granito Westerly.",
+    "VARIAVEL PRIMARIA 1": "Antes da intervenção, a precisão do clustering para o estágio instável foi de 93% usando 10 características independentes.",
+    "VARIAVEL PRIMARIA 2": "Após a intervenção, a precisão do clustering para o estágio instável manteve-se em 93%, mesmo com a remoção de características altamente correlacionadas."
+}

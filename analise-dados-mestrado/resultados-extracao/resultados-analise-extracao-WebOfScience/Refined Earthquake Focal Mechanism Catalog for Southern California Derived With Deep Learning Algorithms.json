@@ -1,0 +1,17 @@
+{
+    "artigo": "Refined Earthquake Focal Mechanism Catalog for Southern CaliforniaDerived With Deep Learning Algorithms.pdf",
+    "TÍTULO": "Refined Earthquake Focal Mechanism Catalog for Southern California Derived With Deep Learning Algorithms",
+    "AUTORES": "Yifang Cheng, Egill Hauksson, Yehuda Ben-Zion",
+    "ANO": "2023",
+    "REVISTA OU PERIÓDICO": "Journal of Geophysical Research: Solid Earth",
+    "PAÍS": "Estados Unidos",
+    "OBJETIVOS": "Desenvolver um catálogo refinado de mecanismos focais para terremotos no sul da Califórnia utilizando algoritmos de deep learning, aumentando a quantidade e qualidade das soluções em comparação com catálogos anteriores. Focar na detecção de fases e polaridades em eventos de baixa magnitude (M < 3).",
+    "GAP": "Limitações na determinação de mecanismos focais para pequenos terremotos devido à dificuldade em detectar polaridades e fases em sinais sísmicos fracos. O catálogo YHS (Yang et al., 2012) apresentava 70% dos eventos sem mecanismos e 60% das soluções com incertezas >45°.",
+    "METODOLOGIA": "Uso de redes neurais convolucionais (CNN) para detecção automática de fases (GPD) e polaridades em dados sísmicos. Combinação com o método HASH para cálculo de mecanismos focais. Análise de 716.513 eventos (1981–2021) do catálogo SCSN, com validação via comparação com catálogos de tensor de momento.",
+    "RESULTADOS": "O novo catálogo (CNN_SoCal) contém 297.478 mecanismos focais, 40% a mais que o YHS. Redução de incertezas: 80% dos mecanismos comuns apresentaram diferenças de ângulo de Kagan <45°. Para eventos M < 2, houve aumento de 50% nas soluções. Consistência com tensores de momento: 80% dos casos com ângulos de matriz <25°.",
+    "CONCLUSÃO": "A integração de CNN permitiu um catálogo mais completo e preciso, com insights sobre variações de estresse pós-grandes terremotos. Melhorias dependem da cobertura de estações e SNR, com aplicações em estudos de estresse crustal e geometria de falhas.",
+    "AVALIAÇÃO": "O estudo avança na automação, mas limita-se à dependência da densidade de estações. A validação em áreas periféricas (ex.: bordas da rede sísmica) é insuficiente. Não aborda a escalabilidade para eventos M < 1 ou a integração com dados geodésicos.",
+    "AMOSTRA": "716.513 eventos sísmicos (1981–2021) do catálogo SCSN.",
+    "VARIAVEL PRIMARIA 1": "Número de mecanismos focais no catálogo YHS: 211.000 (40% menos que o CNN_SoCal).",
+    "VARIAVEL PRIMARIA 2": "Número de mecanismos focais no CNN_SoCal: 297.478 (40% mais que o YHS)."
+}

@@ -1,0 +1,18 @@
+{
+    "artigo": "Exploratory Data Analysis of Earthquake Moment Tensor Catalog in JapanUsing Non-linear Graph-Based Dimensionality Reduction.pdf",
+    "TÍTULO": "Exploratory Data Analysis of Earthquake Moment Tensor Catalog in Japan Using Non-linear Graph-Based Dimensionality Reduction",
+    "AUTORES": "HISAHIKO KUBO, TAKESHI KIMURA, KATSUHIKO SHIOMI",
+    "ANO": "2023",
+    "REVISTA OU PERIÓDICO": "Pure and Applied Geophysics",
+    "PAÍS": "Japão",
+    "OBJETIVOS": "O estudo visa realizar uma análise exploratória de dados do catálogo de momentos tensores de terremotos no Japão, utilizando técnicas de redução de dimensionalidade baseadas em grafos não lineares. O objetivo é obter imagens compreensíveis da atividade sísmica e adquirir conhecimento sobre as características espaciais e temporais dos mecanismos dos terremotos.",
+    "GAP": "A pesquisa aborda a necessidade de superar abordagens artesanais para análise do catálogo de momentos tensores de terremotos, propondo um método mais objetivo e automatizado para interpretar grandes volumes de dados sísmicos acumulados ao longo do tempo.",
+    "METODOLOGIA": "Foram utilizados dados do catálogo de momentos tensores do Instituto Nacional de Pesquisa em Ciências da Terra e Resiliência de Desastres (NIED) do Japão, compreendendo 15.812 terremotos ocorridos entre 2003 e 2019. A metodologia envolveu a aplicação da técnica Uniform Manifold Approximation and Projection (UMAP) para redução de dimensionalidade, embutindo informações espaciais e mecânicas dos terremotos em um espaço bidimensional.",
+    "RESULTADOS": "Os terremotos do leste e oeste do Japão foram distribuídos separadamente no mapa de incorporação, refletindo suas diferenças em mecanismo de falha e profundidade focal. A análise mostrou que a técnica utilizada permite visualizar mudanças temporais na atividade sísmica e realizar buscas de similaridade entre eventos passados e novos terremotos.",
+    "CONCLUSÃO": "O estudo demonstrou que a redução de dimensionalidade baseada em grafos é uma ferramenta útil para visualizar e interpretar padrões na sismicidade do Japão, oferecendo uma abordagem objetiva para entender as características regionais dos mecanismos sísmicos.",
+    "AVALIAÇÃO": "O trabalho apresenta uma abordagem inovadora para a análise de dados sísmicos, utilizando técnicas avançadas de aprendizado de máquina. No entanto, poderia explorar melhor a incorporação de informações temporais e magnitudes dos terremotos para enriquecer a análise de padrões.",
+    "AMOSTRA": "15.812 terremotos",
+    "VARIAVEL PRIMARIA 1": "Distribuição dos terremotos antes da aplicação da técnica UMAP.",
+    "VARIAVEL PRIMARIA 2": "Distribuição dos terremotos após a aplicação da técnica UMAP, evidenciando padrões regionais e temporais."
+}
+  

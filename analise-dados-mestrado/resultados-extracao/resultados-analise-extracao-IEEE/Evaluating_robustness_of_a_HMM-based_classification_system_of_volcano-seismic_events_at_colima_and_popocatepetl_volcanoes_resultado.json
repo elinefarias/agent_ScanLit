@@ -1,0 +1,17 @@
+{
+    "artigo": "Evaluating_robustness_of_a_HMM-based_classification_system_of_volcano-seismic_events_at_colima_and_popocatepetl_volcanoes.pdf",
+    "TÍTULO": "EVALUATING ROBUSTNESS OF A HMM-BASED CLASSIFICATION SYSTEM OF VOLCANO-SEISMIC EVENTS AT COLIMA AND POPOCATEPETL VOLCANOES",
+    "AUTORES": "Guillermo Cortés, Raúl Arámbula, Ligdamis A. Gutiérrez, Carmen Benítez, Jesús Ibáñez, Philippe Lesage, Isaac Álvarez, Luz García",
+    "ANO": "2009",
+    "REVISTA OU PERIÓDICO": "IGARSS 2009",
+    "PAÍS": "Spain",
+    "OBJETIVOS": "Desenvolver e avaliar a robustez de um sistema de classificação automática de eventos vulcano-sísmicos baseado em modelos ocultos de Markov (HMM), utilizando dados dos vulcões Colima e Popocatépetl, com o objetivo de criar uma ferramenta confiável para monitoramento e alerta precoce.",
+    "GAP": "O estudo aborda a necessidade de um sistema de classificação automática que seja robusto e capaz de operar em diferentes cenários vulcânicos, superando as limitações dos métodos tradicionais de classificação manual, que são demorados e dependentes de especialistas.",
+    "METODOLOGIA": "O sistema utiliza modelos ocultos de Markov (HMM) contínuos com funções de densidade de probabilidade Gaussianas multivariadas. A extração de características é feita por meio de coeficientes cepstrais de frequência Mel (MFCC), e o sistema foi treinado com dados de dois vulcões ativos, Colima e Popocatépetl. A avaliação incluiu testes cegos e contínuos para medir a precisão e a robustez do sistema.",
+    "RESULTADOS": "O sistema alcançou uma precisão média de 78% em testes cegos, com resultados variando entre 72,42% e 81,71% para os diferentes conjuntos de dados. A precisão foi maior em testes isolados (88,96%) em comparação com testes contínuos (83,81%). A classificação de eventos como tremores e lahars apresentou menor precisão devido à alta variabilidade temporal.",
+    "CONCLUSÃO": "O sistema desenvolvido mostrou-se eficaz na classificação automática de eventos vulcano-sísmicos, com uma precisão aceitável em testes cegos. A inclusão de medidas de confiança para cada evento reconhecido aumenta a confiabilidade do sistema, permitindo sua aplicação em cenários de monitoramento em tempo real.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem promissora para a classificação automática de eventos vulcano-sísmicos, com resultados robustos em diferentes cenários. No entanto, a baixa precisão em classes com alta variabilidade temporal, como tremores e lahars, sugere a necessidade de melhorias na extração de características e no treinamento dos modelos.",
+    "AMOSTRA": "O banco de dados incluiu 4687 eventos do vulcão Colima e 2101 eventos do vulcão Popocatépetl, totalizando 6788 eventos.",
+    "VARIAVEL PRIMARIA 1": "Precisão de classificação de eventos vulcano-sísmicos antes do uso do sistema HMM: não especificada no artigo.",
+    "VARIAVEL PRIMARIA 2": "Precisão de classificação de eventos vulcano-sísmicos após o uso do sistema HMM: 78% em testes cegos, com variações entre 72,42% e 81,71% para diferentes conjuntos de dados."
+}

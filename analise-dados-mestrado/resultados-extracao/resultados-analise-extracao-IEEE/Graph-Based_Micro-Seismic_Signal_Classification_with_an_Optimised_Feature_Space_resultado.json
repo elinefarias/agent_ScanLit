@@ -1,0 +1,17 @@
+{
+  "artigo": "Graph-Based_Micro-Seismic_Signal_Classification_with_an_Optimised_Feature_Space.pdf",
+  "TÍTULO": "Graph-Based Micro-Seismic Signal Classification with an Optimised Feature Space",
+  "AUTORES": "J. Li, C. Yang, V. Stankovic, L. Stankovic, S. Pytharouli",
+  "ANO": "2020",
+  "REVISTA OU PERIÓDICO": "Não especificado no texto",
+  "PAÍS": "Reino Unido",
+  "OBJETIVOS": "O objetivo do estudo foi propor um método iterativo de aprendizado de características e classificação de sinais micro-sísmicos, utilizando regularização de Laplaciano de grafo e Laplaciano de grafo normalizado, visando melhorar a precisão da classificação com um espaço de características reduzido.",
+  "GAP": "O estudo aborda a falta de métodos eficientes para redução de dimensionalidade via seleção de características na classificação de sinais micro-sísmicos, que tradicionalmente utilizam um grande espaço de características, resultando em complexidade adicional e overfitting.",
+  "METODOLOGIA": "O método proposto combina aprendizado iterativo de características e classificação, utilizando regularização de Laplaciano de grafo e Laplaciano de grafo normalizado. Foram utilizados 48 candidatos a características, incluindo espectrais, temporais e cepstrais, para classificar eventos micro-sísmicos em quatro classes.",
+  "RESULTADOS": "O método proposto alcançou uma precisão de classificação (F1-score) de 0,95 para terremotos, 0,93 para tremores e 0,92 para tiros de calibração, superando métodos como SVM e Random Forest. A redução de dimensionalidade foi de mais de 50%, com apenas 22 características não nulas após a convergência.",
+  "CONCLUSÃO": "O método proposto demonstrou ser eficaz na classificação de eventos micro-sísmicos, com redução de dimensionalidade e sem perda de desempenho em comparação com o uso de todas as características. A abordagem conjunta de seleção de características e classificação mostrou-se superior aos métodos atuais.",
+  "AVALIAÇÃO": "O estudo apresenta uma abordagem inovadora para a classificação de sinais micro-sísmicos, mas a falta de comparação com métodos mais recentes de deep learning pode ser uma limitação. Além disso, a aplicação do método em diferentes contextos geológicos ainda precisa ser validada.",
+  "AMOSTRA": "223 eventos micro-sísmicos detectados, incluindo 56 terremotos, 58 slidequakes, 37 tremores e 11 tiros de calibração.",
+  "VARIAVEL PRIMARIA 1": "Precisão de classificação (F1-score) antes da otimização: 0,87 para terremotos, 0,86 para slidequakes, 0,89 para tremores e 0,61 para tiros de calibração.",
+  "VARIAVEL PRIMARIA 2": "Precisão de classificação (F1-score) após a otimização: 0,95 para terremotos, 0,93 para slidequakes, 0,95 para tremores e 0,92 para tiros de calibração."
+}

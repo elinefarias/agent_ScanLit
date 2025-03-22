@@ -1,0 +1,17 @@
+{
+    "artigo": "Deep Neural Networks Based Denoising of Regional Seismic Waveforms and Impact on Analysis of North Korean Nuclear Tests.pdf",
+    "TÍTULO": "Deep Neural Networks Based Denoising of Regional Seismic Waveforms and Impact on Analysis of North Korean Nuclear Tests",
+    "AUTORES": "Andreas Steinberg, Peter Gaebler, Gernot Hartmann, Johanna Lehr, Christoph Pliger",
+    "ANO": 2024,
+    "REVISTA OU PERIÓDICO": "Pure and Applied Geophysics",
+    "PAÍS": "Alemanha",
+    "OBJETIVOS": "Avaliar a eficácia de autoencoders de desruído (DAE) baseados em deep learning para melhorar a SNR em dados sísmicos e hidroacústicos do IMS, visando aprimorar análises de eventos nucleares norte-coreanos e verificar a confiabilidade dos dados processados em estimativas de tensor de momento e magnitude.",
+    "GAP": "Falta de métodos de desruído que preservem informações críticas (fase e amplitude) em dados de baixa SNR, especialmente para aplicações em monitoramento de tratados internacionais como o CTBT, onde a precisão em análises de fonte sísmica é essencial.",
+    "METODOLOGIA": "Treinamento de três modelos DAE (P-model, LP-model, PS-models) com dados sísmicos (26.000 eventos) e hidroacústicos (4.000 eventos) do IMS. Uso de STFT, normalização min-max, aumento de dados com ruído real e arquitetura de rede com camadas convolucionais, normalização em lote e conexões de salto. Validação via inversão bayesiana de tensor de momento e comparação com filtragem tradicional.",
+    "RESULTADOS": "Aumento de SNR em até 20 dB (ex.: KS31). Precisão do MT para o teste de 2006: Mw 3.84 ± 0.16 (vs. 3.86 ± 0.11 sem desruído). Beampower em análises de array aumentou 30%. Comparado a Tibi et al. (2021), houve melhor preservação de fase, mas vieses de amplitude de 5-10% em magnitude.",
+    "CONCLUSÃO": "DAE melhoraram SNR e precisão em análises sísmicas, principalmente para eventos menores. Variações nas amplitudes pós-desruído exigem cautela em estimativas de magnitude. A técnica é promissora para monitoramento de tratados, porém requer ajustes para minimizar vieses.",
+    "AVALIAÇÃO": "O estudo valida a eficácia do desruído, mas a validação restrita a eventos de alta SNR e a dependência de dados sintéticos limitam a generalização. Falta de métricas de incerteza quantificadas e comparação superficial com métodos tradicionais são lacunas.",
+    "AMOSTRA": "26.000 eventos sísmicos (2006-2022) e 4.000 hidroacústicos.",
+    "VARIAVEL PRIMARIA 1": "SNR médio pré-desruído: 20 dB.",
+    "VARIAVEL PRIMARIA 2": "SNR médio pós-desruído: 40 dB."
+}

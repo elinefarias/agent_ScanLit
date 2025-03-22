@@ -1,0 +1,17 @@
+{
+    "artigo": "A_Hybrid_Deep_Learning_Model.pdf",
+    "TÍTULO": "A Hybrid Deep Learning Model for Rapid Probabilistic Earthquake Source Parameter Estimation With Displacement Waveforms From a Flexible Set of Seismic or HR-GNSS Stations",
+    "AUTORES": "Xuekai Lin, Caijun Xu, Guoyan Jiang, Jianfei Zang",
+    "ANO": "2023",
+    "REVISTA OU PERIÓDICO": "IEEE Transactions on Geoscience and Remote Sensing",
+    "PAÍS": "China",
+    "OBJETIVOS": "Desenvolver um modelo híbrido de deep learning para estimativa probabilística e rápida de parâmetros de fonte sísmica (localização, magnitude e mecanismo focal) utilizando waveforms de deslocamento de estações sísmicas ou HR-GNSS, visando superar limitações de modelos com configurações fixas de estações e métodos tradicionais computacionalmente intensivos.",
+    "GAP": "Modelos existentes de deep learning para estimativa de mecanismo focal dependem de configurações fixas de estações e não capturam incertezas multimodais. Métodos Bayesianos tradicionais são lentos e demandam intervenção manual, limitando aplicações em tempo real.",
+    "METODOLOGIA": "Arquitetura híbrida com: 1) módulo CNN para extração de features temporais; 2) módulo de grafos (GAT + max-aggregation) para agregação adaptativa entre estações; 3) MDN para estimativa probabilística via Gaussian Mixture Model. Treinamento com 50.000 amostras sintéticas e validação em eventos reais (ex.: sequência de Ridgecrest 2019).",
+    "RESULTADOS": "R² de 0,998 (latitude), 0,997 (longitude), 0,958 (profundidade) e 0,713 (strike) em dados sintéticos. CRPS de 0,018 para latitude vs. 0,167 em benchmarks. Aplicação real: discrepância média de 2,5 km na localização epicentral e ângulos de Kagan <15° para eventos M>5. Superou FMNet em NRMSE (0,015 vs. 0,170 para strike).",
+    "CONCLUSÃO": "O modelo demonstrou eficiência na estimativa probabilística de parâmetros sísmicos, com capacidade de operar em configurações flexíveis de estações e capturar incertezas multimodais, validado em casos reais com concordância com resultados publicados.",
+    "AVALIAÇÃO": "Limitações incluem dependência de dados sintéticos e modelo de velocidade 1D, podendo subestimar ruídos reais. A generalização para diferentes contextos tectônicos requer ajustes, mas a arquitetura modular permite adaptações. Sugere-se integração com physics-informed neural networks para melhorias futuras.",
+    "AMOSTRA": "50.000 eventos sintéticos (45.000 treino, 5.000 teste), aplicados em 5 eventos reais M>5 (Ridgecrest 2019) e 3 terremotos globais.",
+    "VARIAVEL PRIMARIA 1": "R²: 0,89 (strike em modelos anteriores); NRMSE: 0,170 (FMNet).",
+    "VARIAVEL PRIMARIA 2": "R²: 0,713 (strike); NRMSE: 0,155 (strike); CRPS: 0,001 (strike)."
+}

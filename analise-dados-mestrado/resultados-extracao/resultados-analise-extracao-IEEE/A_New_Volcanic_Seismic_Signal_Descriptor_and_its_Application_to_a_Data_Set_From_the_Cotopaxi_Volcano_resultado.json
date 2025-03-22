@@ -1,0 +1,18 @@
+{
+  "artigo": "A_New_Volcanic_Seismic_Signal_Descriptor_and_its_Application_to_a_Data_Set_From_the_Cotopaxi_Volcano.pdf",
+  "TÍTULO": "A New Volcanic Seismic Signal Descriptor and its Application to a Data Set From the Cotopaxi Volcano",
+  "AUTORES": "Noel Pérez, Pablo Venegas, Diego Benítez, Román Lara-Cueva, Mario Ruiz",
+  "ANO": "2020",
+  "REVISTA OU PERIÓDICO": "IEEE Transactions on Geoscience and Remote Sensing",
+  "PAÍS": "Equador",
+  "OBJETIVOS": "O estudo propõe um novo descritor de sinais sísmicos vulcânicos para melhorar a classificação de eventos sísmicos do tipo long-period (LP) e volcano-tectonic (VT) utilizando técnicas de processamento de imagens.",
+  "GAP": "A pesquisa busca superar limitações de abordagens tradicionais baseadas em análise de frequência e escala ao propor um método alternativo que representa eventos sísmicos em um espaço de características derivado de espectrogramas.",
+  "METODOLOGIA": "Foi utilizada uma base de dados com 637 eventos sísmicos do vulcão Cotopaxi, Equador. O descritor extraiu 17 características de intensidade, forma e textura a partir de imagens espectrogramas segmentadas. Foram testados cinco classificadores de aprendizado de máquina: Naive Bayes, SVM, k-NN, Random Forest e uma rede neural artificial Feedforward Backpropagation.",
+  "RESULTADOS": "O melhor desempenho foi obtido com a rede neural artificial Feedforward Backpropagation, atingindo uma AUC de 0.96 para o conjunto de dados sem sobreposição de eventos e 0.95 para o conjunto completo. A acurácia máxima atingida foi de 96%, superando abordagens anteriores baseadas em aprendizado de máquina.",
+  "CONCLUSÃO": "Os resultados indicam que o descritor proposto fornece uma representação eficaz para eventos sísmicos vulcânicos e melhora a classificação em comparação com métodos tradicionais. O estudo sugere aprimoramentos na segmentação para reduzir erros em eventos sobrepostos.",
+  "AVALIAÇÃO": "A metodologia introduz uma abordagem inovadora para classificação de eventos sísmicos vulcânicos, mas apresenta limitações em sinais com eventos sobrepostos. A segmentação pode ser aprimorada para aumentar a precisão em cenários mais complexos.",
+  "AMOSTRA": "637 eventos sísmicos registrados no vulcão Cotopaxi entre 2012 e 2019.",
+  "VARIAVEL PRIMARIA 1": "Distribuição inicial dos eventos sísmicos antes da aplicação do descritor.",
+  "VARIAVEL PRIMARIA 2": "Desempenho dos classificadores após a aplicação do descritor, com AUC variando entre 0.87 e 0.96."
+}
+

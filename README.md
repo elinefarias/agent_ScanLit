@@ -10,25 +10,10 @@ O objetivo principal é construir um sistema automatizado capaz de avaliar e org
 
 ## Temas da Revisão Sistemática
 
-A revisão sistemática será conduzida com base nos seguintes temas:
+A revisão sistemática será conduzida com base no seguinte tema:
 
-1. **Bayesian Network-Based Probabilistic Models for Seismic Event Classification: A Systematic Review**  
-   Investiga o uso de modelos probabilísticos baseados em redes Bayesianas para a classificação de eventos sísmicos.
-
-2. **Effectiveness of Principal Component Analysis (PCA) in Dimensionality Reduction for Seismic Event Classification**  
-   Analisa a eficácia da técnica de Análise de Componentes Principais (PCA) na redução de dimensionalidade para a classificação de eventos sísmicos.
-
-3. **Analysis of the Impact of Tensor-Based vs. Vector-Based Machine Learning Methods for Seismic Event Classification**  
+**Analysis of the Impact of Tensor-Based vs. Vector-Based Machine Learning Methods for Seismic Event Classification**  
    Compara métodos de aprendizado de máquina baseados em tensores e vetores para a classificação de eventos sísmicos.
-
----
-
-## Estrutura do Repositório
-
-- `src/` - Código-fonte do agente **ScanLit**.
-- `data/` - Base de dados utilizada para a análise dos artigos.
-- `notebooks/` - Jupyter Notebooks com experimentos e análises exploratórias.
-- `docs/` - Documentação detalhada do projeto.
 
 ---
 
@@ -39,54 +24,88 @@ A revisão sistemática será conduzida com base nos seguintes temas:
 - **Scikit-learn**: Aplicação de técnicas de aprendizado de máquina.
 - **NLTK e SpaCy**: Processamento de linguagem natural para análise textual.
 - **Matplotlib e Seaborn**: Visualização de dados.
-- **ChatGpt API**: Automatização da extração de dados dos artigos analisados
+- **OpenAI API**: Geração de resumos e análise de textos.
+- **Hugging Face API**: Modelos de linguagem para processamento de texto.
+- **ollama**: Execução de LLMs (Large Language Models).
 
 ---
-## arquitetuta do projeto
+
+## Arquitetura do Projeto
 
 .
-├── dados/                    # PDFs originais
+├── dados/                       # PDFs originais
 │   ├── artigo1.pdf
 │   ├── artigo2.pdf
-├── resumos-artigos/          # Resumos gerados pelo BLOOM-560M
+├── resumos-artigos/             # Resumos gerados pelo BLOOM-560M
 │   ├── artigo1.txt
 │   ├── artigo2.txt
-├── resultados-openai/        # Resultados processados pela API OpenAI
+├── resultados
 │   ├── artigo1_resultado.txt
 │   ├── artigo2_resultado.txt
-├── scripts/                  # Scripts principais
-│   ├── process_pdf.py        # Processa PDFs e extrai texto
-│   ├── gerar_resumo.py       # Gera resumos utilizando BLOOM-560M
-│   ├── agente_openai.py      # Gera resultados usando a API OpenAI
-├── config.py                 # Configurações de variáveis de ambiente
-├── .env                      # Chave da API OpenAI
-├── requirements.txt          # Dependências do projeto
-└── README.md                 # Documentação do projeto
-
+├── scripts/                     # Scripts principais
+│   ├── process_pdf.py       
+│   ├── gerar_resumo.py       
+│   ├── avaliacao-qualitativa-artigos.py
+│   ├── classificacao-artigos.py
+│   ├── extracao-dados-artigos.py
+├── meta-analise/                # notebooks para aplicar uma meta-análise
+│   ├── meta_analise.ipynb
+|   ├── resultados-meta-analise           
+├── config.py                    # Configurações de variáveis de ambiente
+├── .env                         # Chave da API OpenAI
+├── .gitignore                   # Arquivos ignorados pelo Git
+├── LICENSE                      # Licença do projeto
+├── main.py                      # Script principal
+├── requirements.txt             # Dependências do projeto
+└── README.md                    # Documentação do projeto
 
 ---
+
 ## Fluxo de Uso
 
 1. Coloque os PDFs na pasta dados.
 2. Extraia o texto dos PDFs:
 
-````
+````bash
 python scripts/process_pdf.py
 ````
 
 3. Gere os resumos com o BLOOM-560M:
 
-````
+````bash
 python scripts/gerar_resumo.py
 ````
 
 4. Analise os resumos com a API OpenAI:
 
+````bash
+python scripts
 ````
-python scripts/agente_openai.py
+
+5. Os resultados serão salvos na pasta resultados.
+
+---
+
+## Configuração de Chaves de API
+
+Para testar os scripts do projeto, é necessário adicionar as chaves da API OpenAI e do Hugging Face no arquivo `.env`:
+
+````properties
+HUGGINGFACE_API_KEY='sua_chave_huggingface'
+OPENAI_API_KEY='sua_chave_openai'
 ````
-5. Os resultados serão salvos na pasta resultados-openai.
---- 
+
+---
+
+## Scripts Disponíveis
+
+- **process_pdf.py**: Processa PDFs e extrai texto.
+- **gerar_resumo.py**: Gera resumos utilizando BLOOM-560M.
+- **avaliacao-qualitativa-artigos.py**: avaliar qualitativamente os artigos a partir de um questionario usando a API OpenAI.
+- **classificacao-artigos.py**: classificar artigos baseados em criterios de inclusão e exclusão pré-definidos usando a API OpenAI.
+- **extracao-dados-artigos.py** ou **main.py**: extracao de informações para aplicar uma meta-análise usando a API OpenAI.
+
+---
 
 ## Como Contribuir
 
@@ -101,9 +120,4 @@ python scripts/agente_openai.py
 ## Contato
 
 Para dúvidas ou sugestões, entre em contato com:
-- **Maria Eline Silva de Farias**  
-  E-mail: elinefarias33@gmail.com
-
-
-  Alterar a Política de Execução para Permitir Scripts:
-  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+E-mail: elinefarias33@gmail.com

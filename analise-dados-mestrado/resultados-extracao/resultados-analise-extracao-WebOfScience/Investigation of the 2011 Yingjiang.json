@@ -1,0 +1,17 @@
+{
+    "artigo": "Investigation of the 2011 Yingjiang, Yunnan, China Ms. 5.8 EarthquakeSequence.pdf",
+    "TÍTULO": "Investigation of the 2011 Yingjiang, Yunnan, China Ms. 5.8 Earthquake Sequence: Seismic Migration, Seismogenic Mechanism, and Hazard Implication",
+    "AUTORES": "Ke Du, Hongyi Li, Yanzhen Li, Zeyu Ma, Jianshe Lei, Jinzhong Jiang, Zigang Sun",
+    "ANO": "2024",
+    "REVISTA OU PERIÓDICO": "Tectonophysics",
+    "PAÍS": "China",
+    "OBJETIVOS": "Analisar a sequência sísmica do terremoto de Yingjiang (2011) para compreender a migração de eventos, mecanismos sismogênicos e implicações de risco, utilizando catálogos sísmicos de alta precisão e modelos de difusão de fluidos e estresse Coulomb.",
+    "GAP": "A escassez de estações sísmicas na região limitava a compreensão da estrutura sismogênica e do papel de fluidos e estresse na ativação do terremoto principal, especialmente a interação entre difusão de fluidos e perturbações tectônicas.",
+    "METODOLOGIA": "Detecção de eventos com machine learning (PhaseNet e REAL), técnicas de template matching (GPU-M&L), relocalização (VELEST, hypoDD, GrowClust), soluções de tensor de momento (gCAP) e cálculo de mudanças de estresse Coulomb.",
+    "RESULTADOS": "Detectaram 10.356 eventos (3× mais que catálogos anteriores), reduziram a magnitude de completude de 1,2 para 0,9. Difusividades de fluidos: 0,8 m²/s (NE) e 0,19 m²/s (SW). O mainshock apresentou componente ISO negativo (22,09%) e estresse Coulomb +24 kPa. Mapearam falhas conjugadas não identificadas em estudos prévios.",
+    "CONCLUSÃO": "O mainshock foi desencadeado por difusão de fluidos e transferência de estresse de prévios eventos. Falhas conjugadas e zonas de extensão atuaram como canais para fluidos, indicando risco sísmico contínuo no oeste de Yunnan.",
+    "AVALIAÇÃO": "O estudo avança na resolução espacial de catálogos sísmicos, mas a ênfase em fluidos carece de evidências diretas. A interpretação de componentes não-DC pode ser influenciada por anisotropia crustal, e a difusividade variável sugere complexidade não totalmente explorada.",
+    "AMOSTRA": "10.356 eventos sísmicos detectados (1.791 relocalizados), com 8 terremotos analisados para mecanismos focais.",
+    "VARIAVEL PRIMARIA 1": "3.836 eventos no catálogo inicial (magnitude de completude = 1,2).",
+    "VARIAVEL PRIMARIA 2": "10.356 eventos após aplicação de machine learning e template matching (magnitude de completude = 0,9)."
+}

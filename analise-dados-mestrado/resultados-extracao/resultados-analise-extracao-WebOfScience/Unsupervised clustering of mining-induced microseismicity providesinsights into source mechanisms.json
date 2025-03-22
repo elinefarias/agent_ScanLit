@@ -1,0 +1,17 @@
+{
+    "artigo": "Unsupervised clustering of mining-induced microseismicity provides insights into source mechanisms.pdf",
+    "TÍTULO": "Unsupervised clustering of mining-induced microseismicity provides insights into source mechanisms",
+    "AUTORES": "Himanshu Barthwal, Robert Shcherbakov",
+    "ANO": "2024",
+    "REVISTA OU PERIÓDICO": "International Journal of Rock Mechanics and Mining Sciences",
+    "PAÍS": "Canadá",
+    "OBJETIVOS": "Desenvolver um método de clustering não supervisionado para classificar eventos microsísmicos induzidos por mineração, agrupando-os conforme similaridade de mecanismos de fonte diretamente de dados de waveform, sem dependência de modelos de velocidade complexos.",
+    "GAP": "Métodos convencionais de análise de mecanismos de fonte dependem de inversão de tensor de momento, exigindo modelos de velocidade precisos e sendo inviáveis para eventos de baixa magnitude. O estudo propõe uma abordagem alternativa para superar essas limitações.",
+    "METODOLOGIA": "Três etapas principais: decomposição espectral para isolar espectros de fonte, redução de dimensionalidade via ICA (Independent Component Analysis) e aplicação de GMM (Gaussian Mixture Model) para clustering. Validado com dados sintéticos e aplicado a dados reais de uma mina de potássio.",
+    "RESULTADOS": "Em dados sintéticos, o método obteve F1 score de 0,96-0,99 para clusters bem definidos. Na mina real, discriminou explosões (F1=0,98) de microsismicidade (F1=0,91) e identificou duas classes principais: uma com mecanismos double-couple (DC) e outra com componentes não-DC (CLVD).",
+    "CONCLUSÃO": "O método agrupa eventos microsísmicos por mecanismos de fonte sem dependência de modelos físicos prévios, sendo eficaz em ambientes com MT compactos e aplicável a grandes volumes de dados em contextos industriais.",
+    "AVALIAÇÃO": "Apesar da eficácia, a necessidade de conhecimento especializado para rotular clusters e a incapacidade de distinguir sinais de componentes não-DC limitam a interpretação. A validação em cenários não compactos requer ajustes adicionais.",
+    "AMOSTRA": "Dados sintéticos: 1000 eventos; dados reais: 2335 eventos (1971 explosões, 364 microsísmicos) em fevereiro/2021 e 1224 microsísmicos em março-junho/2021.",
+    "VARIAVEL PRIMARIA 1": "Acurácia de métodos tradicionais (não quantificada no texto).",
+    "VARIAVEL PRIMARIA 2": "F1 score de 0,96-0,99 (sintéticos) e 0,91-0,98 (dados reais)."
+}

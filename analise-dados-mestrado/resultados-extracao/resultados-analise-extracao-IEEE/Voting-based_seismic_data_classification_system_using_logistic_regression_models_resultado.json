@@ -1,0 +1,17 @@
+{
+    "artigo": "Voting-based_seismic_data_classification_system_using_logistic_regression_models.pdf",
+    "TÍTULO": "Voting-based seismic data classification system using logistic regression models",
+    "AUTORES": "Julian D. Miranda, Ciro A. Gamboa, Angélica Flórez, Miguel Altuve",
+    "ANO": "2019",
+    "REVISTA OU PERIÓDICO": "XXII Symposium on Image, Signal Processing and Artificial Vision (STSIVA)",
+    "PAÍS": "Colômbia",
+    "OBJETIVOS": "O objetivo do estudo foi desenvolver um sistema de classificação binária baseado em regressão logística para distinguir entre eventos sísmicos e não sísmicos, utilizando dados de quatro estações sismológicas da Rede Sismológica Nacional da Colômbia. O sistema visa contribuir para a detecção precoce de eventos sísmicos.",
+    "GAP": "O estudo aborda a necessidade de métodos eficazes para a classificação de eventos sísmicos, especialmente em regiões de alto risco como a Colômbia. O GAP identificado é a falta de sistemas de classificação que combinem múltiplos modelos de regressão logística com funções de votação para melhorar a precisão na detecção de eventos sísmicos.",
+    "METODOLOGIA": "A metodologia incluiu a seleção de dados sísmicos de quatro estações, pré-processamento dos sinais (filtragem e normalização), extração de características (polarização, potência vertical, assimetria e curtose) e classificação usando modelos de regressão logística. As decisões dos modelos foram combinadas usando funções de votação (AND, OR e votação majoritária).",
+    "RESULTADOS": "O melhor classificador individual alcançou uma acurácia de 95%, enquanto a combinação dos modelos com a função de votação atingiu 98,26%. Comparado a trabalhos anteriores, que obtiveram acurácias entre 81% e 99,7%, o sistema proposto mostrou-se competitivo, especialmente ao utilizar múltiplas estações.",
+    "CONCLUSÃO": "Os autores concluíram que o uso de modelos de regressão logística combinados com funções de votação é eficaz para a classificação de eventos sísmicos, alcançando alta precisão. Sugerem a expansão do banco de dados e a aplicação de técnicas mais robustas, como redes neurais, para melhorar a detecção de sinais não lineares.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem interessante ao combinar múltiplos modelos de regressão logística com funções de votação, mas a escolha da regressão logística pode ser limitada para sinais sísmicos não lineares. A inclusão de técnicas mais avançadas, como redes neurais, poderia melhorar a robustez do sistema.",
+    "AMOSTRA": "10288",
+    "VARIAVEL PRIMARIA 1": "Acurácia do melhor classificador individual: 95%",
+    "VARIAVEL PRIMARIA 2": "Acurácia com função de votação: 98,26%"
+}

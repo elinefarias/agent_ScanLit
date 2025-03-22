@@ -1,0 +1,17 @@
+{
+  "artigo": "Deep Learning for P-Wave First-Motion Polarity Determination and Its Application in Focal Mechanism Inversion.pdf",
+  "TÍTULO": "Deep Learning for P-Wave First-Motion Polarity Determination and Its Application in Focal Mechanism Inversion",
+  "AUTORES": "Yangkang Chen, Omar M. Saad, Alexandros Savvaidis, Fangxue Zhang, Yunfeng Chen, Dino Huang, Huijian Li, Farzaneh Aziz Zanjani",
+  "ANO": "2024",
+  "REVISTA OU PERIÓDICO": "IEEE Transactions on Geoscience and Remote Sensing",
+  "PAÍS": "USA",
+  "OBJETIVOS": "Propor um método de deep learning, denominado EQpolarity, para determinar a polaridade da primeira onda P usando formas de onda sísmicas. O método visa obter uma solução ótima de mecanismo focal para terremotos de pequeno a moderado porte.",
+  "GAP": "A determinação da polaridade da primeira onda P pode ser desafiadora e subjetiva para terremotos menores, um GAP que este estudo visa resolver utilizando técnicas avançadas de aprendizado profundo.",
+  "METODOLOGIA": "Utilização de um modelo de deep learning pré-treinado com dados da Califórnia do Sul e ajustado por transferência de aprendizado com dados sísmicos do Texas. O modelo, baseado em transformadores convolucionais compactos, é treinado e validado com conjuntos de dados substanciais para prever a polaridade da primeira onda P.",
+  "RESULTADOS": "O modelo original alcançou uma precisão de 95.43% na base da Califórnia e 98.82% após o ajuste com dados do Texas. A eficácia do método de transferência de aprendizado foi validada, indicando uma melhora significativa na precisão da previsão da polaridade.",
+  "CONCLUSÃO": "O método EQpolarity demonstrou alta precisão na determinação da polaridade da primeira onda P e é eficaz na inversão do mecanismo focal para uma ampla gama de magnitudes de terremotos, facilitando respostas rápidas a terremotos e mitigação de riscos sísmicos.",
+  "AVALIAÇÃO": "O estudo apresenta uma abordagem robusta e inovadora para a determinação de polaridades de onda P e inversão de mecanismo focal. No entanto, a aplicabilidade em regiões com estruturas geológicas complexas e dados de baixa qualidade ainda pode representar um desafio, sugerindo a necessidade de futuras investigações e expansão do banco de dados de treinamento.",
+  "AMOSTRA": "1662796 formas de onda para treinamento e 863151 para teste, com dados adicionais do Texas utilizados na transferência de aprendizado.",
+  "VARIAVEL PRIMARIA 1": "95.43% de precisão na base de dados da Califórnia antes da intervenção do estudo de transferência de aprendizado.",
+  "VARIAVEL PRIMARIA 2": "98.82% de precisão na base de dados do Texas após a intervenção do estudo de transferência de aprendizado."
+}

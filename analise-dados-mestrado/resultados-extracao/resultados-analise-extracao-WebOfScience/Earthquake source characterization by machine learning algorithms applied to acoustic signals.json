@@ -1,0 +1,17 @@
+{
+    "artigo": "Earthquake source characterization by machine learning algorithms applied to acoustic signals.pdf",
+    "TÍTULO": "Earthquake source characterization by machine learning algorithms applied to acoustic signals",
+    "AUTORES": "Bernabe Gomez, Usama Kadri",
+    "ANO": 2021,
+    "REVISTA OU PERIÓDICO": "Scientific Reports",
+    "PAÍS": "Reino Unido",
+    "OBJETIVOS": "Classificar o tipo de deslizamento (vertical ou horizontal) e estimar a magnitude sísmica (Mw) de terremotos submarinos utilizando ML aplicado a sinais acústicos, além de calcular propriedades efetivas da falha via modelo inverso.",
+    "GAP": "Falta de métodos eficientes para caracterização em tempo real de falhas submarinas a partir de sinais acústicos, especialmente para discriminar eventos com deslizamento vertical, essenciais para modelos inversos.",
+    "METODOLOGIA": "Extração de features temporais, espectrais, cepstrais e wavelet de 201 sinais de hidrofones do CTBTO. Classificação (SVM, RFC) e regressão (SVR, RFR) com validação k-fold. Modelo inverso para geometria da falha usando relações empíricas de Wells e Coppersmith.",
+    "RESULTADOS": "Acurácia de 76,64% (SVM) e 78,10% (RFC) para classificação binária. Erro quadrático médio (SSE) de 5,94 (SVR) e R² de 0,51. Comparação com gCMT mostrou erro médio de magnitude de 2,38%. Modelo inverso estimou largura da falha em 9,6 km (caso real).",
+    "CONCLUSÃO": "ML combinado com modelo inverso permite estimativa rápida de parâmetros de falha, porém a limitação de dados e desbalanceamento em eventos normais restringem generalização.",
+    "AVALIAÇÃO": "O estudo é inovador na integração de ML com modelos físicos, mas a amostra pequena (201 eventos) e a baixa precisão em deslizamentos normais (<30%) limitam robustez. Falta de métricas de incerteza quantificadas é uma lacuna.",
+    "AMOSTRA": 201,
+    "VARIAVEL PRIMARIA 1": "Acurácia de classificação sem otimização: 64,14% (eventos normais).",
+    "VARIAVEL PRIMARIA 2": "Acurácia pós-processamento com ML: 78,10% (RFC)."
+}

@@ -1,0 +1,17 @@
+{
+    "artigo": "Accelerating Bayesian microseismic event location with deep learning.pdf",
+    "TÍTULO": "Accelerating Bayesian microseismic event location with deep learning",
+    "AUTORES": "Alessio Spurio Mancini, Davide Piras, Ana Margarida Godinho Ferreira, Michael Paul Hobson, Benjamin Joachimi",
+    "ANO": "2021",
+    "REVISTA OU PERIÓDICO": "arXiv (preprint)",
+    "PAÍS": "Reino Unido",
+    "OBJETIVOS": "Desenvolver algoritmos de deep learning para acelerar a inferência Bayesiana na localização de eventos microsísmicos, substituindo métodos tradicionais de modelagem direta de ondas elásticas por emuladores treinados, visando redução de custo computacional.",
+    "GAP": "Métodos baseados em Gaussian Processes (GP) para emulação de traços sísmicos são lentos e demandam alto armazenamento, limitando a eficiência na inferência Bayesiana de localização de eventos.",
+    "METODOLOGIA": "Foram treinados sete modelos de deep learning (NN direct, PCA+NN, CVAE, etc.) com 2000 traços sísmicos sintéticos. Pré-processamento incluiu normalização de amplitude e tempo. Dois GPs foram usados para ajustar parâmetros de pico. Comparação com método anterior (D18) e validação via inferência Bayesiana.",
+    "RESULTADOS": "Os modelos propostos alcançaram R2D de 0,95 (vs. 0,89 do D18) e tempo de avaliação de ~10 ms (vs. 621 ms do D18). Aceleração de ~100x sobre GPs e ~1e5x sobre métodos pseudoespectrais. Inferência com 4 receptores reduziu incerteza para 0,0025 km (horizontal) e 0,0012 km (vertical).",
+    "CONCLUSÃO": "Os emuladores baseados em deep learning superaram métodos anteriores em velocidade, precisão e escalabilidade, permitindo inferência Bayesiana eficiente de localização de eventos microsísmicos com dados de waveform completos.",
+    "AVALIAÇÃO": "O estudo limita-se a fontes isotrópicas e dados sintéticos, podendo subestimar ruídos reais. A dependência do modelo de velocidade 3D específico exige retreinamento para novos cenários. Transfer learning e redes physics-informed são sugeridos para generalização futura.",
+    "AMOSTRA": "4000 eventos sísmicos sintéticos (2000 para treino, 2000 para validação/teste).",
+    "VARIAVEL PRIMARIA 1": "R2D: 0,89 (D18); Tempo de avaliação: 621 ms (D18).",
+    "VARIAVEL PRIMARIA 2": "R2D: 0,95 (NN direct); Tempo de avaliação: ~10 ms (NN direct)."
+}

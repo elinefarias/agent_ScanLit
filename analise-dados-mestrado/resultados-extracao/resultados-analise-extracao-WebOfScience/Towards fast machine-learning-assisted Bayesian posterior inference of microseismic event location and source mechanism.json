@@ -1,0 +1,17 @@
+{
+    "artigo": "Towards fast machine-learning-assisted Bayesian posterior inference of microseismic event location and source mechanism.pdf",
+    "TÍTULO": "Towards fast machine-learning-assisted Bayesian posterior inference of microseismic event location and source mechanism",
+    "AUTORES": "D. Piras, A. Spurio Mancini, A. M. G. Ferreira, B. Joachimi, M. P. Hobson",
+    "ANO": "2023",
+    "REVISTA OU PERIÓDICO": "Geophysical Journal International",
+    "PAÍS": "Reino Unido",
+    "OBJETIVOS": "Desenvolver um modelo de aprendizado de máquina para inferência bayesiana rápida de localização e mecanismo de fonte (ISO, DC, CLVD) de eventos microsísmicos, superando limitações computacionais de métodos tradicionais.",
+    "GAP": "Estudos anteriores restritos a fontes isotrópicas, sem abordagem eficiente para mecanismos complexos. Métodos baseados em tempo de chegada são limitados em precisão e custo computacional.",
+    "METODOLOGIA": "Rede neural treinada com 10.000 sismogramas sintéticos por mecanismo, usando espectro de potência logarítmico e PCA. Inferência via PyMultinest, com ruído Gaussiano (SNR=33 dB) e validação em dados reais de Groningen.",
+    "RESULTADOS": "Inferência concluída em <0,1 h em laptop, com precisão comparável a métodos tradicionais. Evidência bayesiana identificou corretamente o mecanismo-fonte em 100% dos testes. Redução de 99% no tempo versus simulações diretas.",
+    "CONCLUSÃO": "A abordagem permite localização precisa e identificação do mecanismo-fonte, robusta a ruídos reais, facilitando análises conjuntas futuras de tensor de momento e coordenadas.",
+    "AVALIAÇÃO": "Eficiência notável, mas dependência de dados sintéticos pode limitar aplicação em cenários reais heterogêneos. Exclusão da informação de fase no pré-processamento reduz resolução espacial.",
+    "AMOSTRA": "23 receptores, 10.000 sismogramas por mecanismo (ISO, DC, CLVD).",
+    "VARIAVEL PRIMARIA 1": "Tempo de inferência tradicional: horas em clusters HPC.",
+    "VARIAVEL PRIMARIA 2": "Tempo de inferência reduzido: 0,1 hora em laptop comercial."
+}

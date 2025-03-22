@@ -1,0 +1,18 @@
+{
+    "artigo": "Relocation of the 2018-2022 seismic sequences at the Central Gulf of Corinth New evidence for north-dipping low angle faulting.pdf",
+    "TÍTULO": "Relocation of the 2018–2022 seismic sequences at the Central Gulf of Corinth: New evidence for north-dipping, low angle faulting",
+    "AUTORES": "Vasilis Kapetanidis, Ioannis Spingos, Athanassios Ganas, Antonia Papageorgiou, George Kaviris",
+    "ANO": "2024",
+    "REVISTA OU PERIÓDICO": "Tectonophysics",
+    "PAÍS": "Grécia",
+    "OBJETIVOS": "O estudo analisa a sismicidade do Golfo Central de Corinto entre 2018 e 2022, utilizando relocação sísmica para investigar falhas de baixo ângulo mergulhando para o norte.",
+    "GAP": "A pesquisa preenche lacunas sobre a atividade sísmica em falhas de baixo ângulo, explorando sua geometria e relação com terremotos históricos na região.",
+    "METODOLOGIA": "Foram aplicados modelos de aprendizado de máquina (EQTransformer) para melhorar a identificação de tempos de chegada de ondas sísmicas. Os eventos foram inicialmente localizados com um modelo de velocidade 1D e posteriormente relocados usando o método de dupla diferença, incluindo dados de correlação de formas de onda.",
+    "RESULTADOS": "A sismicidade revelou padrões espaciais que indicam a continuidade de falhas de baixo ângulo mergulhando para o norte. O estudo mostrou que eventos como os terremotos de Mw 5.9 (1970) e Mw 5.7 (1992) ocorreram em falhas não mapeadas na superfície. A distribuição dos hipocentros indica um comportamento variado de deslizamento, de sísmico a assísmico.",
+    "CONCLUSÃO": "Os resultados reforçam a hipótese de que a deformação extensional no Golfo de Corinto é amplamente controlada por falhas de baixo ângulo, algumas das quais não apresentam expressões superficiais evidentes.",
+    "AVALIAÇÃO": "O estudo utiliza metodologias avançadas para relocação sísmica e identificação de padrões de falhamento. No entanto, a escassez de estações sísmicas na região central do Golfo de Corinto pode introduzir incertezas na exatidão dos hipocentros relocados.",
+    "AMOSTRA": "1.429 eventos sísmicos registrados entre junho de 2018 e dezembro de 2022 na região central do Golfo de Corinto.",
+    "VARIAVEL PRIMARIA 1": "Distribuição dos hipocentros antes da relocação, baseada em dados iniciais de catálogos sísmicos.",
+    "VARIAVEL PRIMARIA 2": "Distribuição dos hipocentros após relocação com o método de dupla diferença, revelando estruturas de falhamento de baixo ângulo."
+}
+  

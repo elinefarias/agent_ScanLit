@@ -1,0 +1,17 @@
+{
+  "artigo": "Seismic_Event_Classification_Based_on_Attention_Mechanism_and_Spatial_Pyramid_Pooling.pdf",
+  "TÍTULO": "Seismic Event Classification Based on Attention Mechanism and Spatial Pyramid Pooling",
+  "AUTORES": "Zhiyuan Yang, Yongming Huang, Guobao Zhang",
+  "ANO": "2024",
+  "REVISTA OU PERIÓDICO": "IEEE",
+  "PAÍS": "China",
+  "OBJETIVOS": "O objetivo foi propor um modelo de rede neural convolucional (CNN) que integra a transformada de Fourier de curta duração (STFT), mecanismo de atenção e pooling espacial piramidal (SPP) para classificar eventos sísmicos de forma eficiente.",
+  "GAP": "O estudo aborda a limitação dos métodos tradicionais de classificação de eventos sísmicos, que possuem campos receptivos fixos, perda de informação e pesos fixos, resultando em baixa precisão.",
+  "METODOLOGIA": "O modelo proposto utiliza STFT para extrair características no domínio da frequência, mecanismos de atenção para priorizar características importantes e SPP para capturar informações em múltiplas escalas. A rede foi treinada com validação cruzada de cinco folds.",
+  "RESULTADOS": "O modelo alcançou uma precisão de 94,18%, superando outros métodos como SVM (90,20%) e redes residuais (91,48%). A sensibilidade para terremotos foi de 93,52%, para colapsos de 94,34% e para explosões de 94,80%.",
+  "CONCLUSÃO": "O modelo proposto mostrou-se eficaz na classificação de eventos sísmicos, com alta precisão e robustez, superando métodos tradicionais e outros baseados em deep learning.",
+  "AVALIAÇÃO": "O estudo apresenta uma abordagem inovadora, mas a falta de validação em diferentes conjuntos de dados e a complexidade computacional do modelo podem ser limitações. A aplicação em tempo real ainda precisa ser explorada.",
+  "AMOSTRA": "Não especificado no texto",
+  "VARIAVEL PRIMARIA 1": "Precisão de classificação antes da otimização: 90,20% para SVM e 91,48% para redes residuais.",
+  "VARIAVEL PRIMARIA 2": "Precisão de classificação após a otimização: 94,18% para o modelo proposto."
+}

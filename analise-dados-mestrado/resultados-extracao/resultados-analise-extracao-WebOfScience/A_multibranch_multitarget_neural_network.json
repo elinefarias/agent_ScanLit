@@ -1,0 +1,17 @@
+{
+    "artigo": "A_multibranch_multitarget_neural_network.pdf",
+    "TÍTULO": "A multibranch, multitarget neural network for rapid point-source inversion in a microseismic environment: examples from the Hengill Geothermal Field, Iceland",
+    "AUTORES": "Nima Nooshiri, Christopher J. Bean, Torsten Dahm, Francesco Grigoli, Sigrıður Kristjánsdóttir, Anne Obermann, Stefan Wiemer",
+    "ANO": "2022",
+    "REVISTA OU PERIÓDICO": "Geophysical Journal International",
+    "PAÍS": "Islândia",
+    "OBJETIVOS": "Desenvolver uma rede neural multibranch para estimar rapidamente parâmetros de fonte microsísmica (tensor de momento e localização) usando dados sísmicos sintéticos, visando aplicações em tempo real em ambientes geotérmicos.",
+    "GAP": "Métodos tradicionais de inversão de parâmetros de fonte são computacionalmente intensivos e inviáveis para análise em tempo real, especialmente para eventos de baixa magnitude e dados incompletos.",
+    "METODOLOGIA": "Rede neural convolucional (ConvNet) com dois branches: um para tensor de momento (usando waveforms triaxiais) e outro para localização (usando funções de kurtosis). Treinada com 25.000 eventos sintéticos, incorporando ruído realista e dropout de estações.",
+    "RESULTADOS": "Em 5.000 eventos sintéticos, 95% das distâncias entre tensores preditos e reais foram <0.1. Aplicado a 3 eventos reais, diferenças de localização foram <700 m. Modelos treinados com ruído tiveram erro L² médio de 0.12, contra 0.85 em modelos sem ruído.",
+    "CONCLUSÃO": "O método permite inversão rápida (frações de segundo) e precisa de parâmetros de fonte, sendo robusto a ruído e dados faltantes, adequado para monitoramento em tempo real em contextos geotérmicos.",
+    "AVALIAÇÃO": "A dependência do volume de monitoramento pré-definido e faixas de frequência específicas limita a escalabilidade. Validação em apenas 3 eventos reais pode subestimar a variabilidade de cenários práticos.",
+    "AMOSTRA": "Dados sintéticos: 25.000 eventos (treino), 5.000 (teste); dados reais: 3 eventos.",
+    "VARIAVEL PRIMARIA 1": "Tempo de inversão tradicional: horas (exemplo: Bayesian full-waveform em Geldinganes).",
+    "VARIAVEL PRIMARIA 2": "Tempo de inversão com NN: <1 segundo, com erros de localização médios de 21-133 m (sintéticos) e 238-702 m (reais)."
+}

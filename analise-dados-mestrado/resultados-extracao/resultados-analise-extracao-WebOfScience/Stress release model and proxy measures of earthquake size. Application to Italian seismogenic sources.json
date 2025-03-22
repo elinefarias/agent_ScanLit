@@ -1,0 +1,17 @@
+{
+    "artigo": "Stress release model and proxy measures of earthquake size. Application to Italian seismogenic sources.pdf",
+    "TÍTULO": "Stress release model and proxy measures of earthquake size. Application to Italian seismogenic sources",
+    "AUTORES": "Elisa Varini, Renata Rotondi, Roberto Basili, Salvatore Barba",
+    "ANO": "2016",
+    "REVISTA OU PERIÓDICO": "Tectonophysics",
+    "PAÍS": "Itália",
+    "OBJETIVOS": "O estudo teve como objetivo analisar diferentes versões do modelo de liberação de tensão (SR) para prever a ocorrência de terremotos na Itália, utilizando quatro medidas de tamanho de terremotos: deformação, momento sísmico, energia sísmica e energia escalonada. O objetivo foi identificar qual dessas medidas proporciona o melhor desempenho preditivo.",
+    "GAP": "O estudo aborda a lacuna na escolha da medida física mais adequada para representar o tamanho de terremotos em modelos de liberação de tensão, visando melhorar a precisão das previsões de ocorrência de terremotos em diferentes regiões tectônicas da Itália.",
+    "METODOLOGIA": "O estudo utilizou o paradigma Bayesiano e métodos de Monte Carlo via Cadeias de Markov (McMC) para estimar os parâmetros dos modelos SR. A análise foi realizada em oito macro-regiões tectonicamente coerentes na Itália, com base em catálogos sísmicos históricos e instrumentais, além de informações sobre falhas sismogênicas.",
+    "RESULTADOS": "Os resultados indicaram que os modelos baseados em energia sísmica e energia escalonada apresentaram melhor desempenho preditivo em comparação com os modelos baseados em deformação e momento sísmico. Em algumas regiões, o modelo de energia escalonada (RS) mostrou uma melhoria de até 20% na precisão das previsões em relação ao modelo de momento sísmico (RM).",
+    "CONCLUSÃO": "Os autores concluíram que a energia sísmica e a energia escalonada são as medidas mais adequadas para serem utilizadas em modelos de liberação de tensão, proporcionando previsões mais precisas da ocorrência de terremotos em diferentes regiões tectônicas da Itália.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem robusta para a previsão de terremotos, mas a limitação do tamanho da amostra em algumas regiões pode afetar a generalização dos resultados. Além disso, a dependência de catálogos sísmicos históricos pode introduzir incertezas devido à possível incompletude dos dados.",
+    "AMOSTRA": "O estudo analisou 81 fontes de falhas sismogênicas e terremotos com magnitude Mw ≥ 5.3, distribuídos em oito macro-regiões na Itália.",
+    "VARIAVEL PRIMARIA 1": "A variável primária antes da intervenção foi a taxa de ocorrência de terremotos, que variou entre 0,0126 e 0,170 eventos por ano, dependendo da região.",
+    "VARIAVEL PRIMARIA 2": "Após a aplicação dos modelos SR, a variável primária foi a precisão das previsões de ocorrência de terremotos, com intervalos de confiança de 75% e 90% para o tempo até o próximo evento, mostrando uma redução média de 15% na incerteza em comparação com modelos anteriores."
+}

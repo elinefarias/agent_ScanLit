@@ -1,0 +1,17 @@
+{
+    "artigo": "Deep compressed seismic learning for fast location and moment tensor inferences with natural and induced seismicity.pdf",
+    "TÍTULO": "Deep compressed seismic learning for fast location and moment tensor inferences with natural and induced seismicity",
+    "AUTORES": "Ismael Vera Rodriguez, Erik B. Myklebust",
+    "ANO": 2022,
+    "REVISTA OU PERIÓDICO": "Scientific Reports",
+    "PAÍS": "Noruega",
+    "OBJETIVOS": "Desenvolver uma metodologia (deepCoSeL) que combina Compressive Sensing (CS) e redes neurais convolucionais profundas (DCNN) para inferir rapidamente localização e tensor de momento de fontes sísmicas, visando reduzir o tempo de processamento e a necessidade de descompressão de dados em redes de monitoramento densas.",
+    "GAP": "Falta de métodos eficientes para processamento contínuo de grandes volumes de dados sísmicos (como os gerados por DAS) que integrem compressão e aprendizado de máquina, mantendo precisão na estimativa de parâmetros da fonte sísmica em tempo quase real.",
+    "METODOLOGIA": "Compressão de dados sísmicos via CS (6,25% do tamanho original), treinamento de uma DCNN com exemplos sintéticos (modelagem de velocidades de onda e ruído), e validação com dados reais de emissões acústicas em experimento laboratorial. Comparação com autoencoder e métodos tradicionais.",
+    "RESULTADOS": "Erros medianos de localização: 4,2 cm (dados reais) e 5° para ângulos de dislocação (sintéticos de alta SNR). Tempo de resposta: 7 ms por quadro de dados (GPU Tesla A30). Redução de 430 GB para 26,9 GB no tamanho do conjunto de treinamento com CS. Em dados reais, 55% dos eventos foram detectados com limiar de detecção de 6000.",
+    "CONCLUSÃO": "O deepCoSeL permite processamento contínuo e rápido de dados sísmicos, com precisão comparável a métodos tradicionais. A compressão via CS reduz custos computacionais e facilita o treinamento de redes neurais, porém requer melhorias na estimativa de incertezas e magnitude.",
+    "AVALIAÇÃO": "O método é inovador ao integrar CS e DCNN, mas a validação em escala real é limitada. A ausência de métricas de incerteza e a dependência de dados sintéticos para treinamento podem restringir a generalização. A comparação com o autoencoder foi insuficiente para demonstrar superioridade clara.",
+    "AMOSTRA": "2000 exemplos sintéticos (teste) e 25 eventos reais analisados.",
+    "VARIAVEL PRIMARIA 1": "Erro de localização tradicional: até 8 cm (dados reais).",
+    "VARIAVEL PRIMARIA 2": "Erro de localização deepCoSeL: 4,2 cm (dados reais)."
+}

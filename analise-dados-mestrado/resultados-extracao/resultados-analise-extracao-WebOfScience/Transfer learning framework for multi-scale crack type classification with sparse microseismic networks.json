@@ -1,0 +1,17 @@
+{
+    "artigo": "Transfer learning framework for multi-scale crack type classification with sparse microseismic networks.pdf",
+    "TÍTULO": "Transfer learning framework for multi-scale crack type classification with sparse microseismic networks",
+    "AUTORES": "Arnold Yuxuan Xie, Bing Q. Li",
+    "ANO": "2024",
+    "REVISTA OU PERIÓDICO": "International Journal of Mining Science and Technology",
+    "PAÍS": "Canada",
+    "OBJETIVOS": "O objetivo do estudo foi desenvolver um framework de transfer learning para classificar o tipo de fratura em rochas com base em eventos microsísmicos, utilizando redes de sensores esparsas. O modelo foi treinado com dados de campo e laboratório para prever a polaridade da mudança de volume da fratura a partir de uma única forma de onda.",
+    "GAP": "O estudo aborda a limitação de redes microsísmicas esparsas em minas subterrâneas, onde a cobertura azimutal é insuficiente para a inversão de mecanismos de fratura. O trabalho propõe uma solução para classificar fraturas com base em uma única forma de onda, superando métodos empíricos existentes.",
+    "METODOLOGIA": "O estudo utilizou um modelo de deep learning inicialmente treinado com 2.400.000 formas de onda de campo e laboratório. Transfer learning foi aplicado para ajustar o modelo com 300.000 formas de onda de emissões acústicas em laboratório. O modelo foi avaliado com métricas como precisão, recall e F-score.",
+    "RESULTADOS": "O modelo alcançou F-score de 86% em dados de laboratório e 89% em dados de campo. Comparado ao método de polaridade média, que obteve F-score de 50,14% para ISO+ e 41,28% para ISO-, o modelo proposto mostrou superioridade na classificação de mecanismos de fratura.",
+    "CONCLUSÃO": "O estudo demonstrou que o modelo de deep learning com transfer learning é eficaz na classificação de fraturas em redes microsísmicas esparsas, superando métodos tradicionais e mostrando generalização entre escalas de laboratório e campo.",
+    "AVALIAÇÃO": "O trabalho apresenta uma abordagem inovadora para classificação de fraturas, mas a dependência de dados pré-existentes para transfer learning pode limitar sua aplicação em cenários com dados escassos. A falta de discussão sobre a robustez do modelo em diferentes condições geológicas também é uma limitação.",
+    "AMOSTRA": "O estudo utilizou 351.022 formas de onda de laboratório e 240.000 formas de onda de campo, totalizando 591.022 formas de onda.",
+    "VARIAVEL PRIMARIA 1": "Antes da intervenção, o F-score do modelo baseado em polaridade média foi de 50,14% para ISO+ e 41,28% para ISO-.",
+    "VARIAVEL PRIMARIA 2": "Após a intervenção, o F-score do modelo proposto foi de 86% para ISO+ e 89% para ISO- em dados de campo e laboratório."
+}

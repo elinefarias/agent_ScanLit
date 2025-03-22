@@ -1,0 +1,17 @@
+{
+    "artigo": "A_Heuristic-Learning_Optimizer_for_Elastodynamic_Waveform_Inversion_in_Passive_Seismics.pdf",
+    "TÍTULO": "A Heuristic-Learning Optimizer for Elastodynamic Waveform Inversion in Passive Seismics",
+    "AUTORES": "Ismael A. Vera Rodriguez",
+    "ANO": "2019",
+    "REVISTA OU PERIÓDICO": "IEEE Transactions on Geoscience and Remote Sensing",
+    "PAÍS": "USA",
+    "OBJETIVOS": "Desenvolver um algoritmo de otimização heurística para inversão de formas de onda em sismologia passiva, visando otimizar simultaneamente os parâmetros de fontes sísmicas e as propriedades do meio de propagação.",
+    "GAP": "A maioria dos métodos existentes de inversão em sismologia passiva opera de forma desacoplada, otimizando parâmetros individuais separadamente, o que pode levar a soluções não conjuntamente ótimas. Este estudo propõe uma abordagem conjunta para superar essa limitação.",
+    "METODOLOGIA": "O algoritmo proposto combina técnicas de otimização por enxame de partículas (PSO) e projeção variável para otimizar parâmetros de fontes sísmicas, modelos de velocidade e correções estáticas de receptores. O método foi testado em dados reais de monitoramento de estimulação hidráulica.",
+    "RESULTADOS": "O algoritmo convergiu para soluções consistentes com métodos tradicionais de inversão desacoplada. A variação no ajuste das formas de onda foi inferior a 5% em relação aos resultados anteriores. Os modelos de velocidade invertidos apresentaram variações, mas com equivalência em termos de ajuste das formas de onda.",
+    "CONCLUSÃO": "O método proposto demonstrou ser capaz de otimizar conjuntamente múltiplos parâmetros em sismologia passiva, com resultados consistentes em relação a abordagens tradicionais. A abordagem conjunta pode melhorar a consistência das soluções, embora a unicidade dos parâmetros ainda seja um desafio.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem inovadora ao combinar otimização heurística com inversão conjunta de parâmetros. No entanto, a dependência de uma boa inicialização e o custo computacional podem limitar sua aplicação em cenários mais complexos.",
+    "AMOSTRA": "5 fontes sísmicas e 1082 receptores",
+    "VARIAVEL PRIMARIA 1": "Modelos de velocidade inicial (Vp: 3600 m/s, Vs: 2100 m/s, ε: 0.31, δ: 0.16, Qp: 6.5, Qs: 6.5)",
+    "VARIAVEL PRIMARIA 2": "Modelos de velocidade invertidos (Vp: 3586 m/s, Vs: 2138 m/s, ε: 0.36, δ: 0.19, Qp: 6.1, Qs: 64)"
+}

@@ -1,0 +1,17 @@
+{
+    "artigo": "Tensor-Based_Learning_Framework_for_Automatic_Multichannel_Volcano-Seismic_Classification.pdf",
+    "TÍTULO": "Tensor-Based Learning Framework for Automatic Multichannel Volcano-Seismic Classification",
+    "AUTORES": "Antonio Augusto Teixeira Peixoto, Carlos Alexandre Rolim Fernandes, Pablo Eduardo Espinoza Lara, Adolfo Inza, Jérome I. Mars, Jean-Philippe Métaxian, Mauro Dalla Mura, Marielle Malfante",
+    "ANO": "2021",
+    "REVISTA OU PERIÓDICO": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "PAÍS": "Brazil",
+    "OBJETIVOS": "O estudo propõe um framework de aprendizado baseado em tensores para classificar eventos vulcano-sísmicos a partir de sinais registrados no vulcão Ubinas, no Peru. O objetivo é integrar extração de características, redução de dimensionalidade e classificação em um sistema que preserva a estrutura multidimensional dos dados.",
+    "GAP": "O estudo aborda a limitação dos métodos tradicionais de aprendizado de máquina, que vetorizam dados multidimensionais, perdendo a estrutura tensorial. O uso de técnicas de aprendizado tensorial, como MPCA e STM, visa superar essa limitação, preservando a estrutura dos dados e melhorando a classificação.",
+    "METODOLOGIA": "O método proposto utiliza técnicas de aprendizado tensorial, como a MPCA para redução de dimensionalidade e STM para classificação. Os dados são organizados como tensores de estações × canais × características, preservando a estrutura multidimensional. O sistema foi testado com dados do vulcão Ubinas, coletados em 2009.",
+    "RESULTADOS": "O método proposto alcançou uma taxa de classificação correta (CCR) de 91,9% com o STuM e MPCA-DR, superando métodos tradicionais como SVM (83,5%) e CNN (51,5%). A redução de dimensionalidade com MPCA-DR melhorou o desempenho em comparação com a vetorização dos dados.",
+    "CONCLUSÃO": "O estudo demonstrou a eficácia do framework tensorial para classificação de eventos vulcano-sísmicos, com desempenho superior em relação a métodos vetoriais. A preservação da estrutura multidimensional dos dados e o uso de técnicas tensoriais foram fundamentais para os resultados obtidos.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem inovadora ao utilizar técnicas tensoriais para classificação de eventos vulcano-sísmicos. No entanto, a complexidade computacional do STuM pode ser um ponto de melhoria, especialmente para aplicações em tempo real. Além disso, a generalização do método para outros vulcões precisa ser investigada.",
+    "AMOSTRA": "856 amostras de tensores, organizadas como 2 × 3 × 6000, correspondendo a 5136 sinais sísmicos.",
+    "VARIAVEL PRIMARIA 1": "Taxa de classificação correta (CCR) de 83,5% com SVM e vetorização dos dados.",
+    "VARIAVEL PRIMARIA 2": "Taxa de classificação correta (CCR) de 91,9% com STuM e MPCA-DR."
+}

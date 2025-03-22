@@ -1,0 +1,24 @@
+{
+  "artigo": "Toward_Real-Time_Volcano_Seismic_Events_Classification_A_New_Approach_Using_Mathematical_Morphology_and_Similarity_Criteria.pdf",
+  "TÍTULO": "Toward Real-Time Volcano Seismic Events Classification: A New Approach Using Mathematical Morphology and Similarity Criteria",
+  "AUTORES": [
+    "Noel Pérez",
+    "Francisco Granda",
+    "Diego Benítez",
+    "Felipe Grijalva",
+    "Román Lara-Cueva"
+  ],
+  "ANO": 2022,
+  "REVISTA OU PERIÓDICO": "IEEE Transactions on Geoscience and Remote Sensing",
+  "PAÍS": "Equador",
+  "OBJETIVOS": "Propôs um método de classificação de eventos sísmicos vulcânicos em tempo real utilizando critérios de similaridade e morfologia matemática para extrair características de sinais sísmicos do vulcão Cotopaxi.",
+  "GAP": "Os métodos de classificação de eventos sísmicos frequentemente requerem alto poder computacional, dificultando sua aplicação em tempo real. Este estudo busca reduzir a complexidade algorítmica mantendo boa performance.",
+  "METODOLOGIA": "Foram extraídos mapas de bordas de espectrogramas de eventos sísmicos usando morfologia matemática, e um classificador baseado em critérios de similaridade foi empregado para classificar eventos LP e VT.",
+  "RESULTADOS": "A abordagem proposta obteve acurácia média de 93,34% no conjunto D1 (eventos com sobreposição de sinais) e 96,88% no conjunto D2 (eventos sem sobreposição). O tempo de execução foi reduzido para 0,012 s na fase de teste.",
+  "CONCLUSÃO": "O método demonstrou ser eficiente para classificação sísmica em tempo real, reduzindo a complexidade computacional sem perda significativa de desempenho.",
+  "AVALIAÇÃO": "Embora apresente excelente desempenho, a abordagem pode ser sensível a variações no tipo de sinal e pode exigir ajustes finos para diferentes cenários sísmicos.",
+  "AMOSTRA": "Conjunto de dados MicSigV1, contendo 668 eventos sísmicos LP e VT do vulcão Cotopaxi.",
+  "VARIAVEL PRIMARIA 1": "Acurácia de classificação no conjunto D1: 93,34%",
+  "VARIAVEL PRIMARIA 2": "Acurácia de classificação no conjunto D2: 96,88%"
+}
+

@@ -1,0 +1,18 @@
+{
+    "artigo": "Classification_and_Magnitude_Estimation_of_Global_and_Local_Seismic_Events_Using_Conformer_and_Low-Rank_Adaptation_Fine-Tuning.pdf",
+    "TÍTULO": "Classification and Magnitude Estimation of Global and Local Seismic Events Using Conformer and Low-Rank Adaptation Fine-Tuning",
+    "AUTORES": "Yooseok Jin, Gwantae Kim, Hanscok Ko",
+    "ANO": "2024",
+    "REVISTA OU PERIÓDICO": "IEEE Geoscience and Remote Sensing Letters",
+    "PAÍS": "South Korea",
+    "OBJETIVOS": "O estudo propõe um método para classificar eventos sísmicos e estimar sua magnitude utilizando a arquitetura Conformer e a técnica de adaptação de baixo rank (LoRA). O objetivo é avaliar a eficácia do LoRA em pesquisas de ondas sísmicas, adaptando modelos globais para contextos locais com um número reduzido de parâmetros.",
+    "GAP": "O estudo aborda a limitação de modelos treinados exclusivamente com dados globais, que podem apresentar desempenho subótimo em contextos locais devido às diferenças geológicas. O LoRA é proposto como uma solução para adaptar modelos globais a características locais com menor custo computacional.",
+    "METODOLOGIA": "O estudo utilizou a arquitetura Conformer, simplificada e modificada, com a aplicação da técnica LoRA para fine-tuning. Foram utilizados os conjuntos de dados STEAD e KPED. O modelo foi treinado com uma taxa de aprendizado de 1e-4, otimizador Adam e funções de perda específicas para classificação e estimativa de magnitude.",
+    "RESULTADOS": "O modelo proposto alcançou 99,99% de acurácia na classificação de eventos sísmicos em ambos os conjuntos de dados. Na estimativa de magnitude, houve uma redução de 7% no MAE no STEAD e 48% no KPED em comparação com o estado da arte. O número de parâmetros retreinados foi reduzido em 59 vezes para classificação e 89 vezes para estimativa de magnitude.",
+    "CONCLUSÃO": "O estudo demonstrou a eficácia do Conformer e do LoRA na classificação de eventos sísmicos e estimativa de magnitude, com desempenho superior em comparação com modelos existentes. A técnica LoRA permitiu a adaptação eficiente de modelos globais para contextos locais com um número reduzido de parâmetros.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem inovadora ao combinar Conformer e LoRA para tarefas sísmicas. No entanto, a avaliação poderia ser expandida para incluir mais conjuntos de dados locais para validar a generalização do método. Além disso, a análise de sensibilidade dos hiperparâmetros do LoRA poderia ser mais detalhada.",
+    "AMOSTRA": "1.030.000 sismogramas do STEAD e 305.000 sismogramas do KPED.",
+    "VARIAVEL PRIMARIA 1": "Acurácia de 99,03% no STEAD e 99,97% no KPED para classificação de eventos sísmicos, utilizando modelos existentes como EQTransformer.",
+    "VARIAVEL PRIMARIA 2": "Acurácia de 99,99% no STEAD e 100% no KPED para classificação de eventos sísmicos, utilizando o modelo proposto.",
+    "TAMANHO DA AMOSTRA": "1.030.000 sismogramas do STEAD e 305.000 sismogramas do KPED."
+}

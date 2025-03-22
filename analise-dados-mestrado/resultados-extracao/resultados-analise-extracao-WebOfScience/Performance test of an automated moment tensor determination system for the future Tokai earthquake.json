@@ -1,0 +1,17 @@
+{
+    "artigo": "Performance test of an automated moment tensor determination system forthe future Tokai earthquake.pdf",
+    "TÍTULO": "Performance test of an automated moment tensor determination system for the future Tokai earthquake",
+    "AUTORES": "Eiichi Fukuyama and Douglas S. Dreger",
+    "ANO": "2000",
+    "REVISTA OU PERIÓDICO": "Não explicitado no texto",
+    "PAÍS": "Japão",
+    "OBJETIVOS": "Avaliar o desempenho de um sistema automatizado de determinação de tensor de momento (AMTD) para grandes terremotos (M >8), utilizando dados sintéticos baseados no modelo do terremoto de Tokai. Verificar a necessidade de ajustes em estações distantes e faixas de frequência específicas para garantir precisão.",
+    "GAP": "A ausência de dados reais de terremotos próximos de magnitude elevada (M >8) dificulta a validação do sistema. O estudo aborda essa lacuna utilizando modelos sintéticos de ruptura heterogênea e testes com eventos históricos (ex.: Kobe e Hokkaido).",
+    "METODOLOGIA": "Simulações de cenários de ruptura unilaterais/bilaterais com modelos de deslizamento uniforme e heterogêneo. Uso de dados sintéticos gerados por integração de frequência-onda e análise de ondas em faixas de 0,005-0,02 Hz. Validação com eventos reais (Kobe e Hokkaido).",
+    "RESULTADOS": "O uso de estações a >600 km e frequências de 0,005-0,02 Hz recuperou 100% do momento sísmico escalar em modelos sintéticos. Para o terremoto de Hokkaido (M7,8), a precisão aumentou de 23% (0,01-0,05 Hz) para 42,2% (0,005-0,02 Hz), aproximando-se do valor real (M7,7).",
+    "CONCLUSÃO": "O sistema AMTD requer ajustes em grandes terremotos, como inclusão de estações distantes e baixas frequências, para manter a suposição de fonte pontual. A profundidade do hipocentro foi estimada com erro de ±5 km.",
+    "AVALIAÇÃO": "O estudo é relevante para alertas sísmicos, porém limita-se à dependência de modelos sintéticos. A análise de apenas dois eventos reais reduz a generalização. Não há discussão sobre a aplicação em tempo real com ajustes iterativos.",
+    "AMOSTRA": "2 terremotos reais (Kobe e Hokkaido) e 6 modelos sintéticos (UNI-MID, UNI-NW, HET-MID, HET-NW, SAG-UNI-MID, SAG-HET-NW).",
+    "VARIAVEL PRIMARIA 1": "Precisão do momento tensor com faixa de 0,01-0,05 Hz: 23% (Hokkaido) e 89% (Kobe).",
+    "VARIAVEL PRIMARIA 2": "Precisão do momento tensor com faixa de 0,005-0,02 Hz: 42,2% (Hokkaido) e manutenção de 89% (Kobe)."
+}

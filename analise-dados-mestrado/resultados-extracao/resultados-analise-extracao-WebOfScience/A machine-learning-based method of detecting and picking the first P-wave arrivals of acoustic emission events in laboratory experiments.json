@@ -1,0 +1,17 @@
+{
+    "artigo": "A machine-learning-based method of detecting and picking the first P-wave arrivals of acoustic emission events in laboratory experiments.pdf",
+    "TÍTULO": "A machine-learning-based method of detecting and picking the first P-wave arrivals of acoustic emission events in laboratory experiments",
+    "AUTORES": "Ziyu Li, Lupei Zhu, Timothy Officer, Feng Shi, Tony Yu, Yanbin Wang",
+    "ANO": "2022",
+    "REVISTA OU PERIÓDICO": "Geophysical Journal International",
+    "PAÍS": "USA",
+    "OBJETIVOS": "Desenvolver um método baseado em machine learning para detectar e identificar automaticamente os tempos de chegada das ondas P em eventos de emissão acústica (AE) em experimentos laboratoriais, reduzindo a necessidade de intervenção humana.",
+    "GAP": "Os métodos existentes de machine learning para identificação de ondas P operam em estações sísmicas individuais, exigindo associação posterior dos eventos. Além disso, muitos métodos dependem da existência prévia de ondas P nos sismogramas, o que limita sua aplicação em cenários com baixa relação sinal-ruído.",
+    "METODOLOGIA": "O método MultiNet utiliza imagens 2D de formas de onda multicanal como entrada para uma rede neural convolucional (CNN) para detectar eventos AE. Em seguida, uma rede neural totalmente convolucional (FCN) é usada para identificar os tempos de chegada das ondas P em cada canal. O modelo foi treinado com 50 eventos AE e testado com 500 eventos.",
+    "RESULTADOS": "O CNN detectou todos os 500 eventos conhecidos e mais 48 eventos previamente não identificados. 98,7% dos tempos de chegada das ondas P identificados pelo FCN estiveram dentro de 0,5 μs dos tempos identificados manualmente. Os erros médios variaram de 0,01 ± 0,05 a -0,06 ± 0,22 μs entre os canais.",
+    "CONCLUSÃO": "O método MultiNet demonstrou alta precisão na detecção de eventos AE e na identificação dos tempos de chegada das ondas P, reduzindo significativamente a necessidade de intervenção humana. O método pode ser adaptado para uso em redes sísmicas para detecção e localização de terremotos em tempo real.",
+    "AVALIAÇÃO": "O estudo apresenta uma abordagem inovadora ao combinar detecção de eventos e identificação de ondas P em um único método. No entanto, a aplicação em dados sísmicos reais pode exigir ajustes, como a necessidade de mais eventos de treinamento e a consideração de janelas de tempo maiores devido à dispersão das ondas P em terremotos.",
+    "AMOSTRA": "550 eventos AE",
+    "VARIAVEL PRIMARIA 1": "Tempo de chegada das ondas P identificado manualmente",
+    "VARIAVEL PRIMARIA 2": "Tempo de chegada das ondas P identificado pelo FCN"
+}

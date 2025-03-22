@@ -1,0 +1,17 @@
+{
+  "artigo": "Adaptive_Filtering_for_Event_Recognition_from_Noisy_Signal_an_Application_to_Earthquake_Detection.pdf",
+  "TÍTULO": "ADAPTIVE FILTERING FOR EVENT RECOGNITION FROM NOISY SIGNAL: AN APPLICATION TO EARTHQUAKE DETECTION",
+  "AUTORES": "Zhongping Zhang, Youzuo Lin, Zheng Zhou, Tianlang Chen",
+  "ANO": "Não especificado (referências incluem trabalhos até 2018)",
+  "REVISTA OU PERIÓDICO": "Não explicitamente mencionado (possível submissão em conferência ou periódico)",
+  "PAÍS": "Estados Unidos",
+  "OBJETIVOS": "Desenvolver um framework end-to-end para denoizar sinais sísmicos e classificar eventos, automatizando a seleção de parâmetros de filtragem via redes neurais, sem dependência de dados limpos.",
+  "GAP": "Falta de métodos eficientes para ajuste automático de filtros em sinais sísmicos ruidosos, eliminando a necessidade de pares limpos-ruidosos e superando a subjetividade na escolha manual de parâmetros.",
+  "METODOLOGIA": "Framework com módulo de filtragem adaptativa (sample-specific ou dataset-specific) e classificação via CNN. A filtragem usa aproximação diferenciável de filtro passa-alta, treinada com perda de entropia cruzada.",
+  "RESULTADOS": "No dataset Oklahoma, CNN+Adapt-SP obteve F-score de 78,43 (single channel) e 92,51 (multi-channel), superando CNN+Manualmente (74,45 e 90,98). Em Decatur, F-score alcançou 93,46 contra 91,43 do método manual.",
+  "CONCLUSÃO": "A filtragem adaptativa sample-specific melhorou a classificação de eventos sísmicos, eliminando a necessidade de dados limpos e adaptando-se dinamicamente a cada amostra.",
+  "AVALIAÇÃO": "Pontos fortes: automatização de parâmetros e desempenho superior. Limitações: restrição a filtros passa-alta e dependência de datasets com padrões de ruído pré-definidos. A generalização para outros tipos de filtros não foi explorada.",
+  "AMOSTRA": "Oklahoma: 2.654 positivos e 7.962 negativos. Decatur: 264 positivos (após aumento) e 264 negativos.",
+  "VARIAVEL PRIMARIA 1": "F-score de 74,45 (CNN+Manualmente) e 90,98 (multi-channel) no dataset Oklahoma.",
+  "VARIAVEL PRIMARIA 2": "F-score de 78,43 (CNN+Adapt-SP) e 92,51 (multi-channel) no dataset Oklahoma; 93,46 em Decatur."
+}

@@ -1,0 +1,17 @@
+{
+    "artigo": "Volcano seismology.pdf",
+    "TÍTULO": "Volcano Seismology",
+    "AUTORES": "Bernard Chouet",
+    "ANO": "2003",
+    "REVISTA OU PERIÓDICO": "Pure and Applied Geophysics",
+    "PAÍS": "Estados Unidos",
+    "OBJETIVOS": "O estudo visa compreender sistemas magmáticos ativos, caracterizar sua configuração e determinar a evolução das fontes de energia magmática. Busca integrar métodos sísmicos avançados, como tomografia de alta resolução e análise espectral, para modelar processos eruptivos e aprimorar previsões de riscos vulcânicos.",
+    "GAP": "Apesar dos avanços em técnicas sísmicas, persistem lacunas na compreensão dos processos físico-químicos que desencadeiam atividade vulcânica. Há necessidade de integrar dados sismológicos, geoquímicos e periódicos para modelar interações dinâmicas entre fluidos magmáticos e hidrotermais.",
+    "METODOLOGIA": "Utilizou tomografia 3D de alta resolução (0,5 km), antenas sísmicas para mapear eventos de longo período (LP), inversão do tensor de momento para dados de período muito longo (VLP), análises espectrais com método Sompi e experimentos laboratoriais com fluidos análogos para simular dinâmicas vulcânicas.",
+    "RESULTADOS": "Identificou zonas de baixa velocidade (10% de contraste) no Kilauea, associadas a reservatórios magmáticos (27 km³). O volume de magma transportado foi estimado em 500.000 m³. Fatores Q variaram de 20 a >100, indicando fluidos com baixa dissipação intrínseca. Modelos anteriores não resolviam anomalias <1 km.",
+    "CONCLUSÃO": "A sismologia vulcânica avançou na caracterização de estruturas magmáticas e dinâmicas de fluidos, mas requer integração multidisciplinar para traduzir dados sísmicos em modelos quantitativos de fluxo e previsão eruptiva.",
+    "AVALIAÇÃO": "O estudo é robusto na aplicação de métodos sísmicos, porém depende fortemente de modelos teóricos (ex.: crack preenchido por fluido). Limita-se pela escassez de dados geoquímicos em tempo real e pela complexidade na validação de experimentos análogos com condições vulcânicas reais.",
+    "AMOSTRA": "206 terremotos locais, 4695 chegadas de ondas P e 3195 de ondas S, registrados por 67 estações sísmicas no Havaí.",
+    "VARIAVEL PRIMARIA 1": "Resolução tomográfica prévia >1 km (modelos regionais anteriores)",
+    "VARIAVEL PRIMARIA 2": "Resolução tomográfica de 0,5 km (modelo atual)"
+}

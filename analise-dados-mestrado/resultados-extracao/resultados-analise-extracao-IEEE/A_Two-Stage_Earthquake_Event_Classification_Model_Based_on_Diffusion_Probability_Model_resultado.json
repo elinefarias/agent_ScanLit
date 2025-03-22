@@ -1,0 +1,17 @@
+{
+  "artigo": "A_Two-Stage_Earthquake_Event_Classification_Model_Based_on_Diffusion_Probability_Model.pdf",
+  "TÍTULO": "A Two-Stage Earthquake Event Classification Model Based on Diffusion Probability Model",
+  "AUTORES": "Fanchun Meng, Tao Ren, Pengyu Wang, Xinliang Liu, Wenjuan Xiang, Xinyu He",
+  "ANO": "2024",
+  "REVISTA OU PERIÓDICO": "IEEE",
+  "PAÍS": "China",
+  "OBJETIVOS": "O objetivo do estudo foi desenvolver um modelo de classificação de eventos sísmicos em tempo real, utilizando um modelo de difusão probabilística (DPM) e técnicas de destilação de conhecimento (KD), para melhorar a precisão e generalização na classificação de terremotos, especialmente em cenários com desequilíbrio de dados.",
+  "GAP": "O estudo aborda a limitação de métodos tradicionais de classificação de eventos sísmicos, que sofrem com desequilíbrio de dados, dificuldade na extração de características e falta de generalização. O modelo proposto visa superar essas limitações ao combinar DPM e KD para melhorar a extração de características e a precisão da classificação.",
+  "METODOLOGIA": "O estudo propõe um modelo de duas etapas: extração de características de fase sísmica (PFE) e classificação de eventos (EC). Utiliza DPM para otimizar características de fase sísmica, combinando dados de InSAR e técnicas de KD para transferir conhecimento de modelos complexos para CNNs. O modelo emprega focal loss para lidar com desequilíbrio de dados.",
+  "RESULTADOS": "O modelo alcançou 96% de acurácia na classificação de eventos sísmicos, com recall de 89,5% e precisão de 13,2%. Comparado a métodos anteriores, o modelo apresentou melhora significativa, especialmente na identificação de eventos não tectônicos, superando abordagens como CapsuleNN e outros métodos de deep learning.",
+  "CONCLUSÃO": "O modelo DiffEEC demonstrou ser eficaz na classificação de eventos sísmicos, com alta precisão e capacidade de generalização. A combinação de DPM, KD e focal loss permitiu superar desafios como desequilíbrio de dados e complexidade na extração de características, oferecendo uma solução robusta para a classificação de terremotos.",
+  "AVALIAÇÃO": "O estudo apresenta uma abordagem inovadora ao combinar DPM e KD para classificação de eventos sísmicos. No entanto, a precisão ainda é relativamente baixa (13,2%), indicando que o modelo pode gerar muitos falsos positivos. Além disso, a dependência de dados de InSAR pode limitar a aplicabilidade em regiões com pouca cobertura de satélite.",
+  "AMOSTRA": "1.3 milhões de eventos sísmicos",
+  "VARIAVEL PRIMARIA 1": "Acurácia de classificação de eventos sísmicos antes da intervenção: 84% (média dos métodos anteriores)",
+  "VARIAVEL PRIMARIA 2": "Acurácia de classificação de eventos sísmicos após a intervenção: 96%"
+}

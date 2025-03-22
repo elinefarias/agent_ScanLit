@@ -1,0 +1,17 @@
+{
+    "artigo": "Source parameter estimation of acoustic emissions induced by hydraulic fracturing in the laboratory.pdf",
+    "TÍTULO": "Source parameter estimation of acoustic emissions induced by hydraulic fracturing in the laboratory",
+    "AUTORES": "Makoto Naoi, Keiichi Imakita, Youqing Chen, Kazune Yamamoto, Rui Tanaka, Hironori Kawakata, Tsuyoshi Ishida, Eiichi Fukuyama, Yutaro Arima",
+    "ANO": "2022",
+    "REVISTA OU PERIÓDICO": "Geophysical Journal International",
+    "PAÍS": "Japão",
+    "OBJETIVOS": "Estimar parâmetros de fonte (momento sísmico M₀ e frequência de canto f_c) de emissões acústicas (AE) induzidas por fraturamento hidráulico em laboratório, visando compreender a relação entre queda de tensão e eventos sísmicos induzidos por fluidos.",
+    "GAP": "Falta de métodos robustos para calibrar respostas de transdutores AE, corrigir padrões de radiação variáveis e superar limitações de banda de frequência, especialmente para eventos não cisalhantes.",
+    "METODOLOGIA": "Experimentos com xisto Eagle Ford (2 amostras) e granito Kurokami-jima (10 amostras), utilizando análise espectral, função de Green empírica múltipla (MEGF) e técnicas de aprendizado profundo para inversão de tensor de momento (46.857 soluções).",
+    "RESULTADOS": "M₀ variou de 2,8×10⁻⁵ a 4,5×10⁻¹ N·m (Mw -9,1 a -6,3). Dos 1053 eventos, 465 (44,2%) apresentaram relação M₀-f_c alinhada à queda de tensão constante (0,1–100 MPa), enquanto outros mostraram f_c mais baixos, indicando influência da pressão de poro. Superou métodos anteriores em calibração de sensores.",
+    "CONCLUSÃO": "A estimativa de parâmetros de fonte para AE laboratoriais é viável, com pressão de poro elevada correlacionada a eventos de baixa frequência, ampliando o entendimento de terremotos induzidos por fluidos.",
+    "AVALIAÇÃO": "Metodologia inovadora na correção de mecanismos focais, porém limitada a condições controladas. Dependência de dados sintéticos para treinamento do modelo pode introduzir vieses. Amostra restrita a dois tipos de rocha.",
+    "AMOSTRA": "12 experimentos (2 xisto, 10 granito), 46.857 eventos AE analisados.",
+    "VARIAVEL PRIMARIA 1": "Sem calibração adequada: sensibilidade variável dos transdutores e resposta em frequência não corrigida.",
+    "VARIAVEL PRIMARIA 2": "Precisão alcançada: 465 eventos (44,2%) com queda de tensão consistente (0,1–100 MPa)."
+}
